@@ -77,7 +77,9 @@ En cas de doute, le signaler à Denis plutôt que trancher seul.
   - `data/meta.json` : date de la dernière mise à jour globale
 - Service worker : fonctionnement hors ligne complet, mise à jour du cache à chaque nouvelle version de `data/`.
 - `manifest.webmanifest` avec icônes 192 et 512, `display: standalone`, nom court "Argumentaire".
-- Hébergement : GitHub Pages (branche `main`, dossier racine). Installation sur le Pixel via Chrome, menu, "Ajouter à l'écran d'accueil".
+- Hébergement : GitHub Pages (branche `main`, dossier racine), gratuit, adresse https://landiiv.github.io/161/. Chaque `git push` met le site à jour en une ou deux minutes. Installation sur le Pixel via Chrome, menu, "Ajouter à l'écran d'accueil".
+- Maintenance sans frais : pas de service payant ni d'automatisation dans le cloud. Denis lance `/maj-actu` ici quand il a un moment (une fois par mois suffit) ; `python3 outils/verifier_liens.py` vérifie gratuitement toutes les sources.
+- À chaque modification de code ou de données : incrémenter `VERSION` dans `sw.js` (et `version` dans `meta.json`), sinon le téléphone garde l'ancienne version en cache.
 
 ### Schéma d'un fait
 
@@ -182,7 +184,9 @@ Le résultat combine les réponses pour proposer : une phrase d'ouverture adapt�
 6. **Besoin d'arguments ?** : bouton principal de l'écran d'accueil. Trois questions en un tap chacune, puis une fiche de réponse prête à l'emploi (voir schéma du parcours). C'est le point d'entrée pour les situations où Denis n'a pas le temps de chercher.
 7. **Actus** : fil chronologique des actualités validées, filtrable par thème et pays, chaque entrée liée aux faits concernés. Pastille "nouveau" sur les actus ajoutées depuis la dernière ouverture.
 8. **Boycotts** : liste par secteur avec recherche par nom de marque (cas d'usage : Denis est au magasin et vérifie une marque). Chaque fiche affiche la raison, la source, les alternatives et la date de vérification. Les fiches `a-revoir` sont signalées, les `retire` sont masquées.
-9. Navigation basse à 4 onglets : Arguments, Faits, Actus, Boycotts.
+9. Navigation basse à 5 onglets : Arguments, Faits, Actus, Boycotts, Réseaux. Chaque onglet a une recherche et des filtres à cocher (catégories).
+11. **Réseaux** : toile des liens entre grandes fortunes, entreprises, médias et responsables politiques (France, Belgique), dans `data/reseaux.json`. Chaque lien est un fait sourcé (famille, parrainage, témoin de mariage, propriété, direction, emploi, financement), avec `fin` (année) quand il est terminé. Seules les personnes ayant un rôle public y figurent ; aucune vie privée, aucune intention prêtée, aucune qualification (« clan », « oligarchie »...). Les textes générés par d'autres IA ou les listes militantes servent de pistes : chaque lien est vérifié avant ajout.
+12. **Signaler une erreur / proposer un ajout** : bouton sur chaque fiche et en bas de chaque onglet. Ouvre un ticket GitHub prérempli (`data/meta.json` > `signalement`), ou un courriel si une adresse y est renseignée. L'app ne collecte rien elle-même.
 10. Aucune collecte de données, aucun tracker, aucune police ou ressource chargée depuis un tiers à l'exécution (polices auto-hébergées).
 
 ## Mise à jour du contenu avec l'actualité

@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-04.4",
+  "version": "2026-10-04.11",
   "derniere_maj": "2026-10-04",
   "a_suivre": [
     "Procès Zecler (prévu novembre 2026) : à sourcer",
@@ -7,6 +7,11 @@
     "Affaire Nahel (cassation 2026) : à sourcer",
     "Rapport V-Dem le plus récent (recul démocratique)",
     "Origines de Fratelli d'Italia (MSI)",
-    "Résultats du Vlaams Belang en 2024"
-  ]
+    "Résultats du Vlaams Belang en 2024",
+    "Décision en appel de Nicolas Sarkozy (financement libyen), annoncée pour fin novembre 2026 : à vérifier et mettre à jour"
+  ],
+  "signalement": {
+    "github_issues": "https://github.com/landiiv/161/issues/new",
+    "email": ""
+  }
 }

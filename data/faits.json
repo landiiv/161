@@ -314,5 +314,18 @@
     "date_publication": "2019-12-01",
     "date_verification": "2026-10-04",
     "nuance": "L'affaire a été portée par l'Organisation juive européenne et la cave Psagot, qui contestaient cette obligation."
+  },
+  {
+    "id": "fr-sarkozy-condamnations",
+    "pays": "FR",
+    "theme": "democratie",
+    "titre": "Nicolas Sarkozy : deux condamnations définitives, un dossier en appel",
+    "resume": "Nicolas Sarkozy a été définitivement condamné dans l'affaire des écoutes, dite Bismuth (corruption et trafic d'influence, décembre 2024), puis dans l'affaire Bygmalion (financement illégal de sa campagne de 2012, novembre 2025). Dans le dossier du financement libyen de sa campagne de 2007, le tribunal correctionnel de Paris l'a condamné en septembre 2025 à cinq ans de prison pour association de malfaiteurs ; son procès en appel s'est ouvert le 16 mars 2026.",
+    "fiabilite": "jugé",
+    "source_url": "https://www.parismatch.be/actualites/monde/2026/03/17/nicolas-sarkozy-condamne-dans-laffaire-bygmalion-lex-president-francais-devra-bien-purger-sa-peine-de-six-mois-de-prison-DGYWAY3WNZCFRJIKYGKJAFS63U/",
+    "source_nom": "Paris Match Belgique (AFP)",
+    "date_publication": "2026-03-17",
+    "date_verification": "2026-10-04",
+    "nuance": "Dans le dossier libyen, la condamnation n'est pas définitive : Nicolas Sarkozy reste présumé innocent jusqu'à la décision d'appel et conteste les faits. En première instance, le tribunal ne l'a pas condamné pour corruption passive ni pour financement illicite de campagne (ActuaLitté)."
   }
 ]

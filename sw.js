@@ -1,12 +1,13 @@
 // Service worker : fonctionnement hors ligne.
 // À CHAQUE mise à jour de data/ : incrémenter VERSION pour forcer le rafraîchissement du cache.
-const VERSION = '2026-10-04.4';
+const VERSION = '2026-10-04.11';
 const CACHE = 'argumentaire-' + VERSION;
 
 const FICHIERS = [
   './',
   'index.html',
   'css/style.css',
+  'js/reseaux.js',
   'js/app.js',
   'manifest.webmanifest',
   'icons/icon-192.png',
@@ -16,7 +17,8 @@ const FICHIERS = [
   'data/actus.json',
   'data/boycotts.json',
   'data/parcours.json',
-  'data/meta.json'
+  'data/meta.json',
+  'data/reseaux.json'
 ];
 
 self.addEventListener('install', (e) => {

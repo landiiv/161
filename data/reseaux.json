@@ -1,0 +1,1768 @@
+{
+  "_lisez_moi": "Chaque lien est un fait sourcé. Types : parent, conjoint, parrain, temoin, invite, possede, copropriete, dirige, siege, fonction, edite, finance. Un lien terminé porte « fin » (année). Seules les personnes ayant un rôle public figurent ici.",
+  "reseaux": {
+    "bollore": {
+      "nom": "Bolloré",
+      "pays": "FR"
+    },
+    "sterin": {
+      "nom": "Stérin",
+      "pays": "FR"
+    },
+    "arnault": {
+      "nom": "Arnault",
+      "pays": "FR"
+    },
+    "saade": {
+      "nom": "Saadé",
+      "pays": "FR"
+    },
+    "kretinsky": {
+      "nom": "Křetínský",
+      "pays": "FR"
+    },
+    "dassault": {
+      "nom": "Dassault",
+      "pays": "FR"
+    },
+    "frere": {
+      "nom": "Frère et Desmarais (GBL)",
+      "pays": "BE"
+    },
+    "ab-inbev": {
+      "nom": "Familles d'AB InBev",
+      "pays": "BE"
+    },
+    "rossel-ipm": {
+      "nom": "Rossel et IPM",
+      "pays": "BE"
+    },
+    "dpg": {
+      "nom": "DPG Media",
+      "pays": "BE"
+    },
+    "mediahuis": {
+      "nom": "Mediahuis",
+      "pays": "BE"
+    },
+    "roularta": {
+      "nom": "Roularta",
+      "pays": "BE"
+    },
+    "bouygues": {
+      "nom": "Bouygues",
+      "pays": "FR"
+    },
+    "politique": {
+      "nom": "Responsables politiques",
+      "pays": "FR"
+    }
+  },
+  "noeuds": [
+    {
+      "id": "vincent-bollore",
+      "type": "personne",
+      "nom": "Vincent Bolloré",
+      "reseau": "bollore",
+      "pays": "FR",
+      "role": "Industriel"
+    },
+    {
+      "id": "cyrille-bollore",
+      "type": "personne",
+      "nom": "Cyrille Bolloré",
+      "reseau": "bollore",
+      "pays": "FR"
+    },
+    {
+      "id": "yannick-bollore",
+      "type": "personne",
+      "nom": "Yannick Bolloré",
+      "reseau": "bollore",
+      "pays": "FR"
+    },
+    {
+      "id": "groupe-bollore",
+      "type": "entreprise",
+      "nom": "Groupe Bolloré",
+      "reseau": "bollore",
+      "pays": "FR"
+    },
+    {
+      "id": "lhg",
+      "type": "entreprise",
+      "nom": "Louis Hachette Group",
+      "reseau": "bollore",
+      "pays": "FR",
+      "faits": [
+        "fr-bollore-lhg-2025"
+      ]
+    },
+    {
+      "id": "lagardere",
+      "type": "entreprise",
+      "nom": "Lagardère",
+      "reseau": "bollore",
+      "pays": "FR"
+    },
+    {
+      "id": "canal-plus",
+      "type": "entreprise",
+      "nom": "Canal+",
+      "reseau": "bollore",
+      "pays": "FR",
+      "boycotts": [
+        "canal-plus"
+      ]
+    },
+    {
+      "id": "havas",
+      "type": "entreprise",
+      "nom": "Havas",
+      "reseau": "bollore",
+      "pays": "FR"
+    },
+    {
+      "id": "cnews",
+      "type": "media",
+      "nom": "CNews",
+      "reseau": "bollore",
+      "pays": "FR",
+      "boycotts": [
+        "canal-plus"
+      ],
+      "faits": [
+        "analyse-bollore-medias"
+      ]
+    },
+    {
+      "id": "europe1",
+      "type": "media",
+      "nom": "Europe 1",
+      "reseau": "bollore",
+      "pays": "FR",
+      "boycotts": [
+        "europe1-jdd"
+      ]
+    },
+    {
+      "id": "jdd",
+      "type": "media",
+      "nom": "Le JDD",
+      "reseau": "bollore",
+      "pays": "FR",
+      "boycotts": [
+        "europe1-jdd"
+      ],
+      "faits": [
+        "fr-jdd-greve-2023"
+      ]
+    },
+    {
+      "id": "hachette-livre",
+      "type": "entreprise",
+      "nom": "Hachette Livre",
+      "reseau": "bollore",
+      "pays": "FR",
+      "boycotts": [
+        "hachette-livre",
+        "hachette-boardgames"
+      ]
+    },
+    {
+      "id": "relay",
+      "type": "entreprise",
+      "nom": "Relay",
+      "reseau": "bollore",
+      "pays": "FR",
+      "boycotts": [
+        "relay"
+      ]
+    },
+    {
+      "id": "prisma",
+      "type": "media",
+      "nom": "Prisma Media",
+      "reseau": "bollore",
+      "pays": "FR",
+      "boycotts": [
+        "prisma-media"
+      ]
+    },
+    {
+      "id": "pe-sterin",
+      "type": "personne",
+      "nom": "Pierre-Édouard Stérin",
+      "reseau": "sterin",
+      "pays": "FR",
+      "role": "Entrepreneur et investisseur"
+    },
+    {
+      "id": "otium",
+      "type": "entreprise",
+      "nom": "Otium Capital",
+      "reseau": "sterin",
+      "pays": "FR"
+    },
+    {
+      "id": "smartbox",
+      "type": "entreprise",
+      "nom": "Smartbox",
+      "reseau": "sterin",
+      "pays": "FR",
+      "boycotts": [
+        "smartbox"
+      ]
+    },
+    {
+      "id": "pericles",
+      "type": "autre",
+      "nom": "Projet Périclès",
+      "reseau": "sterin",
+      "pays": "FR",
+      "faits": [
+        "fr-sterin-pericles-2024"
+      ]
+    },
+    {
+      "id": "bernard-arnault",
+      "type": "personne",
+      "nom": "Bernard Arnault",
+      "reseau": "arnault",
+      "pays": "FR",
+      "role": "Industriel"
+    },
+    {
+      "id": "delphine-arnault",
+      "type": "personne",
+      "nom": "Delphine Arnault",
+      "reseau": "arnault",
+      "pays": "FR"
+    },
+    {
+      "id": "alexandre-arnault",
+      "type": "personne",
+      "nom": "Alexandre Arnault",
+      "reseau": "arnault",
+      "pays": "FR"
+    },
+    {
+      "id": "frederic-arnault",
+      "type": "personne",
+      "nom": "Frédéric Arnault",
+      "reseau": "arnault",
+      "pays": "FR"
+    },
+    {
+      "id": "lvmh",
+      "type": "entreprise",
+      "nom": "LVMH",
+      "reseau": "arnault",
+      "pays": "FR"
+    },
+    {
+      "id": "dior",
+      "type": "entreprise",
+      "nom": "Christian Dior Couture",
+      "reseau": "arnault",
+      "pays": "FR"
+    },
+    {
+      "id": "les-echos",
+      "type": "media",
+      "nom": "Les Échos",
+      "reseau": "arnault",
+      "pays": "FR"
+    },
+    {
+      "id": "le-parisien",
+      "type": "media",
+      "nom": "Le Parisien",
+      "reseau": "arnault",
+      "pays": "FR"
+    },
+    {
+      "id": "paris-match",
+      "type": "media",
+      "nom": "Paris Match",
+      "reseau": "arnault",
+      "pays": "FR"
+    },
+    {
+      "id": "challenges",
+      "type": "media",
+      "nom": "Challenges",
+      "reseau": "arnault",
+      "pays": "FR"
+    },
+    {
+      "id": "cheval-blanc",
+      "type": "autre",
+      "nom": "Château Cheval Blanc",
+      "reseau": "arnault",
+      "pays": "FR"
+    },
+    {
+      "id": "rodolphe-saade",
+      "type": "personne",
+      "nom": "Rodolphe Saadé",
+      "reseau": "saade",
+      "pays": "FR",
+      "role": "Armateur"
+    },
+    {
+      "id": "cma-cgm",
+      "type": "entreprise",
+      "nom": "CMA CGM",
+      "reseau": "saade",
+      "pays": "FR"
+    },
+    {
+      "id": "bfmtv",
+      "type": "media",
+      "nom": "BFMTV",
+      "reseau": "saade",
+      "pays": "FR"
+    },
+    {
+      "id": "rmc",
+      "type": "media",
+      "nom": "RMC",
+      "reseau": "saade",
+      "pays": "FR"
+    },
+    {
+      "id": "la-provence",
+      "type": "media",
+      "nom": "La Provence",
+      "reseau": "saade",
+      "pays": "FR"
+    },
+    {
+      "id": "la-tribune",
+      "type": "media",
+      "nom": "La Tribune",
+      "reseau": "saade",
+      "pays": "FR"
+    },
+    {
+      "id": "brut",
+      "type": "media",
+      "nom": "Brut",
+      "reseau": "saade",
+      "pays": "FR"
+    },
+    {
+      "id": "m6",
+      "type": "media",
+      "nom": "M6",
+      "reseau": "saade",
+      "pays": "FR"
+    },
+    {
+      "id": "daniel-kretinsky",
+      "type": "personne",
+      "nom": "Daniel Křetínský",
+      "reseau": "kretinsky",
+      "pays": "FR",
+      "role": "Investisseur tchèque"
+    },
+    {
+      "id": "cmi",
+      "type": "entreprise",
+      "nom": "Czech Media Invest",
+      "reseau": "kretinsky",
+      "pays": "FR"
+    },
+    {
+      "id": "elle",
+      "type": "media",
+      "nom": "Elle",
+      "reseau": "kretinsky",
+      "pays": "FR"
+    },
+    {
+      "id": "tele7",
+      "type": "media",
+      "nom": "Télé 7 Jours",
+      "reseau": "kretinsky",
+      "pays": "FR"
+    },
+    {
+      "id": "famille-dassault",
+      "type": "famille",
+      "nom": "Famille Dassault",
+      "reseau": "dassault",
+      "pays": "FR"
+    },
+    {
+      "id": "le-figaro",
+      "type": "media",
+      "nom": "Le Figaro",
+      "reseau": "dassault",
+      "pays": "FR"
+    },
+    {
+      "id": "albert-frere",
+      "type": "personne",
+      "nom": "Albert Frère (1926-2018)",
+      "reseau": "frere",
+      "pays": "BE",
+      "role": "Financier"
+    },
+    {
+      "id": "gerald-frere",
+      "type": "personne",
+      "nom": "Gérald Frère",
+      "reseau": "frere",
+      "pays": "BE"
+    },
+    {
+      "id": "segolene-frere",
+      "type": "personne",
+      "nom": "Ségolène Gallienne-Frère",
+      "reseau": "frere",
+      "pays": "BE"
+    },
+    {
+      "id": "ian-gallienne",
+      "type": "personne",
+      "nom": "Ian Gallienne",
+      "reseau": "frere",
+      "pays": "BE"
+    },
+    {
+      "id": "famille-desmarais",
+      "type": "famille",
+      "nom": "Famille Desmarais (Canada)",
+      "reseau": "frere",
+      "pays": "BE"
+    },
+    {
+      "id": "gbl",
+      "type": "entreprise",
+      "nom": "Groupe Bruxelles Lambert (GBL)",
+      "reseau": "frere",
+      "pays": "BE"
+    },
+    {
+      "id": "famille-de-spoelberch",
+      "type": "famille",
+      "nom": "Famille de Spoelberch",
+      "reseau": "ab-inbev",
+      "pays": "BE"
+    },
+    {
+      "id": "famille-de-mevius",
+      "type": "famille",
+      "nom": "Famille de Mévius",
+      "reseau": "ab-inbev",
+      "pays": "BE"
+    },
+    {
+      "id": "famille-van-damme",
+      "type": "famille",
+      "nom": "Famille Van Damme",
+      "reseau": "ab-inbev",
+      "pays": "BE"
+    },
+    {
+      "id": "eps",
+      "type": "entreprise",
+      "nom": "Eugénie Patri Sébastien (EPS)",
+      "reseau": "ab-inbev",
+      "pays": "BE"
+    },
+    {
+      "id": "ab-inbev",
+      "type": "entreprise",
+      "nom": "AB InBev",
+      "reseau": "ab-inbev",
+      "pays": "BE",
+      "boycotts": [
+        "ab-inbev"
+      ]
+    },
+    {
+      "id": "famille-hurbain",
+      "type": "famille",
+      "nom": "Famille Hurbain",
+      "reseau": "rossel-ipm",
+      "pays": "BE"
+    },
+    {
+      "id": "famille-le-hodey",
+      "type": "famille",
+      "nom": "Famille le Hodey",
+      "reseau": "rossel-ipm",
+      "pays": "BE"
+    },
+    {
+      "id": "bernard-marchant",
+      "type": "personne",
+      "nom": "Bernard Marchant",
+      "reseau": "rossel-ipm",
+      "pays": "BE"
+    },
+    {
+      "id": "francois-le-hodey",
+      "type": "personne",
+      "nom": "François le Hodey",
+      "reseau": "rossel-ipm",
+      "pays": "BE"
+    },
+    {
+      "id": "rossel",
+      "type": "entreprise",
+      "nom": "Rossel",
+      "reseau": "rossel-ipm",
+      "pays": "BE"
+    },
+    {
+      "id": "ipm",
+      "type": "entreprise",
+      "nom": "IPM",
+      "reseau": "rossel-ipm",
+      "pays": "BE"
+    },
+    {
+      "id": "rtl-belgium",
+      "type": "media",
+      "nom": "RTL Belgium",
+      "reseau": "rossel-ipm",
+      "pays": "BE"
+    },
+    {
+      "id": "mediafin",
+      "type": "entreprise",
+      "nom": "Mediafin",
+      "reseau": "rossel-ipm",
+      "pays": "BE"
+    },
+    {
+      "id": "le-soir",
+      "type": "media",
+      "nom": "Le Soir",
+      "reseau": "rossel-ipm",
+      "pays": "BE"
+    },
+    {
+      "id": "sudinfo",
+      "type": "media",
+      "nom": "Sudinfo",
+      "reseau": "rossel-ipm",
+      "pays": "BE"
+    },
+    {
+      "id": "la-libre",
+      "type": "media",
+      "nom": "La Libre",
+      "reseau": "rossel-ipm",
+      "pays": "BE"
+    },
+    {
+      "id": "la-dh",
+      "type": "media",
+      "nom": "La DH",
+      "reseau": "rossel-ipm",
+      "pays": "BE"
+    },
+    {
+      "id": "l-avenir",
+      "type": "media",
+      "nom": "L'Avenir",
+      "reseau": "rossel-ipm",
+      "pays": "BE"
+    },
+    {
+      "id": "l-echo",
+      "type": "media",
+      "nom": "L'Echo",
+      "reseau": "rossel-ipm",
+      "pays": "BE"
+    },
+    {
+      "id": "de-tijd",
+      "type": "media",
+      "nom": "De Tijd",
+      "reseau": "rossel-ipm",
+      "pays": "BE"
+    },
+    {
+      "id": "epifin",
+      "type": "entreprise",
+      "nom": "Epifin",
+      "reseau": "dpg",
+      "pays": "BE"
+    },
+    {
+      "id": "famille-van-thillo",
+      "type": "famille",
+      "nom": "Famille Van Thillo",
+      "reseau": "dpg",
+      "pays": "BE"
+    },
+    {
+      "id": "dpg-media",
+      "type": "entreprise",
+      "nom": "DPG Media",
+      "reseau": "dpg",
+      "pays": "BE"
+    },
+    {
+      "id": "hln",
+      "type": "media",
+      "nom": "Het Laatste Nieuws",
+      "reseau": "dpg",
+      "pays": "BE"
+    },
+    {
+      "id": "vtm",
+      "type": "media",
+      "nom": "VTM",
+      "reseau": "dpg",
+      "pays": "BE"
+    },
+    {
+      "id": "mediahuis-partners",
+      "type": "entreprise",
+      "nom": "Mediahuis Partners",
+      "reseau": "mediahuis",
+      "pays": "BE"
+    },
+    {
+      "id": "concentra",
+      "type": "entreprise",
+      "nom": "Concentra",
+      "reseau": "mediahuis",
+      "pays": "BE"
+    },
+    {
+      "id": "vp-capital",
+      "type": "entreprise",
+      "nom": "VP Capital",
+      "reseau": "mediahuis",
+      "pays": "BE"
+    },
+    {
+      "id": "mediahuis",
+      "type": "entreprise",
+      "nom": "Mediahuis",
+      "reseau": "mediahuis",
+      "pays": "BE"
+    },
+    {
+      "id": "de-standaard",
+      "type": "media",
+      "nom": "De Standaard",
+      "reseau": "mediahuis",
+      "pays": "BE"
+    },
+    {
+      "id": "het-nieuwsblad",
+      "type": "media",
+      "nom": "Het Nieuwsblad",
+      "reseau": "mediahuis",
+      "pays": "BE"
+    },
+    {
+      "id": "gva",
+      "type": "media",
+      "nom": "Gazet van Antwerpen",
+      "reseau": "mediahuis",
+      "pays": "BE"
+    },
+    {
+      "id": "famille-de-nolf",
+      "type": "famille",
+      "nom": "Famille De Nolf",
+      "reseau": "roularta",
+      "pays": "BE"
+    },
+    {
+      "id": "koinon",
+      "type": "entreprise",
+      "nom": "Koinon",
+      "reseau": "roularta",
+      "pays": "BE"
+    },
+    {
+      "id": "roularta",
+      "type": "entreprise",
+      "nom": "Roularta",
+      "reseau": "roularta",
+      "pays": "BE"
+    },
+    {
+      "id": "knack",
+      "type": "media",
+      "nom": "Knack",
+      "reseau": "roularta",
+      "pays": "BE"
+    },
+    {
+      "id": "nicolas-sarkozy",
+      "type": "personne",
+      "nom": "Nicolas Sarkozy",
+      "reseau": "politique",
+      "pays": "FR",
+      "role": "Président de la République de 2007 à 2012",
+      "faits": [
+        "fr-sarkozy-condamnations"
+      ]
+    },
+    {
+      "id": "louis-sarkozy",
+      "type": "personne",
+      "nom": "Louis Sarkozy",
+      "reseau": "politique",
+      "pays": "FR",
+      "role": "Chroniqueur"
+    },
+    {
+      "id": "martin-bouygues",
+      "type": "personne",
+      "nom": "Martin Bouygues",
+      "reseau": "bouygues",
+      "pays": "FR",
+      "role": "Industriel"
+    },
+    {
+      "id": "lci",
+      "type": "media",
+      "nom": "LCI",
+      "reseau": "bouygues",
+      "pays": "FR"
+    },
+    {
+      "id": "jordan-bardella",
+      "type": "personne",
+      "nom": "Jordan Bardella",
+      "reseau": "politique",
+      "pays": "FR",
+      "role": "Président du Rassemblement national"
+    },
+    {
+      "id": "fayard",
+      "type": "entreprise",
+      "nom": "Fayard",
+      "reseau": "bollore",
+      "pays": "FR",
+      "boycotts": [
+        "hachette-livre"
+      ]
+    },
+    {
+      "id": "arnaud-lagardere",
+      "type": "personne",
+      "nom": "Arnaud Lagardère",
+      "reseau": "bollore",
+      "pays": "FR"
+    },
+    {
+      "id": "lagardere-capital",
+      "type": "entreprise",
+      "nom": "Lagardère Capital",
+      "reseau": "bollore",
+      "pays": "FR"
+    },
+    {
+      "id": "financiere-agache",
+      "type": "entreprise",
+      "nom": "Financière Agache",
+      "reseau": "arnault",
+      "pays": "FR"
+    }
+  ],
+  "liens": [
+    {
+      "de": "vincent-bollore",
+      "type": "parent",
+      "vers": "cyrille-bollore",
+      "source_url": "https://www.tradingsat.com/bollore-FR0000039299/actualites/bollore-vincent-bollore-cede-les-renes-de-son-empire-a-son-fils-cyrille-853235.html",
+      "source_nom": "Tradingsat",
+      "fiabilite": "presse",
+      "date_source": "2019-03-14",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "vincent-bollore",
+      "type": "parent",
+      "vers": "yannick-bollore",
+      "source_url": "https://www.cbnews.fr/conseil/yannick-bollore-va-succeder-son-pere-presidence-havas",
+      "source_nom": "CB News",
+      "fiabilite": "presse",
+      "date_source": "2013-06-07",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "cyrille-bollore",
+      "type": "dirige",
+      "vers": "groupe-bollore",
+      "detail": "président-directeur général",
+      "source_url": "https://www.digitalmusicnews.com/2025/07/28/cyrille-bollore-universal-music-board-exit/",
+      "source_nom": "Digital Music News",
+      "fiabilite": "presse",
+      "date_source": "2025-07-28",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "yannick-bollore",
+      "type": "dirige",
+      "vers": "havas",
+      "detail": "président d'Havas à partir de 2013",
+      "source_url": "https://www.cbnews.fr/conseil/yannick-bollore-va-succeder-son-pere-presidence-havas",
+      "source_nom": "CB News",
+      "fiabilite": "presse",
+      "date_source": "2013-06-07",
+      "date_verification": "2013-06-07"
+    },
+    {
+      "de": "groupe-bollore",
+      "type": "possede",
+      "vers": "lhg",
+      "detail": "31,03 % du capital fin 2025",
+      "source_url": "https://gusandco.net/2026/05/01/boycott-jeux-societe-bollore-hachette/",
+      "source_nom": "Gus&Co, d'après le rapport annuel 2025 de Louis Hachette Group",
+      "fiabilite": "presse",
+      "date_source": "2026-05-01",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "groupe-bollore",
+      "type": "possede",
+      "vers": "canal-plus",
+      "detail": "le groupe détenait près de 30 % de Vivendi avant la scission de 2024",
+      "source_url": "https://www.tradingsat.com/actualites/informations-societes/canal-chute-pour-ses-premiers-pas-a-la-bourse-de-londres-havas-grimpe-a-amsterdam-1129188.html",
+      "source_nom": "Tradingsat",
+      "fiabilite": "presse",
+      "date_source": "2024-12-16",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "groupe-bollore",
+      "type": "possede",
+      "vers": "havas",
+      "detail": "depuis la scission de Vivendi en 2024",
+      "source_url": "https://www.tradingsat.com/actualites/informations-societes/canal-chute-pour-ses-premiers-pas-a-la-bourse-de-londres-havas-grimpe-a-amsterdam-1129188.html",
+      "source_nom": "Tradingsat",
+      "fiabilite": "presse",
+      "date_source": "2024-12-16",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "lhg",
+      "type": "possede",
+      "vers": "lagardere",
+      "detail": "66,53 %",
+      "source_url": "https://www.abcbourse.com/marches/le-conseil-de-surveillance-de-vivendi-arrete-les-resolutions-de-scission-du-grou_647111",
+      "source_nom": "ABC Bourse, d'après Vivendi",
+      "fiabilite": "presse",
+      "date_source": "2024-10-29",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "lhg",
+      "type": "possede",
+      "vers": "prisma",
+      "detail": "100 %",
+      "source_url": "https://www.abcbourse.com/marches/le-conseil-de-surveillance-de-vivendi-arrete-les-resolutions-de-scission-du-grou_647111",
+      "source_nom": "ABC Bourse, d'après Vivendi",
+      "fiabilite": "presse",
+      "date_source": "2024-10-29",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "lagardere",
+      "type": "possede",
+      "vers": "hachette-livre",
+      "source_url": "https://vert.eco/chaleurs-actuelles/quelles-entreprises-possede-vincent-bollore-le-milliardaire-au-service-de-lextreme-droite/",
+      "source_nom": "Vert",
+      "fiabilite": "presse",
+      "date_source": "2026-05-18",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "lagardere",
+      "type": "possede",
+      "vers": "relay",
+      "source_url": "https://vert.eco/chaleurs-actuelles/quelles-entreprises-possede-vincent-bollore-le-milliardaire-au-service-de-lextreme-droite/",
+      "source_nom": "Vert",
+      "fiabilite": "presse",
+      "date_source": "2026-05-18",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "lagardere",
+      "type": "possede",
+      "vers": "europe1",
+      "source_url": "https://vert.eco/chaleurs-actuelles/quelles-entreprises-possede-vincent-bollore-le-milliardaire-au-service-de-lextreme-droite/",
+      "source_nom": "Vert",
+      "fiabilite": "presse",
+      "date_source": "2026-05-18",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "lagardere",
+      "type": "possede",
+      "vers": "jdd",
+      "source_url": "https://vert.eco/chaleurs-actuelles/quelles-entreprises-possede-vincent-bollore-le-milliardaire-au-service-de-lextreme-droite/",
+      "source_nom": "Vert",
+      "fiabilite": "presse",
+      "date_source": "2026-05-18",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "canal-plus",
+      "type": "possede",
+      "vers": "cnews",
+      "source_url": "https://lessentieldeleco.fr/2322-qui-possede-les-medias-en-france/",
+      "source_nom": "L'Essentiel de l'Éco",
+      "fiabilite": "presse",
+      "date_source": "2025-05-29",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "pe-sterin",
+      "type": "possede",
+      "vers": "otium",
+      "detail": "family office de Pierre-Édouard Stérin",
+      "source_url": "https://www.cfnews.net/L-actualite/International/Operations/M-A/Otium-Capital-vend-la-filiale-britannique-de-Smartbox-404465",
+      "source_nom": "CFNews",
+      "fiabilite": "presse",
+      "date_source": "2022-05-24",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "pe-sterin",
+      "type": "possede",
+      "vers": "smartbox",
+      "detail": "fondateur, 100 % selon CFNews (2022)",
+      "source_url": "https://www.cfnews.net/L-actualite/International/Operations/M-A/Otium-Capital-vend-la-filiale-britannique-de-Smartbox-404465",
+      "source_nom": "CFNews",
+      "fiabilite": "presse",
+      "date_source": "2022-05-24",
+      "date_verification": "2022-05-24"
+    },
+    {
+      "de": "pe-sterin",
+      "type": "finance",
+      "vers": "pericles",
+      "detail": "150 millions d'euros prévus sur dix ans",
+      "source_url": "https://www.politis.fr/articles/2024/07/pericles-linquietant-projet-pro-rn-du-milliardaire-sterin/",
+      "source_nom": "Politis, d'après L'Humanité",
+      "fiabilite": "presse",
+      "date_source": "2024-07-25",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "bernard-arnault",
+      "type": "dirige",
+      "vers": "lvmh",
+      "detail": "président-directeur général",
+      "source_url": "https://fortune.com/europe/2024/01/23/bernard-arnault-lvmh-succession-2-sons-board-directors-alexandre-frederic",
+      "source_nom": "Fortune",
+      "fiabilite": "presse",
+      "date_source": "2024-01-23",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "bernard-arnault",
+      "type": "parent",
+      "vers": "delphine-arnault",
+      "source_url": "https://www.lalibre.be/economie/entreprises-startup/2023/01/18/delphine-arnault-nommee-a-la-tete-de-dior-notre-pere-nous-a-toujours-beaucoup-impliques-Z2HBEOGXCBHEZJ3V3SDO52DGNI/",
+      "source_nom": "La Libre",
+      "fiabilite": "presse",
+      "date_source": "2023-01-18",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "bernard-arnault",
+      "type": "parent",
+      "vers": "alexandre-arnault",
+      "source_url": "https://fortune.com/europe/2024/01/23/bernard-arnault-lvmh-succession-2-sons-board-directors-alexandre-frederic",
+      "source_nom": "Fortune",
+      "fiabilite": "presse",
+      "date_source": "2024-01-23",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "bernard-arnault",
+      "type": "parent",
+      "vers": "frederic-arnault",
+      "source_url": "https://fortune.com/europe/2024/01/23/bernard-arnault-lvmh-succession-2-sons-board-directors-alexandre-frederic",
+      "source_nom": "Fortune",
+      "fiabilite": "presse",
+      "date_source": "2024-01-23",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "delphine-arnault",
+      "type": "dirige",
+      "vers": "dior",
+      "detail": "présidente-directrice générale depuis 2023",
+      "source_url": "https://www.lalibre.be/economie/entreprises-startup/2023/01/18/delphine-arnault-nommee-a-la-tete-de-dior-notre-pere-nous-a-toujours-beaucoup-impliques-Z2HBEOGXCBHEZJ3V3SDO52DGNI/",
+      "source_nom": "La Libre",
+      "fiabilite": "presse",
+      "date_source": "2023-01-18",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "alexandre-arnault",
+      "type": "siege",
+      "vers": "lvmh",
+      "detail": "entré au conseil d'administration en 2024",
+      "source_url": "https://fortune.com/europe/2024/01/23/bernard-arnault-lvmh-succession-2-sons-board-directors-alexandre-frederic",
+      "source_nom": "Fortune",
+      "fiabilite": "presse",
+      "date_source": "2024-01-23",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "frederic-arnault",
+      "type": "siege",
+      "vers": "lvmh",
+      "detail": "entré au conseil d'administration en 2024",
+      "source_url": "https://fortune.com/europe/2024/01/23/bernard-arnault-lvmh-succession-2-sons-board-directors-alexandre-frederic",
+      "source_nom": "Fortune",
+      "fiabilite": "presse",
+      "date_source": "2024-01-23",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "lvmh",
+      "type": "possede",
+      "vers": "les-echos",
+      "source_url": "https://lessentieldeleco.fr/2322-qui-possede-les-medias-en-france/",
+      "source_nom": "L'Essentiel de l'Éco",
+      "fiabilite": "presse",
+      "date_source": "2025-05-29",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "lvmh",
+      "type": "possede",
+      "vers": "le-parisien",
+      "source_url": "https://lessentieldeleco.fr/2322-qui-possede-les-medias-en-france/",
+      "source_nom": "L'Essentiel de l'Éco",
+      "fiabilite": "presse",
+      "date_source": "2025-05-29",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "lvmh",
+      "type": "possede",
+      "vers": "paris-match",
+      "detail": "racheté en octobre 2024",
+      "source_url": "https://lessentieldeleco.fr/2322-qui-possede-les-medias-en-france/",
+      "source_nom": "L'Essentiel de l'Éco",
+      "fiabilite": "presse",
+      "date_source": "2025-05-29",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "lvmh",
+      "type": "possede",
+      "vers": "challenges",
+      "detail": "30 %",
+      "source_url": "https://lessentieldeleco.fr/2322-qui-possede-les-medias-en-france/",
+      "source_nom": "L'Essentiel de l'Éco",
+      "fiabilite": "presse",
+      "date_source": "2025-05-29",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "bernard-arnault",
+      "type": "copropriete",
+      "vers": "cheval-blanc",
+      "detail": "achat avec Albert Frère en 1998",
+      "source_url": "https://www.winespectator.com/articles/chateau-cheval-blanc-sold-to-lvmh-chairman-and-belgian-businessman-7998",
+      "source_nom": "Wine Spectator",
+      "fiabilite": "presse",
+      "date_source": "1998-12-15",
+      "date_verification": "1998-12-15"
+    },
+    {
+      "de": "rodolphe-saade",
+      "type": "dirige",
+      "vers": "cma-cgm",
+      "detail": "dirigeant de l'armateur",
+      "source_url": "https://www.abcbourse.com/marches/bfmtv-et-rmc-officiellement-aux-mains-de-l-armateur-cma-cgm_635957",
+      "source_nom": "ABC Bourse (AFP)",
+      "fiabilite": "presse",
+      "date_source": "2024-07-02",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "cma-cgm",
+      "type": "possede",
+      "vers": "bfmtv",
+      "detail": "rachat finalisé en juillet 2024",
+      "source_url": "https://www.abcbourse.com/marches/bfmtv-et-rmc-officiellement-aux-mains-de-l-armateur-cma-cgm_635957",
+      "source_nom": "ABC Bourse (AFP)",
+      "fiabilite": "presse",
+      "date_source": "2024-07-02",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "cma-cgm",
+      "type": "possede",
+      "vers": "rmc",
+      "detail": "rachat finalisé en juillet 2024",
+      "source_url": "https://www.abcbourse.com/marches/bfmtv-et-rmc-officiellement-aux-mains-de-l-armateur-cma-cgm_635957",
+      "source_nom": "ABC Bourse (AFP)",
+      "fiabilite": "presse",
+      "date_source": "2024-07-02",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "cma-cgm",
+      "type": "possede",
+      "vers": "la-provence",
+      "source_url": "https://lessentieldeleco.fr/2322-qui-possede-les-medias-en-france/",
+      "source_nom": "L'Essentiel de l'Éco",
+      "fiabilite": "presse",
+      "date_source": "2025-05-29",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "cma-cgm",
+      "type": "possede",
+      "vers": "la-tribune",
+      "source_url": "https://lessentieldeleco.fr/2322-qui-possede-les-medias-en-france/",
+      "source_nom": "L'Essentiel de l'Éco",
+      "fiabilite": "presse",
+      "date_source": "2025-05-29",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "cma-cgm",
+      "type": "possede",
+      "vers": "brut",
+      "detail": "rachat finalisé en septembre 2025",
+      "source_url": "https://www.cbnews.fr/node/95172",
+      "source_nom": "CB News",
+      "fiabilite": "presse",
+      "date_source": "2025-09-12",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "cma-cgm",
+      "type": "possede",
+      "vers": "m6",
+      "detail": "10 %",
+      "source_url": "https://lessentieldeleco.fr/2322-qui-possede-les-medias-en-france/",
+      "source_nom": "L'Essentiel de l'Éco",
+      "fiabilite": "presse",
+      "date_source": "2025-05-29",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "daniel-kretinsky",
+      "type": "possede",
+      "vers": "cmi",
+      "source_url": "https://lessentieldeleco.fr/2322-qui-possede-les-medias-en-france/",
+      "source_nom": "L'Essentiel de l'Éco",
+      "fiabilite": "presse",
+      "date_source": "2025-05-29",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "cmi",
+      "type": "possede",
+      "vers": "elle",
+      "source_url": "https://lessentieldeleco.fr/2322-qui-possede-les-medias-en-france/",
+      "source_nom": "L'Essentiel de l'Éco",
+      "fiabilite": "presse",
+      "date_source": "2025-05-29",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "cmi",
+      "type": "possede",
+      "vers": "tele7",
+      "source_url": "https://lessentieldeleco.fr/2322-qui-possede-les-medias-en-france/",
+      "source_nom": "L'Essentiel de l'Éco",
+      "fiabilite": "presse",
+      "date_source": "2025-05-29",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "famille-dassault",
+      "type": "possede",
+      "vers": "le-figaro",
+      "detail": "via Figaro Holding",
+      "source_url": "https://lessentieldeleco.fr/2322-qui-possede-les-medias-en-france/",
+      "source_nom": "L'Essentiel de l'Éco",
+      "fiabilite": "presse",
+      "date_source": "2025-05-29",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "albert-frere",
+      "type": "parent",
+      "vers": "gerald-frere",
+      "source_url": "https://fr.businessam.be/?p=57913",
+      "source_nom": "Business AM",
+      "fiabilite": "presse",
+      "date_source": "2021-04-22",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "albert-frere",
+      "type": "parent",
+      "vers": "segolene-frere",
+      "source_url": "https://fr.businessam.be/?p=57913",
+      "source_nom": "Business AM",
+      "fiabilite": "presse",
+      "date_source": "2021-04-22",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "ian-gallienne",
+      "type": "conjoint",
+      "vers": "segolene-frere",
+      "source_url": "https://fr.businessam.be/?p=57913",
+      "source_nom": "Business AM",
+      "fiabilite": "presse",
+      "date_source": "2021-04-22",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "ian-gallienne",
+      "type": "dirige",
+      "vers": "gbl",
+      "detail": "administrateur délégué",
+      "source_url": "https://fr.businessam.be/?p=57913",
+      "source_nom": "Business AM",
+      "fiabilite": "presse",
+      "date_source": "2021-04-22",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "gerald-frere",
+      "type": "possede",
+      "vers": "gbl",
+      "detail": "avec les autres déclarants de concert : 59,30 % des droits de vote (mai 2026)",
+      "source_url": "https://www.gbl.com/fr/media/4338/20260511%20-%20GBL%20-%20Declaration_de_transparence%201.pdf",
+      "source_nom": "GBL, déclaration de transparence du 11 mai 2026",
+      "fiabilite": "officiel",
+      "date_source": "2026-05-11",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "segolene-frere",
+      "type": "possede",
+      "vers": "gbl",
+      "detail": "avec les autres déclarants de concert : 59,30 % des droits de vote (mai 2026)",
+      "source_url": "https://www.gbl.com/fr/media/4338/20260511%20-%20GBL%20-%20Declaration_de_transparence%201.pdf",
+      "source_nom": "GBL, déclaration de transparence du 11 mai 2026",
+      "fiabilite": "officiel",
+      "date_source": "2026-05-11",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "famille-desmarais",
+      "type": "possede",
+      "vers": "gbl",
+      "detail": "avec les autres déclarants de concert : 59,30 % des droits de vote (mai 2026)",
+      "source_url": "https://www.gbl.com/fr/media/4338/20260511%20-%20GBL%20-%20Declaration_de_transparence%201.pdf",
+      "source_nom": "GBL, déclaration de transparence du 11 mai 2026",
+      "fiabilite": "officiel",
+      "date_source": "2026-05-11",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "albert-frere",
+      "type": "copropriete",
+      "vers": "cheval-blanc",
+      "detail": "achat avec Bernard Arnault en 1998",
+      "source_url": "https://www.winespectator.com/articles/chateau-cheval-blanc-sold-to-lvmh-chairman-and-belgian-businessman-7998",
+      "source_nom": "Wine Spectator",
+      "fiabilite": "presse",
+      "date_source": "1998-12-15",
+      "date_verification": "1998-12-15"
+    },
+    {
+      "de": "famille-de-spoelberch",
+      "type": "possede",
+      "vers": "eps",
+      "detail": "holding luxembourgeoise des familles",
+      "source_url": "https://www.inside.beer/news/detail/belgium-ab-inbev-founding-families-divest-eur-731-million-stake",
+      "source_nom": "Inside.beer",
+      "fiabilite": "presse",
+      "date_source": "2025",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "famille-de-mevius",
+      "type": "possede",
+      "vers": "eps",
+      "detail": "holding luxembourgeoise des familles",
+      "source_url": "https://www.inside.beer/news/detail/belgium-ab-inbev-founding-families-divest-eur-731-million-stake",
+      "source_nom": "Inside.beer",
+      "fiabilite": "presse",
+      "date_source": "2025",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "famille-van-damme",
+      "type": "possede",
+      "vers": "eps",
+      "detail": "holding luxembourgeoise des familles",
+      "source_url": "https://www.inside.beer/news/detail/belgium-ab-inbev-founding-families-divest-eur-731-million-stake",
+      "source_nom": "Inside.beer",
+      "fiabilite": "presse",
+      "date_source": "2025",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "eps",
+      "type": "possede",
+      "vers": "ab-inbev",
+      "detail": "actionnaire familial de référence",
+      "source_url": "https://www.inside.beer/news/detail/belgium-ab-inbev-founding-families-divest-eur-731-million-stake",
+      "source_nom": "Inside.beer",
+      "fiabilite": "presse",
+      "date_source": "2025",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "famille-hurbain",
+      "type": "possede",
+      "vers": "rossel",
+      "detail": "100 % en 2022 ; la presse cite aussi les familles Marchant et Defourt (2025)",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2022-09-01"
+    },
+    {
+      "de": "bernard-marchant",
+      "type": "dirige",
+      "vers": "rossel",
+      "detail": "administrateur délégué",
+      "source_url": "https://www.lavenir.net/actu/belgique/2025/06/23/seisme-dans-la-presse-belge-rossel-e-soir-sudinfo-absorbe-ipm-qui-lui-cede-ses-journaux-lavenir-la-libre-la-dh-TJGG54U2KJENRIVAL2AJJ3RHKM/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2025-06-23",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "famille-le-hodey",
+      "type": "possede",
+      "vers": "ipm",
+      "detail": "via la holding Maja",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "francois-le-hodey",
+      "type": "dirige",
+      "vers": "ipm",
+      "detail": "administrateur délégué",
+      "source_url": "https://www.lavenir.net/actu/belgique/2025/06/23/seisme-dans-la-presse-belge-rossel-e-soir-sudinfo-absorbe-ipm-qui-lui-cede-ses-journaux-lavenir-la-libre-la-dh-TJGG54U2KJENRIVAL2AJJ3RHKM/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2025-06-23",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "famille-le-hodey",
+      "type": "possede",
+      "vers": "rossel",
+      "detail": "10 % prévus après l'absorption d'IPM par Rossel (finalisation annoncée fin 2026)",
+      "source_url": "https://www.lavenir.net/actu/belgique/2025/06/23/seisme-dans-la-presse-belge-rossel-e-soir-sudinfo-absorbe-ipm-qui-lui-cede-ses-journaux-lavenir-la-libre-la-dh-TJGG54U2KJENRIVAL2AJJ3RHKM/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2025-06-23",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "rossel",
+      "type": "possede",
+      "vers": "le-soir",
+      "source_url": "https://www.lavenir.net/actu/belgique/2025/06/23/seisme-dans-la-presse-belge-rossel-e-soir-sudinfo-absorbe-ipm-qui-lui-cede-ses-journaux-lavenir-la-libre-la-dh-TJGG54U2KJENRIVAL2AJJ3RHKM/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2025-06-23",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "rossel",
+      "type": "possede",
+      "vers": "sudinfo",
+      "source_url": "https://www.lavenir.net/actu/belgique/2025/06/23/seisme-dans-la-presse-belge-rossel-e-soir-sudinfo-absorbe-ipm-qui-lui-cede-ses-journaux-lavenir-la-libre-la-dh-TJGG54U2KJENRIVAL2AJJ3RHKM/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2025-06-23",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "ipm",
+      "type": "possede",
+      "vers": "la-libre",
+      "detail": "titres cédés à Rossel dans le cadre de la fusion",
+      "source_url": "https://www.lavenir.net/actu/belgique/2025/06/23/seisme-dans-la-presse-belge-rossel-e-soir-sudinfo-absorbe-ipm-qui-lui-cede-ses-journaux-lavenir-la-libre-la-dh-TJGG54U2KJENRIVAL2AJJ3RHKM/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2025-06-23",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "ipm",
+      "type": "possede",
+      "vers": "la-dh",
+      "detail": "titres cédés à Rossel dans le cadre de la fusion",
+      "source_url": "https://www.lavenir.net/actu/belgique/2025/06/23/seisme-dans-la-presse-belge-rossel-e-soir-sudinfo-absorbe-ipm-qui-lui-cede-ses-journaux-lavenir-la-libre-la-dh-TJGG54U2KJENRIVAL2AJJ3RHKM/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2025-06-23",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "ipm",
+      "type": "possede",
+      "vers": "l-avenir",
+      "detail": "titres cédés à Rossel dans le cadre de la fusion",
+      "source_url": "https://www.lavenir.net/actu/belgique/2025/06/23/seisme-dans-la-presse-belge-rossel-e-soir-sudinfo-absorbe-ipm-qui-lui-cede-ses-journaux-lavenir-la-libre-la-dh-TJGG54U2KJENRIVAL2AJJ3RHKM/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2025-06-23",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "rossel",
+      "type": "possede",
+      "vers": "rtl-belgium",
+      "detail": "50 %",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "rossel",
+      "type": "possede",
+      "vers": "mediafin",
+      "detail": "50 %",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "mediafin",
+      "type": "possede",
+      "vers": "l-echo",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "mediafin",
+      "type": "possede",
+      "vers": "de-tijd",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "famille-van-thillo",
+      "type": "possede",
+      "vers": "epifin",
+      "detail": "bénéficiaire avec les familles Criel et Convent, selon le Monitor (non confirmé)",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2022-09-01"
+    },
+    {
+      "de": "epifin",
+      "type": "possede",
+      "vers": "dpg-media",
+      "detail": "99,2 %",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "dpg-media",
+      "type": "possede",
+      "vers": "hln",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "dpg-media",
+      "type": "possede",
+      "vers": "vtm",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "dpg-media",
+      "type": "possede",
+      "vers": "rtl-belgium",
+      "detail": "50 %",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "mediahuis-partners",
+      "type": "possede",
+      "vers": "mediahuis",
+      "detail": "50,6 %",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "concentra",
+      "type": "possede",
+      "vers": "mediahuis",
+      "detail": "32 %",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "vp-capital",
+      "type": "possede",
+      "vers": "mediahuis",
+      "detail": "16,3 %",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "mediahuis",
+      "type": "possede",
+      "vers": "de-standaard",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "mediahuis",
+      "type": "possede",
+      "vers": "het-nieuwsblad",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "mediahuis",
+      "type": "possede",
+      "vers": "gva",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "famille-de-nolf",
+      "type": "possede",
+      "vers": "koinon",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "koinon",
+      "type": "possede",
+      "vers": "roularta",
+      "detail": "71,2 %",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "roularta",
+      "type": "possede",
+      "vers": "knack",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "roularta",
+      "type": "possede",
+      "vers": "mediafin",
+      "detail": "50 %",
+      "source_url": "https://media-ownership.eu/2023-edition/findings/countries/belgium/",
+      "source_nom": "Euromedia Ownership Monitor (Université de Salzbourg, cofinancé par la Commission européenne)",
+      "fiabilite": "officiel",
+      "date_source": "2022-09",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "nicolas-sarkozy",
+      "type": "parent",
+      "vers": "louis-sarkozy",
+      "source_url": "https://www.dhnet.be/actu/monde/2024/10/02/comment-louis-le-fan-de-napoleon-issu-de-la-droite-figaro-a-ramene-le-nom-de-sarkozy-sur-la-scene-francaise-6G3N7PWX6NGIBGHC2GOZGTIYG4/",
+      "source_nom": "La DH",
+      "fiabilite": "presse",
+      "date_source": "2024-10-02",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "martin-bouygues",
+      "type": "parrain",
+      "vers": "louis-sarkozy",
+      "source_url": "https://www.dhnet.be/actu/monde/2024/10/02/comment-louis-le-fan-de-napoleon-issu-de-la-droite-figaro-a-ramene-le-nom-de-sarkozy-sur-la-scene-francaise-6G3N7PWX6NGIBGHC2GOZGTIYG4/",
+      "source_nom": "La DH",
+      "fiabilite": "presse",
+      "date_source": "2024-10-02",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "martin-bouygues",
+      "type": "temoin",
+      "vers": "nicolas-sarkozy",
+      "source_url": "https://www.dhnet.be/actu/monde/2024/10/02/comment-louis-le-fan-de-napoleon-issu-de-la-droite-figaro-a-ramene-le-nom-de-sarkozy-sur-la-scene-francaise-6G3N7PWX6NGIBGHC2GOZGTIYG4/",
+      "source_nom": "La DH",
+      "fiabilite": "presse",
+      "date_source": "2024-10-02",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "martin-bouygues",
+      "type": "possede",
+      "vers": "lci",
+      "detail": "via son groupe, selon La DH",
+      "source_url": "https://www.dhnet.be/actu/monde/2024/10/02/comment-louis-le-fan-de-napoleon-issu-de-la-droite-figaro-a-ramene-le-nom-de-sarkozy-sur-la-scene-francaise-6G3N7PWX6NGIBGHC2GOZGTIYG4/",
+      "source_nom": "La DH",
+      "fiabilite": "presse",
+      "date_source": "2024-10-02",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "louis-sarkozy",
+      "type": "fonction",
+      "vers": "lci",
+      "detail": "chroniqueur depuis août 2024",
+      "source_url": "https://www.dhnet.be/actu/monde/2024/10/02/comment-louis-le-fan-de-napoleon-issu-de-la-droite-figaro-a-ramene-le-nom-de-sarkozy-sur-la-scene-francaise-6G3N7PWX6NGIBGHC2GOZGTIYG4/",
+      "source_nom": "La DH",
+      "fiabilite": "presse",
+      "date_source": "2024-10-02",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "nicolas-sarkozy",
+      "type": "siege",
+      "vers": "lagardere",
+      "detail": "au conseil depuis 2020, toujours en fonction en septembre 2025",
+      "source_url": "https://actualitte.com/article/126468/droit-justice/nicolas-sarkozy-condamne-lagardere-peut-il-le-garder",
+      "source_nom": "ActuaLitté",
+      "fiabilite": "presse",
+      "date_source": "2025-09-30",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "nicolas-sarkozy",
+      "type": "invite",
+      "vers": "vincent-bollore",
+      "detail": "séjour sur le yacht de Vincent Bolloré au large de Malte, mai 2007",
+      "source_url": "https://www.nbcnews.com/id/wbna18581183",
+      "source_nom": "NBC News",
+      "fiabilite": "presse",
+      "date_source": "2007-05-10",
+      "date_verification": "2007-05-10"
+    },
+    {
+      "de": "hachette-livre",
+      "type": "possede",
+      "vers": "fayard",
+      "source_url": "https://vert.eco/chaleurs-actuelles/quelles-entreprises-possede-vincent-bollore-le-milliardaire-au-service-de-lextreme-droite/",
+      "source_nom": "Vert",
+      "fiabilite": "presse",
+      "date_source": "2026-05-18",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "jordan-bardella",
+      "type": "edite",
+      "vers": "fayard",
+      "detail": "« Ce que je cherche », novembre 2024",
+      "source_url": "https://www.livreshebdo.fr/article/jordan-bardella-publiera-ce-que-je-cherche-le-9-novembre-chez-fayard",
+      "source_nom": "Livres Hebdo",
+      "fiabilite": "presse",
+      "date_source": "2024-10-15",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "arnaud-lagardere",
+      "type": "possede",
+      "vers": "lagardere-capital",
+      "detail": "holding personnelle",
+      "source_url": "https://www.ozap.com/actu/bernard-arnault-sort-de-la-holding-d-arnaud-lagardere/608067",
+      "source_nom": "Puremédias (ozap)",
+      "fiabilite": "presse",
+      "date_source": "2021-09-02",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "bernard-arnault",
+      "type": "possede",
+      "vers": "financiere-agache",
+      "detail": "société détenue par Bernard Arnault",
+      "source_url": "https://www.ozap.com/actu/bernard-arnault-sort-de-la-holding-d-arnaud-lagardere/608067",
+      "source_nom": "Puremédias (ozap)",
+      "fiabilite": "presse",
+      "date_source": "2021-09-02",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "financiere-agache",
+      "type": "possede",
+      "vers": "lagardere-capital",
+      "detail": "27 % de 2020 à septembre 2021",
+      "fin": "2021",
+      "source_url": "https://www.ozap.com/actu/bernard-arnault-sort-de-la-holding-d-arnaud-lagardere/608067",
+      "source_nom": "Puremédias (ozap)",
+      "fiabilite": "presse",
+      "date_source": "2021-09-02",
+      "date_verification": "2026-10-04"
+    }
+  ]
+}

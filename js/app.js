@@ -2,7 +2,7 @@
 // Le contenu vient des fichiers data/*.json ; ce fichier ne fait que l'afficher.
 'use strict';
 
-const etat = { faits: [], repliques: [], actus: [], boycotts: [], parcours: null, meta: {} };
+const etat = { faits: [], repliques: [], actus: [], boycotts: [], parcours: null, meta: {}, reseaux: null };
 const favoris = new Set(lire('favoris', []));
 let reponsesParcours = [];
 
@@ -79,6 +79,26 @@ async function copier(texte) {
   toast('Copié');
 }
 
+/* ---------- Signaler une erreur ou proposer un ajout ----------
+   Ouvre un ticket GitHub prérempli (ou un courriel si une adresse est
+   renseignée dans data/meta.json > signalement). L'app ne collecte rien elle-même. */
+
+function urlSignalement(sujet, corps) {
+  const s = etat.meta.signalement || {};
+  if (s.github_issues) return `${s.github_issues}?title=${encodeURIComponent(sujet)}&body=${encodeURIComponent(corps)}`;
+  if (s.email) return `mailto:${s.email}?subject=${encodeURIComponent(sujet)}&body=${encodeURIComponent(corps)}`;
+  return '';
+}
+function boutonSignaler(onglet, titre, id) {
+  const url = urlSignalement(`Erreur : ${titre}`,
+    `Onglet : ${onglet}\nÉlément : « ${titre} » (id : ${id})\n\nQuel est le problème ?\n\n\nSource qui le montre (lien obligatoire) :\n`);
+  return url ? `<a class="bouton" href="${esc(url)}" target="_blank" rel="noopener">Signaler une erreur</a>` : '';
+}
+function piedSignalement() {
+  const url = urlSignalement('Proposition d\'ajout', 'Ce que je propose d\'ajouter ou de corriger :\n\n\nSource (lien obligatoire, de préférence presse reconnue ou source officielle) :\n');
+  return url ? `<p class="signaler-global">Une erreur, une information à ajouter ? <a href="${esc(url)}" target="_blank" rel="noopener">Proposer une correction ou un ajout</a>. Sans source vérifiable, rien n'est ajouté.</p>` : '';
+}
+
 /* ---------- Textes copiés (texte brut, prêt à coller sur Facebook) ---------- */
 
 function texteFait(f) {
@@ -119,6 +139,7 @@ function carteFait(f) {
     <div class="actions">
       <button type="button" data-copier-fait="${esc(f.id)}">Copier</button>
       <button type="button" data-fav="${esc(f.id)}" aria-pressed="${fav}">${fav ? 'Retirer des favoris' : 'Ajouter aux favoris'}</button>
+      ${boutonSignaler('Faits', f.titre, f.id)}
     </div>
   </article>`;
 }
@@ -287,6 +308,7 @@ function vueActus() {
         <p class="nuance"><strong>Pourquoi ça compte :</strong> ${esc(a.pourquoi_ca_compte)}</p>
         <p class="source">Sources : ${(a.sources || []).map((s) => `<a href="${esc(s.url)}" target="_blank" rel="noopener">${esc(s.nom)}</a>`).join(', ')}</p>
         ${(a.faits_lies || []).map(faitParId).filter(Boolean).map((x) => `<p class="source">Fait lié : <a href="#faits" data-voir-fait="${esc(x.id)}">${esc(x.titre)}</a></p>`).join('')}
+        <div class="actions">${boutonSignaler('Actus', a.titre, a.id)}</div>
       </article>`).join('') : '<p class="vide">Aucune actu pour ces filtres.</p>';
   };
   champ.addEventListener('input', dessiner);
@@ -317,6 +339,8 @@ function vueBoycotts() {
     </details>
     <div id="liste"></div>`;
   const champ = document.getElementById('marque');
+  const pre = lire('boycott-recherche', '');
+  if (pre) { champ.value = pre; ecrire('boycott-recherche', ''); }
   const ordreImpact = Object.keys(IMPACT);
   const dessiner = () => {
     const q = norm(champ.value.trim());
@@ -351,7 +375,7 @@ function vueBoycotts() {
           <p class="source">Source : <a href="${esc(b.source_url)}" target="_blank" rel="noopener">${esc(b.source_nom)}</a></p>
           <p class="verif${aRevérifier(b.date_verification) ? ' perime' : ''}">Vérifié le ${esc(dateFr(b.date_verification))}</p>
           <details><summary>Faits liés</summary>${listeFaitsLies(b.faits_lies)}</details>
-          <div class="actions"><button type="button" data-copier-boycott="${esc(b.id)}">Copier</button></div>
+          <div class="actions"><button type="button" data-copier-boycott="${esc(b.id)}">Copier</button>${boutonSignaler('Boycotts', b.marque, b.id)}</div>
         </article>`).join('')).join('');
   };
   champ.addEventListener('input', dessiner);
@@ -404,7 +428,7 @@ function vueParcours() {
 
 /* ---------- Navigation ---------- */
 
-const VUES = { arguments: vueArguments, faits: vueFaits, actus: vueActus, boycotts: vueBoycotts, parcours: vueParcours };
+const VUES = { arguments: vueArguments, faits: vueFaits, actus: vueActus, boycotts: vueBoycotts, reseaux: vueReseaux, parcours: vueParcours };
 
 function router() {
   const nom = location.hash.slice(1) || 'arguments';
@@ -415,6 +439,7 @@ function router() {
     if (actif) a.setAttribute('aria-current', 'page'); else a.removeAttribute('aria-current');
   });
   fn();
+  if (nom !== 'parcours') vue().insertAdjacentHTML('beforeend', piedSignalement());
   window.scrollTo(0, 0);
 }
 
@@ -443,7 +468,7 @@ document.addEventListener('click', (e) => {
   else if (d.voirFait) {
     // Affiche l'onglet Faits sans filtre puis fait défiler jusqu'au fait
     e.preventDefault();
-    ecrire('filtres-faits', { pays: '', theme: '', fiab: '', fav: false });
+    ecrire('decoches-faits', {}); ecrire('faits-favoris-seuls', false);
     location.hash = '#faits';
     setTimeout(() => document.getElementById('fait-' + d.voirFait)?.scrollIntoView(), 50);
   }
@@ -452,7 +477,7 @@ document.addEventListener('click', (e) => {
 window.addEventListener('hashchange', router);
 
 (async function demarrer() {
-  const noms = ['faits', 'repliques', 'actus', 'boycotts', 'parcours', 'meta'];
+  const noms = ['faits', 'repliques', 'actus', 'boycotts', 'parcours', 'meta', 'reseaux'];
   const res = await Promise.all(noms.map((n) => fetch(`data/${n}.json`).then((r) => r.json()).catch(() => null)));
   noms.forEach((n, i) => { if (res[i]) etat[n] = res[i]; });
   if (etat.meta.derniere_maj) document.getElementById('maj').textContent = 'Mis à jour le ' + dateFr(etat.meta.derniere_maj);

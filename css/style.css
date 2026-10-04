@@ -71,13 +71,13 @@ main { padding: 16px; max-width: 640px; margin: 0 auto; outline: none; }
 /* Navigation basse */
 .nav {
   position: fixed; left: 0; right: 0; bottom: 0;
-  display: grid; grid-template-columns: repeat(4, 1fr);
+  display: grid; grid-template-columns: repeat(5, 1fr);
   background: var(--papier); border-top: 1px solid var(--trait);
   padding-bottom: env(safe-area-inset-bottom);
 }
 .nav a {
   position: relative; min-height: 56px; display: flex; align-items: center; justify-content: center;
-  color: var(--encre-2); text-decoration: none; font-size: .9rem;
+  color: var(--encre-2); text-decoration: none; font-size: .85rem;
 }
 .nav a[aria-current="page"] { color: var(--encre); font-weight: 700; box-shadow: inset 0 3px 0 var(--marge); }
 .pastille { width: 8px; height: 8px; border-radius: 50%; background: var(--marge); margin-left: 4px; align-self: flex-start; margin-top: 16px; }
@@ -171,3 +171,59 @@ details.objection[open] > summary { border-bottom: 1px solid var(--trait); }
 .filtres-chips > summary::-webkit-details-marker, .legende > summary::-webkit-details-marker { display: none; }
 .filtres-chips > summary::before, .legende > summary::before { content: "▸"; margin-right: 8px; }
 .filtres-chips[open] > summary::before, .legende[open] > summary::before { content: "▾"; }
+
+/* ---------- Onglet Réseaux ---------- */
+.intro { color: var(--encre-2); font-size: .95rem; }
+.suggestions { display: flex; flex-wrap: wrap; gap: 6px; margin: 6px 0; }
+.toile-cadre { position: relative; border: 1px solid var(--trait); background: var(--papier); margin-top: 8px; }
+#toile { display: block; width: 100%; height: 62vh; min-height: 360px; touch-action: none; cursor: grab; user-select: none; }
+#toile:active { cursor: grabbing; }
+.toile-boutons { position: absolute; top: 8px; right: 8px; display: flex; gap: 6px; }
+.toile-boutons button { min-width: 44px; padding: 0 10px; background: var(--papier); }
+.legende-toile { font-size: .8rem; color: var(--encre-2); margin-top: 6px; }
+
+#toile .lien { stroke: var(--encre-2); stroke-width: 1.2; fill: none; }
+#toile .lien-direction { stroke-dasharray: 6 4; }
+#toile .lien-financement { stroke-dasharray: 2 4; stroke-width: 1.6; }
+#toile .lien-proches { stroke-dasharray: 8 3 2 3; }
+#toile marker path { fill: var(--encre-2); }
+#toile .noeud { cursor: pointer; }
+#toile .noeud .zone { fill: transparent; stroke: none; }
+#toile .noeud circle:not(.zone), #toile .noeud rect, #toile .noeud path { fill: var(--papier); stroke: var(--encre); stroke-width: 1.5; }
+#toile .noeud-personne circle:not(.zone) { fill: var(--encre); }
+#toile .noeud .interieur { fill: var(--encre) !important; }
+#toile .noeud text {
+  font: 600 10px var(--police); fill: var(--encre); text-anchor: middle;
+  paint-order: stroke; stroke: var(--papier); stroke-width: 3px; stroke-linejoin: round;
+}
+#toile.loin .noeud:not(.noeud-personne):not(.noeud-famille):not(.choisi):not(.voisin) text { display: none; }
+#toile .cache { display: none; }
+#toile.focus .noeud:not(.choisi):not(.voisin) { opacity: .18; }
+#toile.focus .lien:not(.actif) { opacity: .08; }
+#toile .lien.actif { stroke: var(--marge); stroke-width: 2; }
+#toile .noeud.choisi circle:not(.zone), #toile .noeud.choisi rect, #toile .noeud.choisi path { stroke: var(--marge); stroke-width: 3; }
+
+.liens-noeud { list-style: none; padding: 0; margin: 8px 0; }
+.liens-noeud li { padding: 8px 0; border-top: 1px dashed var(--trait); }
+.liens-noeud .source { display: block; margin-top: 2px; }
+.liens-noeud .badge { font-size: .7rem; padding: 1px 6px; }
+.liste-reseau { list-style: none; padding: 0; }
+.liste-reseau > li { margin-bottom: 10px; }
+.perime { color: var(--perime); font-weight: 700; }
+
+/* Signalement */
+.signaler-global { margin-top: 24px; padding-top: 12px; border-top: 1px solid var(--trait); font-size: .9rem; color: var(--encre-2); }
+#toile .lien-affaires { stroke-dasharray: 12 4; }
+#toile .lien-fini { stroke-opacity: .4; }
+
+/* Carte d'explication posée sur la toile */
+#toile .lien-zone { stroke: transparent; stroke-width: 16; cursor: pointer; }
+.carte-info {
+  position: absolute; left: 8px; right: 8px; bottom: 8px; max-height: 48%; overflow: auto;
+  background: var(--papier); border: 1px solid var(--encre-2); padding: 10px 44px 10px 12px; font-size: .9rem;
+}
+.carte-info p { margin-bottom: 4px; }
+.carte-cat { font-size: .8rem; color: var(--encre-2); font-weight: 700; }
+.carte-phrase { font-size: 1rem; }
+.carte-info .actions { margin-top: 4px; gap: 4px 12px; }
+.carte-info .fermer { position: absolute; top: 2px; right: 2px; border: 0; background: none; font-size: 1.4rem; min-width: 44px; }
