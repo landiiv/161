@@ -11,6 +11,8 @@ const TYPES_LIEN = {
   parrains_croises: { cat: 'proches', de: 'Parrains croisés avec', vers: 'Parrains croisés avec', phrase: "{a} et {b} sont chacun parrain d'un enfant de l'autre" },
   designe: { cat: 'nominations', de: 'A désigné ou choisi', vers: 'Désigné(e) par', phrase: '{a} a désigné ou choisi {b}' },
   formateur: { cat: 'nominations', de: 'Chargé de la mission :', vers: 'Mission confiée à', phrase: '{a} a été chargé de la mission : {b}' },
+  candidat: { cat: 'nominations', de: 'Candidat(e) sur une liste de', vers: 'Candidat(e) :', phrase: "{a} a été candidat sur une liste de : {b}" },
+  collaborateur: { cat: 'affaires', de: 'Proche collaborateur de', vers: 'Proche collaborateur :', phrase: '{a} a été un proche collaborateur de {b}' },
   membre: { cat: 'famille', de: 'Membre de', vers: 'Membre :', phrase: '{a} fait partie de : {b}' },
   alliance: { cat: 'famille', de: 'Allié par mariage à', vers: 'Allié par mariage :', phrase: '{a} : alliance par mariage avec {b}' },
   parrain: { cat: 'proches', de: 'Parrain de', vers: 'Filleul de', phrase: '{a} est le parrain de {b}' },
@@ -25,7 +27,7 @@ const TYPES_LIEN = {
   edite: { cat: 'affaires', de: 'Publie chez', vers: 'A publié', phrase: '{a} publie chez {b}' },
   finance: { cat: 'financement', de: 'Finance', vers: 'Financé par', phrase: '{a} finance {b}' }
 };
-const CATS_LIEN = { famille: 'Famille', proches: 'Proches (parrain, témoin, invité)', propriete: 'Propriété', direction: 'Direction et conseils', affaires: 'Emplois et contrats', nominations: 'Nominations et missions', financement: 'Financement' };
+const CATS_LIEN = { famille: 'Famille', proches: 'Proches (parrain, témoin, invité)', propriete: 'Propriété', direction: 'Direction et conseils', affaires: 'Emplois et contrats', nominations: 'Nominations, missions et candidatures', financement: 'Financement' };
 const TYPES_NOEUD = { personne: 'Personne', famille: 'Famille', entreprise: 'Entreprise', media: 'Média', institution: 'Institution ou parti', autre: 'Autre' };
 const EXPLIC_CAT = {
   famille: 'Lien familial (filiation, couple, mariage), documenté par la presse. Les conjoints sans rôle public ne sont pas nommés.',
@@ -108,6 +110,7 @@ function calculerPositions(noeuds, liens, reseaux) {
 /* ---------- Données utiles ---------- */
 
 const noeudParId = (id) => etat.reseaux.noeuds.find((n) => n.id === id);
+const finLien = (l) => (/^\d{4}$/.test(String(l.fin)) ? `terminé en ${l.fin}` : 'terminé');
 const catLien = (l) => (TYPES_LIEN[l.type] || {}).cat || 'propriete';
 
 // Éléments et liens visibles selon les filtres cochés
@@ -232,7 +235,7 @@ function majClasses() {
 function ligneLien(l, depuis) {
   const { verbe, autre } = phraseLien(l, depuis);
   const perime = aRevérifier(l.date_verification);
-  return `<li><strong>${esc(verbe)}</strong> <button type="button" class="lien" data-aller="${esc(autre.id)}">${esc(autre.nom)}</button>${l.detail ? ` (${esc(l.detail)})` : ''}${l.fin ? ` <span class="issue">Lien terminé en ${esc(l.fin)}</span>` : ''}
+  return `<li><strong>${esc(verbe)}</strong> <button type="button" class="lien" data-aller="${esc(autre.id)}">${esc(autre.nom)}</button>${l.detail ? ` (${esc(l.detail)})` : ''}${l.fin ? ` <span class="issue">Lien ${esc(finLien(l))}</span>` : ''}
     <span class="source">${badge(l.fiabilite)} Source : <a href="${esc(l.source_url)}" target="_blank" rel="noopener">${esc(l.source_nom)}</a>, ${esc(l.date_source)}${perime ? ' · <span class="perime">à revérifier</span>' : ''}</span></li>`;
 }
 
@@ -261,7 +264,7 @@ function texteNoeud(id) {
   const n = noeudParId(id);
   const lignes = visibles().liens.filter((l) => l.de === id || l.vers === id).map((l) => {
     const { verbe, autre } = phraseLien(l, id);
-    return `- ${verbe} ${autre.nom}${l.detail ? ` (${l.detail})` : ''}${l.fin ? ` [terminé en ${l.fin}]` : ''}. Source : ${l.source_nom}, ${l.date_source}. ${l.source_url}`;
+    return `- ${verbe} ${autre.nom}${l.detail ? ` (${l.detail})` : ''}${l.fin ? ` [${finLien(l)}]` : ''}. Source : ${l.source_nom}, ${l.date_source}. ${l.source_url}`;
   });
   return `${n.nom} :\n${lignes.join('\n')}`;
 }
@@ -296,7 +299,7 @@ function dessinerCarte() {
     const cat = catLien(l);
     const de = noeudParId(l.de), vers = noeudParId(l.vers);
     c.innerHTML = `${fermer}<p class="carte-cat">Lien : ${esc(CATS_LIEN[cat] || cat)}</p>
-      <p class="carte-phrase">${esc(phraseComplete(l))}${l.detail ? ` (${esc(l.detail)})` : ''}.${l.fin ? ` <span class="issue">Terminé en ${esc(l.fin)}</span>` : ''}</p>
+      <p class="carte-phrase">${esc(phraseComplete(l))}${l.detail ? ` (${esc(l.detail)})` : ''}.${l.fin ? ` <span class="issue">${esc(finLien(l).replace('t', 'T'))}</span>` : ''}</p>
       <p class="source">${esc(EXPLIC_CAT[cat] || '')}</p>
       <p class="source">${badge(l.fiabilite)} Source : <a href="${esc(l.source_url)}" target="_blank" rel="noopener">${esc(l.source_nom)}</a>, ${esc(l.date_source)}${aRevérifier(l.date_verification) ? ' · <span class="perime">à revérifier</span>' : ''}</p>
       <div class="actions"><button type="button" class="lien" data-aller="${esc(de.id)}">Voir ${esc(de.nom)}</button><button type="button" class="lien" data-aller="${esc(vers.id)}">Voir ${esc(vers.nom)}</button></div>`;

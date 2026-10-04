@@ -1,5 +1,5 @@
 {
-  "_lisez_moi": "Chaque lien est un fait sourcé. Types : parent, fratrie, parrains_croises, designe, formateur, conjoint, membre, alliance (mariage avec un membre d'une famille ; la personne n'est pas nommée si elle n'a pas de rôle public), parrain, temoin, invite, possede, copropriete, dirige, fonde, siege, fonction, edite, finance. Un lien terminé porte « fin » (année). Seules les personnes ayant un rôle public figurent ici.",
+  "_lisez_moi": "Chaque lien est un fait sourcé. Types : parent, fratrie, parrains_croises, designe, formateur, candidat, collaborateur, conjoint, membre, alliance (mariage avec un membre d'une famille ; la personne n'est pas nommée si elle n'a pas de rôle public), parrain, temoin, invite, possede, copropriete, dirige, fonde, siege, fonction, edite, finance. Un lien terminé porte « fin » (année). Seules les personnes ayant un rôle public figurent ici.",
   "reseaux": {
     "bollore": {
       "nom": "Bolloré",
@@ -67,6 +67,14 @@
     },
     "bouchez": {
       "nom": "Bouchez (MR)",
+      "pays": "BE"
+    },
+    "reynders": {
+      "nom": "Reynders",
+      "pays": "BE"
+    },
+    "michel": {
+      "nom": "Famille Michel",
       "pays": "BE"
     }
   },
@@ -893,6 +901,74 @@
       "type": "institution",
       "nom": "Formation du gouvernement bruxellois (2024-2026)",
       "reseau": "bouchez",
+      "pays": "BE"
+    },
+    {
+      "id": "didier-reynders",
+      "type": "personne",
+      "nom": "Didier Reynders",
+      "reseau": "reynders",
+      "pays": "BE",
+      "role": "Ancien président du MR, ancien ministre fédéral et ancien commissaire européen",
+      "faits": [
+        "be-reynders-enquete"
+      ]
+    },
+    {
+      "id": "nicolas-reynders",
+      "type": "personne",
+      "nom": "Nicolas Reynders",
+      "reseau": "reynders",
+      "pays": "BE",
+      "role": "Candidat MR aux élections de 2019"
+    },
+    {
+      "id": "jean-claude-fontinoy",
+      "type": "personne",
+      "nom": "Jean-Claude Fontinoy",
+      "reseau": "reynders",
+      "pays": "BE",
+      "role": "Ancien président de la SNCB",
+      "faits": [
+        "be-reynders-enquete"
+      ]
+    },
+    {
+      "id": "sncb",
+      "type": "institution",
+      "nom": "SNCB",
+      "reseau": "reynders",
+      "pays": "BE"
+    },
+    {
+      "id": "louis-michel",
+      "type": "personne",
+      "nom": "Louis Michel",
+      "reseau": "michel",
+      "pays": "BE",
+      "role": "Ancien ministre, ancien commissaire européen, ancien bourgmestre de Jodoigne"
+    },
+    {
+      "id": "charles-michel",
+      "type": "personne",
+      "nom": "Charles Michel",
+      "reseau": "michel",
+      "pays": "BE",
+      "role": "Ancien Premier ministre et ancien président du Conseil européen"
+    },
+    {
+      "id": "mathieu-michel",
+      "type": "personne",
+      "nom": "Mathieu Michel",
+      "reseau": "michel",
+      "pays": "BE",
+      "role": "Nommé secrétaire d'État fédéral en octobre 2020"
+    },
+    {
+      "id": "ln24",
+      "type": "media",
+      "nom": "LN24",
+      "reseau": "rossel-ipm",
       "pays": "BE"
     }
   ],
@@ -2057,6 +2133,115 @@
       "source_nom": "RTBF",
       "fiabilite": "presse",
       "date_source": "2025-10-29",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "didier-reynders",
+      "type": "dirige",
+      "vers": "mr",
+      "detail": "ancien président du parti",
+      "source_url": "https://www.parismatch.be/actualites/politique/2026/02/16/affaire-reynders-deux-proches-de-lex-ministre-inculpes-dans-lenquete-pour-blanchiment-4XWTVTVTJJHWRCZPUCVGNSTU3Y/",
+      "source_nom": "Paris Match Belgique",
+      "fiabilite": "presse",
+      "date_source": "2026-02-16",
+      "date_verification": "2026-10-04",
+      "fin": "oui"
+    },
+    {
+      "de": "didier-reynders",
+      "type": "parent",
+      "vers": "nicolas-reynders",
+      "source_url": "https://www.lavenir.net/regions/huy-waremme/burdinne/2019/03/16/le-fils-de-didier-reynders-sur-la-liste-mr-a-la-chambre-WZSCKNLZ65BQVLEURW3GQJHJGA/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2019-03-16",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "nicolas-reynders",
+      "type": "candidat",
+      "vers": "mr",
+      "detail": "sur la liste MR à la Chambre en 2019",
+      "source_url": "https://www.lavenir.net/regions/huy-waremme/burdinne/2019/03/16/le-fils-de-didier-reynders-sur-la-liste-mr-a-la-chambre-WZSCKNLZ65BQVLEURW3GQJHJGA/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2019-03-16",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "jean-claude-fontinoy",
+      "type": "collaborateur",
+      "vers": "didier-reynders",
+      "detail": "ancien bras droit, selon Paris Match",
+      "source_url": "https://www.parismatch.be/actualites/politique/2026/02/16/affaire-reynders-deux-proches-de-lex-ministre-inculpes-dans-lenquete-pour-blanchiment-4XWTVTVTJJHWRCZPUCVGNSTU3Y/",
+      "source_nom": "Paris Match Belgique",
+      "fiabilite": "presse",
+      "date_source": "2026-02-16",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "jean-claude-fontinoy",
+      "type": "dirige",
+      "vers": "sncb",
+      "detail": "ancien président",
+      "source_url": "https://www.parismatch.be/actualites/politique/2026/02/16/affaire-reynders-deux-proches-de-lex-ministre-inculpes-dans-lenquete-pour-blanchiment-4XWTVTVTJJHWRCZPUCVGNSTU3Y/",
+      "source_nom": "Paris Match Belgique",
+      "fiabilite": "presse",
+      "date_source": "2026-02-16",
+      "date_verification": "2026-10-04",
+      "fin": "oui"
+    },
+    {
+      "de": "louis-michel",
+      "type": "parent",
+      "vers": "charles-michel",
+      "source_url": "https://www.lalibre.be/belgique/politique-belge/2020/10/01/lombre-de-la-famille-michel-plane-sur-la-presidence-du-mr-bouchez-est-au-bord-du-precipice-2LNCD67YXFCBZHZOXCZR4QNNYI/",
+      "source_nom": "La Libre",
+      "fiabilite": "presse",
+      "date_source": "2020-10-01",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "louis-michel",
+      "type": "parent",
+      "vers": "mathieu-michel",
+      "source_url": "https://www.lalibre.be/belgique/politique-belge/2020/10/01/lombre-de-la-famille-michel-plane-sur-la-presidence-du-mr-bouchez-est-au-bord-du-precipice-2LNCD67YXFCBZHZOXCZR4QNNYI/",
+      "source_nom": "La Libre",
+      "fiabilite": "presse",
+      "date_source": "2020-10-01",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "charles-michel",
+      "type": "fratrie",
+      "vers": "mathieu-michel",
+      "detail": "frères",
+      "source_url": "https://www.lavenir.net/regions/brabantwallon/jodoigne/2020/10/01/mathieu-michel-fils-et-frere-de-sauf-en-brabant-wallon-SRMXGR6XSVEP5K4FKZ3POVP6GQ/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2020-10-01",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "georges-louis-bouchez",
+      "type": "designe",
+      "vers": "mathieu-michel",
+      "detail": "secrétaire d'État fédéral au Numérique, octobre 2020",
+      "source_url": "https://www.lalibre.be/belgique/politique-belge/2020/10/01/lombre-de-la-famille-michel-plane-sur-la-presidence-du-mr-bouchez-est-au-bord-du-precipice-2LNCD67YXFCBZHZOXCZR4QNNYI/",
+      "source_nom": "La Libre",
+      "fiabilite": "presse",
+      "date_source": "2020-10-01",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "famille-le-hodey",
+      "type": "possede",
+      "vers": "ln24",
+      "detail": "actionnaire majoritaire via la holding Maja, qui a recapitalisé la chaîne en janvier 2026",
+      "source_url": "https://www.lalibre.be/economie/entreprises-startup/2026/01/15/la-chaine-ln24-recapitalisee-par-la-famille-le-hodey-entrevoit-le-bout-du-tunnel-F4S6IRQGLBCR7CEBRKLUJEO2II/",
+      "source_nom": "La Libre",
+      "fiabilite": "presse",
+      "date_source": "2026-01-15",
       "date_verification": "2026-10-04"
     }
   ]
