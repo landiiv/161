@@ -1,0 +1,50 @@
+[
+  {
+    "id": "r-pas-contre-police",
+    "objection": "Tu es contre la police.",
+    "theme": "police",
+    "courte": "Je ne suis pas contre la police, je suis contre une police qui n'a plus de comptes à rendre. L'histoire montre que c'est souvent par là que commencent les dérives autoritaires.",
+    "longue": "Je ne suis pas contre la police, je suis contre une police qui n'a plus de comptes à rendre. En Belgique, moins de 4 % des plaintes adressées au Comité P aboutissent à une décision judiciaire. Je ne dis pas que toutes les plaintes sont fondées. Je dis qu'un contrôle aussi faible n'aide personne, y compris les policiers qui font bien leur travail.",
+    "faits_lies": ["be-comitep-taux-2023", "cedh-bouyid-2015"]
+  },
+  {
+    "id": "r-etat-de-droit",
+    "objection": "La police fait juste son travail.",
+    "theme": "police",
+    "courte": "La plupart des policiers font leur travail, oui. Je défends l'État de droit, y compris face à ceux qui sont censés le faire respecter. Quand un tribunal condamne un policier, c'est la loi qui fonctionne.",
+    "longue": "La plupart des policiers font leur travail. Mais des tribunaux ont condamné des policiers pour des coups jugés injustifiés (Liège, 2023) ou pour des violences lors d'une interpellation (affaire Théo Luhaka, 2024). La Cour européenne des droits de l'homme a jugé qu'une seule gifle d'un policier à une personne sous son contrôle est un traitement dégradant. Demander des comptes dans ces cas, c'est appliquer les mêmes règles à tous.",
+    "faits_lies": ["be-liege-2023", "fr-theo-luhaka-2024", "cedh-bouyid-2015"]
+  },
+  {
+    "id": "r-debut-video",
+    "objection": "Vous ne montrez jamais le début.",
+    "theme": "police",
+    "courte": "Les affaires que je cite ont été jugées par des tribunaux qui ont vu toutes les images, lu le dossier et entendu les policiers. Ce n'est pas un extrait de vidéo, c'est une décision de justice.",
+    "longue": "Tu as raison de te méfier des vidéos coupées. C'est pour ça que je m'appuie sur des jugements. Dans l'affaire Geneviève Legay, la cour d'appel a confirmé la condamnation du commissaire après avoir examiné tout le dossier. À Liège, cinq policiers ont été condamnés par le tribunal correctionnel. Et quand la justice ne retient rien, comme dans l'affaire Chovanec, je le dis aussi.",
+    "faits_lies": ["fr-legay-appel-2026", "be-liege-2023", "be-mawda-appel-2021", "be-chovanec-nonlieu-2026"]
+  },
+  {
+    "id": "r-plaintes-pour-rien",
+    "objection": "Les gens portent plainte pour un rien.",
+    "theme": "police",
+    "courte": "En réalité, beaucoup ne portent pas plainte du tout. Selon l'Agence des droits fondamentaux de l'UE, 63 % des victimes d'agression raciste par un policier ne l'ont pas signalée.",
+    "longue": "Beaucoup ne portent pas plainte du tout : selon la FRA, 63 % des victimes d'agression raciste par un policier ne l'ont pas signalée. Et en Belgique, moins de 4 % des plaintes au Comité P aboutissent à une décision judiciaire. Toutes les plaintes ne sont pas fondées, mais beaucoup de situations ne sont jamais examinées par un juge.",
+    "faits_lies": ["ue-fra-signalement-2019", "be-comitep-taux-2023", "methode-estimation-1pc"]
+  },
+  {
+    "id": "r-cerveau-lave",
+    "objection": "Tu as le cerveau lavé.",
+    "theme": "methode",
+    "courte": "C'est possible que je me trompe. C'est pour ça que je ne cite que des décisions de justice et des chiffres officiels, avec la source. Dis-moi lequel est faux, et on regarde ensemble.",
+    "longue": "C'est possible que je me trompe sur certaines choses. C'est pour ça que je ne cite que des décisions de justice et des chiffres officiels, avec la source et la date. Je cite aussi les affaires où il n'y a pas eu de condamnation. Si un de ces faits est faux, montre-moi, je le corrigerai.",
+    "faits_lies": ["be-comitep-taux-2023", "fr-theo-luhaka-2024", "be-chovanec-nonlieu-2026"]
+  },
+  {
+    "id": "r-extremiste",
+    "objection": "Tu es un extrémiste.",
+    "theme": "methode",
+    "courte": "Demander que la loi s'applique à tout le monde, policiers compris, ce n'est pas extrême. C'est ce que dit la Cour européenne des droits de l'homme, et ce que disent nos tribunaux.",
+    "longue": "Je demande que la loi s'applique à tout le monde, policiers compris. La Cour européenne des droits de l'homme a condamné la Belgique pour une gifle donnée par un policier. Un tribunal civil a condamné l'État, une zone de police et un bourgmestre après une manifestation en 2021. Ce sont des institutions, pas des militants.",
+    "faits_lies": ["cedh-bouyid-2015", "be-nasses-2021-civil-2025"]
+  }
+]

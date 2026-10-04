@@ -1,0 +1,38 @@
+{
+  "questions": [
+    { "id": "contexte", "texte": "Tu parles avec qui ?", "options": ["Famille ou proche", "Commentaire sur les réseaux", "Débat en public", "Collègue"] },
+    { "id": "theme", "texte": "Sur quel sujet ?", "options": ["Violences policières", "Extrême droite", "Médias et milliardaires", "Boycott", "On me traite d'extrémiste"] },
+    { "id": "ton", "texte": "Tu veux...", "options": ["Apaiser", "Convaincre avec des faits", "Répondre court"] }
+  ],
+  "ouvertures": {
+    "Famille ou proche": "Je sais qu'on n'est pas d'accord sur tout, et je ne veux pas qu'on se fâche. Je peux te dire pourquoi ça me tient à cœur ?",
+    "Commentaire sur les réseaux": "Je comprends la réaction. Je partage juste quelques faits, avec les sources, pour que chacun puisse vérifier.",
+    "Débat en public": "On veut tous la sécurité et la justice. La question, c'est comment on s'assure que les règles s'appliquent à tout le monde.",
+    "Collègue": "Je ne cherche pas à te convaincre à tout prix. Je te donne deux ou trois faits vérifiés, tu en feras ce que tu veux."
+  },
+  "conseils_contexte": {
+    "Famille ou proche": "Commence par ce sur quoi vous êtes d'accord (la sécurité, la justice). Pose une question avant d'avancer un chiffre.",
+    "Commentaire sur les réseaux": "Un fait, une source, pas de surenchère. Tu écris pour les lecteurs silencieux, pas pour gagner contre une personne.",
+    "Débat en public": "Parle lentement et cite l'instance qui a jugé. Mentionne aussi les affaires sans condamnation : ça te rend crédible.",
+    "Collègue": "Reste bref et factuel. Propose d'en reparler plus tard plutôt que d'insister."
+  },
+  "conseils_ton": {
+    "Apaiser": "Reformule ce que l'autre a dit avant de répondre.",
+    "Convaincre avec des faits": "Deux faits solides valent mieux que dix. Priorité aux décisions de justice.",
+    "Répondre court": "Une phrase, une source. Pas besoin d'avoir le dernier mot."
+  },
+  "themes": {
+    "Violences policières": {
+      "themes": ["police"],
+      "repliques": { "Apaiser": "r-pas-contre-police", "Convaincre avec des faits": "r-etat-de-droit", "Répondre court": "r-debut-video" }
+    },
+    "Extrême droite": { "themes": ["extreme-droite", "democratie"], "repliques": {} },
+    "Médias et milliardaires": { "themes": ["medias"], "repliques": {} },
+    "Boycott": { "themes": [], "repliques": {}, "renvoi": "boycotts" },
+    "On me traite d'extrémiste": {
+      "themes": ["police"],
+      "repliques": { "defaut": "r-extremiste", "Apaiser": "r-cerveau-lave" }
+    }
+  },
+  "ordre_fiabilite": ["jugé", "officiel", "presse", "associatif", "methode", "analyse"]
+}

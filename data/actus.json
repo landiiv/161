@@ -1,0 +1,26 @@
+[
+  {
+    "id": "2026-06-29-legay-appel",
+    "date": "2026-06-29",
+    "theme": "police",
+    "pays": "FR",
+    "titre": "Affaire Legay : la cour d'appel de Lyon confirme six mois avec sursis pour le commissaire",
+    "resume": "La cour d'appel de Lyon a confirmé la peine de six mois de prison avec sursis du commissaire qui avait ordonné la charge à Nice en 2019. Geneviève Legay, alors âgée de 73 ans, avait été gravement blessée. La peine est identique à celle de première instance.",
+    "pourquoi_ca_compte": "Une décision rendue en appel, après examen complet du dossier, répond à l'objection « on ne voit jamais le début ».",
+    "faits_lies": ["fr-legay-appel-2026"],
+    "fiabilite": "jugé",
+    "sources": [{ "nom": "Lyon Capitale", "url": "https://www.lyoncapitale.fr/?p=507748" }]
+  },
+  {
+    "id": "2026-03-16-chovanec-nonlieu",
+    "date": "2026-03-16",
+    "theme": "police",
+    "pays": "BE",
+    "titre": "Affaire Chovanec : la cour d'appel de Mons prononce un non-lieu pour les 31 inculpés",
+    "resume": "La cour d'appel de Mons a prononcé un non-lieu pour les 31 inculpés dans l'affaire du décès de Josef Chovanec, survenu après une intervention policière à l'aéroport de Charleroi en 2018. Il n'y aura donc pas de procès.",
+    "pourquoi_ca_compte": "Une affaire sans condamnation, à citer honnêtement comme telle.",
+    "faits_lies": ["be-chovanec-nonlieu-2026"],
+    "fiabilite": "jugé",
+    "sources": [{ "nom": "RTBF", "url": "https://www.rtbf.be/article/affaire-chovanec-la-cour-d-appel-de-mons-prononce-un-non-lieu-pour-les-31-inculpes-11695295" }]
+  }
+]
