@@ -97,7 +97,9 @@ En cas de doute, le signaler à Denis plutôt que trancher seul.
 }
 ```
 
-Thèmes autorisés : `police`, `extreme-droite`, `democratie`, `medias` (concentration et propriété des médias), `methode` (comment argumenter).
+Thèmes autorisés : `police`, `extreme-droite`, `democratie`, `medias` (concentration et propriété des médias), `israel-palestine` (colonies, droit international), `methode` (comment argumenter).
+
+Pays : `BE`, `FR`, `UE`, `US`, `INT` (international : ONU, CIJ...).
 
 ### Schéma d'un boycott
 
@@ -108,7 +110,9 @@ Thèmes autorisés : `police`, `extreme-droite`, `democratie`, `medias` (concent
   "sous_marques": ["Marques du même groupe, trouvées par la recherche (optionnel)"],
   "groupe": "Groupe ou propriétaire",
   "secteur": "media | distribution | alimentation | tech | energie | autre",
+  "categorie": "bollore | extreme-droite | trump | israel-palestine",
   "motif": "Étiquette courte et neutre du type de raison, ex. « Groupe Bolloré », « Don à l'investiture de Trump (2025) »",
+  "impact": "fort | moyen | faible",
   "pays": ["BE", "FR"],
   "raison": "Fait neutre et vérifiable, une ou deux phrases.",
   "nuance": "Précision utile : distributeur local différent, ancienne filiale vendue... (optionnel)",
@@ -123,6 +127,15 @@ Thèmes autorisés : `police`, `extreme-droite`, `democratie`, `medias` (concent
 ```
 
 Le champ `alternatives` est important : un boycott sans alternative concrète est rarement suivi.
+
+**Niveau d'impact** : il mesure à quel point le lien est direct, pas la gravité des faits (la fiabilité dit d'où vient l'information).
+- `fort` : l'entreprise elle-même (ou son propriétaire quasi unique) mène l'activité en cause. Base de l'ONU sur les colonies : implication « causalité » ou « contribution ».
+- `moyen` : lien par un actionnaire, une maison mère, une filiale, un franchisé ou un partenaire. Base de l'ONU : « lien direct ».
+- `faible` : don ponctuel et légal, don personnel d'un dirigeant, prise de position publique.
+
+Une entreprise visée pour deux raisons différentes a deux fiches (ex. `coca-cola` et `coca-cola-atarot`), chacune avec sa catégorie, son impact et sa source.
+
+Sources de référence pour les boycotts : déclaration du comité d'investiture Trump-Vance à la FEC (officiel), base de données du HCDH sur les entreprises liées aux colonies (officiel, mise à jour chaque année en septembre). Les listes militantes (BDS, Ethical Consumer, AFPS...) servent de pistes : chaque fiche qui en vient est vérifiée et, faute de recoupement, étiquetée `associatif`.
 
 ### Schéma d'une actualité
 

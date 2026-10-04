@@ -32,7 +32,9 @@
     ],
     "date_verification": "2026-10-04",
     "statut": "actif",
-    "motif": "Groupe Bolloré"
+    "motif": "Groupe Bolloré",
+    "categorie": "bollore",
+    "impact": "moyen"
   },
   {
     "id": "hachette-boardgames",
@@ -69,7 +71,9 @@
     ],
     "date_verification": "2026-10-04",
     "statut": "actif",
-    "motif": "Groupe Bolloré"
+    "motif": "Groupe Bolloré",
+    "categorie": "bollore",
+    "impact": "moyen"
   },
   {
     "id": "prisma-media",
@@ -102,7 +106,9 @@
     ],
     "date_verification": "2026-10-04",
     "statut": "actif",
-    "motif": "Groupe Bolloré"
+    "motif": "Groupe Bolloré",
+    "categorie": "bollore",
+    "impact": "moyen"
   },
   {
     "id": "relay",
@@ -128,7 +134,9 @@
     ],
     "date_verification": "2026-10-04",
     "statut": "actif",
-    "motif": "Groupe Bolloré"
+    "motif": "Groupe Bolloré",
+    "categorie": "bollore",
+    "impact": "moyen"
   },
   {
     "id": "europe1-jdd",
@@ -159,7 +167,9 @@
     ],
     "date_verification": "2026-10-04",
     "statut": "actif",
-    "motif": "Groupe Bolloré"
+    "motif": "Groupe Bolloré",
+    "categorie": "bollore",
+    "impact": "moyen"
   },
   {
     "id": "canal-plus",
@@ -191,7 +201,9 @@
     ],
     "date_verification": "2026-10-04",
     "statut": "actif",
-    "motif": "Groupe Bolloré"
+    "motif": "Groupe Bolloré",
+    "categorie": "bollore",
+    "impact": "moyen"
   },
   {
     "id": "smartbox",
@@ -224,7 +236,9 @@
     ],
     "date_verification": "2026-10-04",
     "statut": "actif",
-    "motif": "Projet Périclès (Stérin)"
+    "motif": "Projet Périclès (Stérin)",
+    "categorie": "extreme-droite",
+    "impact": "fort"
   },
   {
     "id": "tesla",
@@ -251,7 +265,9 @@
     ],
     "date_verification": "2026-10-04",
     "statut": "actif",
-    "motif": "Soutien d'Elon Musk à l'AfD"
+    "motif": "Soutien d'Elon Musk à l'AfD",
+    "categorie": "extreme-droite",
+    "impact": "faible"
   },
   {
     "id": "x-twitter",
@@ -279,7 +295,9 @@
     ],
     "date_verification": "2026-10-04",
     "statut": "actif",
-    "motif": "Soutien d'Elon Musk à l'AfD"
+    "motif": "Soutien d'Elon Musk à l'AfD",
+    "categorie": "extreme-droite",
+    "impact": "faible"
   },
   {
     "id": "coca-cola",
@@ -312,7 +330,9 @@
       "Limonades de brasseries locales"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "categorie": "trump",
+    "impact": "faible"
   },
   {
     "id": "pepsico",
@@ -344,7 +364,9 @@
       "Marques de distributeur (Delhaize, Colruyt, Carrefour)"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "categorie": "trump",
+    "impact": "faible"
   },
   {
     "id": "mcdonalds",
@@ -368,7 +390,9 @@
       "Friteries et snacks indépendants"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "categorie": "trump",
+    "impact": "faible"
   },
   {
     "id": "ab-inbev",
@@ -403,7 +427,9 @@
       "Brasseries familiales (Dupont, Duvel Moortgat, Brasserie de la Senne)"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "categorie": "trump",
+    "impact": "faible"
   },
   {
     "id": "diageo",
@@ -436,7 +462,9 @@
       "Distilleries belges (Filliers, Belgian Owl)"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "categorie": "trump",
+    "impact": "faible"
   },
   {
     "id": "spotify",
@@ -463,7 +491,9 @@
       "Deezer"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "categorie": "trump",
+    "impact": "faible"
   },
   {
     "id": "openai",
@@ -492,7 +522,9 @@
       "Le Chat (Mistral AI)"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "categorie": "trump",
+    "impact": "faible"
   },
   {
     "id": "anthropic",
@@ -519,7 +551,9 @@
       "Le Chat (Mistral AI)"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "categorie": "trump",
+    "impact": "faible"
   },
   {
     "id": "meta",
@@ -551,7 +585,9 @@
       "Bluesky"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "categorie": "trump",
+    "impact": "faible"
   },
   {
     "id": "google",
@@ -585,7 +621,9 @@
       "Organic Maps"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "categorie": "trump",
+    "impact": "faible"
   },
   {
     "id": "amazon",
@@ -616,7 +654,9 @@
       "Bol (groupe Ahold Delhaize)"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "categorie": "trump",
+    "impact": "faible"
   },
   {
     "id": "microsoft",
@@ -651,7 +691,9 @@
       "Proton Mail"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "categorie": "trump",
+    "impact": "faible"
   },
   {
     "id": "apple",
@@ -681,7 +723,9 @@
       "Fairphone"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "categorie": "trump",
+    "impact": "faible"
   },
   {
     "id": "uber",
@@ -708,7 +752,9 @@
       "Commande directe au restaurant"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "categorie": "trump",
+    "impact": "faible"
   },
   {
     "id": "deliveroo",
@@ -731,6 +777,524 @@
     "source_nom": "FEC, déclaration du comité d'investiture Trump-Vance (version du 7 août 2025)",
     "alternatives": [
       "Commande directe au restaurant"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif",
+    "categorie": "trump",
+    "impact": "faible"
+  },
+  {
+    "id": "airbnb-colonies",
+    "marque": "Airbnb",
+    "sous_marques": [],
+    "groupe": "Airbnb",
+    "secteur": "tech",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "categorie": "israel-palestine",
+    "motif": "Activités liées aux colonies (base de l'ONU)",
+    "impact": "fort",
+    "raison": "Airbnb Inc. figure dans la base de données de l'ONU des entreprises impliquées dans des activités liées aux colonies israéliennes (mise à jour du 25 septembre 2026), pour la fourniture de services soutenant le maintien et l'existence des colonies. Type d'implication retenu par l'ONU : contribution.",
+    "nuance": "L'ONU précise que cette base n'est ni une procédure judiciaire ni une qualification juridique. Israël la rejette.",
+    "faits_lies": [
+      "onu-base-colonies-2026",
+      "cij-avis-2024"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/sessions-regular/session63/advance-versions/a-hrc-63-20-aev.pdf",
+    "source_nom": "HCDH (ONU), rapport A/HRC/63/20 du 25 septembre 2026",
+    "alternatives": [
+      "Fairbnb.coop",
+      "Gîtes de Wallonie"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "booking",
+    "marque": "Booking.com",
+    "sous_marques": [
+      "Kayak",
+      "Priceline",
+      "Agoda",
+      "OpenTable",
+      "Rentalcars.com"
+    ],
+    "groupe": "Booking Holdings",
+    "secteur": "tech",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "categorie": "israel-palestine",
+    "motif": "Activités liées aux colonies (base de l'ONU)",
+    "impact": "fort",
+    "raison": "Booking Holdings Inc. (avec sa filiale Booking.com B.V.) figure dans la base de données de l'ONU des entreprises impliquées dans des activités liées aux colonies israéliennes (mise à jour du 25 septembre 2026), pour la fourniture de services soutenant le maintien et l'existence des colonies. Type d'implication retenu par l'ONU : contribution.",
+    "nuance": "L'ONU précise que cette base n'est ni une procédure judiciaire ni une qualification juridique. Israël la rejette.",
+    "faits_lies": [
+      "onu-base-colonies-2026",
+      "cij-avis-2024"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/sessions-regular/session63/advance-versions/a-hrc-63-20-aev.pdf",
+    "source_nom": "HCDH (ONU), rapport A/HRC/63/20 du 25 septembre 2026",
+    "alternatives": [
+      "Réservation directe auprès de l'hôtel",
+      "Fairbnb.coop"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "expedia",
+    "marque": "Expedia",
+    "sous_marques": [
+      "Hotels.com",
+      "Vrbo"
+    ],
+    "groupe": "Expedia Group",
+    "secteur": "tech",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "categorie": "israel-palestine",
+    "motif": "Activités liées aux colonies (base de l'ONU)",
+    "impact": "fort",
+    "raison": "Expedia Group Inc. figure dans la base de données de l'ONU des entreprises impliquées dans des activités liées aux colonies israéliennes (mise à jour du 25 septembre 2026), pour la fourniture de services soutenant le maintien et l'existence des colonies. Type d'implication retenu par l'ONU : contribution.",
+    "nuance": "L'ONU précise que cette base n'est ni une procédure judiciaire ni une qualification juridique. Israël la rejette.",
+    "faits_lies": [
+      "onu-base-colonies-2026",
+      "cij-avis-2024"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/sessions-regular/session63/advance-versions/a-hrc-63-20-aev.pdf",
+    "source_nom": "HCDH (ONU), rapport A/HRC/63/20 du 25 septembre 2026",
+    "alternatives": [
+      "Réservation directe auprès de l'hôtel"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "tripadvisor",
+    "marque": "Tripadvisor",
+    "sous_marques": [
+      "TheFork",
+      "LaFourchette"
+    ],
+    "groupe": "Tripadvisor",
+    "secteur": "tech",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "categorie": "israel-palestine",
+    "motif": "Activités liées aux colonies (base de l'ONU)",
+    "impact": "fort",
+    "raison": "TripAdvisor, Inc. figure dans la base de données de l'ONU des entreprises impliquées dans des activités liées aux colonies israéliennes (mise à jour du 25 septembre 2026), pour la fourniture de services soutenant le maintien et l'existence des colonies. Type d'implication retenu par l'ONU : contribution.",
+    "nuance": "L'ONU précise que cette base n'est ni une procédure judiciaire ni une qualification juridique. Israël la rejette.",
+    "faits_lies": [
+      "onu-base-colonies-2026",
+      "cij-avis-2024"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/sessions-regular/session63/advance-versions/a-hrc-63-20-aev.pdf",
+    "source_nom": "HCDH (ONU), rapport A/HRC/63/20 du 25 septembre 2026",
+    "alternatives": [
+      "Réservation directe au restaurant"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "remax",
+    "marque": "RE/MAX (agences immobilières)",
+    "sous_marques": [],
+    "groupe": "RE/MAX Holdings",
+    "secteur": "autre",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "categorie": "israel-palestine",
+    "motif": "Activités liées aux colonies (base de l'ONU)",
+    "impact": "moyen",
+    "raison": "RE/MAX Holdings, Inc. figure dans la base de données de l'ONU des entreprises impliquées dans des activités liées aux colonies israéliennes (mise à jour du 25 septembre 2026), pour la fourniture de services soutenant le maintien et l'existence des colonies et l'utilisation de ressources naturelles, notamment l'eau et la terre, à des fins commerciales. Type d'implication retenu par l'ONU : lien direct.",
+    "nuance": "En Belgique, les agences RE/MAX sont des franchises locales. L'ONU précise que cette base n'est ni une procédure judiciaire ni une qualification juridique. Israël la rejette.",
+    "faits_lies": [
+      "onu-base-colonies-2026",
+      "cij-avis-2024"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/sessions-regular/session63/advance-versions/a-hrc-63-20-aev.pdf",
+    "source_nom": "HCDH (ONU), rapport A/HRC/63/20 du 25 septembre 2026",
+    "alternatives": [
+      "Agences immobilières indépendantes"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "ahava",
+    "marque": "Ahava (cosmétiques)",
+    "sous_marques": [],
+    "groupe": "Ahava – Dead Sea Laboratories",
+    "secteur": "autre",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "categorie": "israel-palestine",
+    "motif": "Activités liées aux colonies (base de l'ONU)",
+    "impact": "fort",
+    "raison": "Ahava – Dead Sea Laboratories Ltd. figure dans la base de données de l'ONU des entreprises impliquées dans des activités liées aux colonies israéliennes (mise à jour du 25 septembre 2026), pour l'utilisation de ressources naturelles, notamment l'eau et la terre, à des fins commerciales. Type d'implication retenu par l'ONU : contribution.",
+    "nuance": "L'ONU précise que cette base n'est ni une procédure judiciaire ni une qualification juridique. Israël la rejette.",
+    "faits_lies": [
+      "onu-base-colonies-2026",
+      "cij-avis-2024"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/sessions-regular/session63/advance-versions/a-hrc-63-20-aev.pdf",
+    "source_nom": "HCDH (ONU), rapport A/HRC/63/20 du 25 septembre 2026",
+    "alternatives": [
+      "Savon de Naplouse (produit palestinien)"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "delta-galil",
+    "marque": "Delta Galil (lingerie, vêtements)",
+    "sous_marques": [
+      "Schiesser",
+      "Eminence",
+      "Athena",
+      "Passionata",
+      "7 For All Mankind",
+      "Splendid"
+    ],
+    "groupe": "Delta Galil Industries",
+    "secteur": "autre",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "categorie": "israel-palestine",
+    "motif": "Activités liées aux colonies (base de l'ONU)",
+    "impact": "fort",
+    "raison": "Delta Galil Industries Ltd. (et Delta Israel Brands) figure dans la base de données de l'ONU des entreprises impliquées dans des activités liées aux colonies israéliennes (mise à jour du 25 septembre 2026), pour l'utilisation de ressources naturelles, notamment l'eau et la terre, à des fins commerciales. Type d'implication retenu par l'ONU : contribution.",
+    "nuance": "Marques du groupe selon Delta Galil et FashionUnited (rachat d'Eminence en 2018). L'ONU précise que cette base n'est ni une procédure judiciaire ni une qualification juridique. Israël la rejette.",
+    "faits_lies": [
+      "onu-base-colonies-2026",
+      "cij-avis-2024"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/sessions-regular/session63/advance-versions/a-hrc-63-20-aev.pdf",
+    "source_nom": "HCDH (ONU), rapport A/HRC/63/20 du 25 septembre 2026",
+    "alternatives": [
+      "Triumph (dont Sloggi)"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "hadiklaim",
+    "marque": "Dattes Hadiklaim",
+    "sous_marques": [
+      "Dattes Medjool d'Israël"
+    ],
+    "groupe": "Hadiklaim – Israel Date Growers Cooperative",
+    "secteur": "alimentation",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "categorie": "israel-palestine",
+    "motif": "Activités liées aux colonies (base de l'ONU)",
+    "impact": "fort",
+    "raison": "Hadiklaim – Israel Date Growers Cooperative Ltd. figure dans la base de données de l'ONU des entreprises impliquées dans des activités liées aux colonies israéliennes (mise à jour du 25 septembre 2026), pour la fourniture de services soutenant le maintien et l'existence des colonies. Type d'implication retenu par l'ONU : contribution.",
+    "nuance": "Retiré de la base en 2025, réintégré en 2026. Sur l'étiquette, l'origine « colonie israélienne » doit être indiquée le cas échéant (CJUE, 2019). L'ONU précise que cette base n'est ni une procédure judiciaire ni une qualification juridique. Israël la rejette.",
+    "faits_lies": [
+      "onu-base-colonies-2026",
+      "cij-avis-2024"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/sessions-regular/session63/advance-versions/a-hrc-63-20-aev.pdf",
+    "source_nom": "HCDH (ONU), rapport A/HRC/63/20 du 25 septembre 2026",
+    "alternatives": [
+      "Dattes de Tunisie ou d'Algérie",
+      "Dattes palestiniennes du commerce équitable"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "vins-colonies",
+    "marque": "Vins de caves listées par l'ONU",
+    "sous_marques": [
+      "Psagot",
+      "Gush Etzion",
+      "Shilo",
+      "Tanya",
+      "Teperberg",
+      "Baron",
+      "Arza",
+      "Gat Shomron",
+      "Jerusalem Wineries"
+    ],
+    "groupe": "Caves israéliennes",
+    "secteur": "alimentation",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "categorie": "israel-palestine",
+    "motif": "Activités liées aux colonies (base de l'ONU)",
+    "impact": "fort",
+    "raison": "Plusieurs caves (Psagot, Gush Etzion, Shilo, Tanya, Teperberg, The Baron, Arza, Gat Shomron, Jerusalem Wineries) figure dans la base de données de l'ONU des entreprises impliquées dans des activités liées aux colonies israéliennes (mise à jour du 25 septembre 2026), pour la fourniture de services soutenant le maintien et l'existence des colonies et l'utilisation de ressources naturelles, notamment l'eau et la terre, à des fins commerciales. Type d'implication retenu par l'ONU : contribution.",
+    "nuance": "Selon les caves, l'ONU retient les services (e), les ressources naturelles (g) ou les deux. La cave Psagot est celle qui a contesté l'obligation d'étiquetage devant la CJUE. L'ONU précise que cette base n'est ni une procédure judiciaire ni une qualification juridique. Israël la rejette.",
+    "faits_lies": [
+      "onu-base-colonies-2026",
+      "cij-avis-2024"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/sessions-regular/session63/advance-versions/a-hrc-63-20-aev.pdf",
+    "source_nom": "HCDH (ONU), rapport A/HRC/63/20 du 25 septembre 2026",
+    "alternatives": [
+      "Vins palestiniens (Taybeh, Cremisan)"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "produits-colonies",
+    "marque": "Produits des colonies israéliennes",
+    "sous_marques": [
+      "colonie israélienne",
+      "Cisjordanie",
+      "Golan"
+    ],
+    "groupe": "(étiquette à vérifier)",
+    "secteur": "alimentation",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "categorie": "israel-palestine",
+    "motif": "Étiquetage des produits des colonies",
+    "impact": "fort",
+    "raison": "Selon un arrêt de la Cour de justice de l'UE du 12 novembre 2019, les denrées produites dans les territoires occupés par Israël doivent indiquer leur territoire d'origine et, le cas échéant, la mention « colonie israélienne ». La seule mention « Israël » ne suffit pas pour ces produits.",
+    "faits_lies": [
+      "cjue-etiquetage-colonies-2019",
+      "cij-avis-2024"
+    ],
+    "fiabilite": "jugé",
+    "source_url": "https://legrandcontinent.eu/fr/2019/12/01/la-cour-de-justice-de-lunion-europeenne-reaffirme-lobligation-dindiquer-lorigine-des-produits-issus-des-colonies-israeliennes/",
+    "source_nom": "Le Grand Continent, d'après l'arrêt C-363/18 de la CJUE",
+    "alternatives": [
+      "Produits palestiniens (huile d'olive, dattes, savon de Naplouse)"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "carrefour-israel",
+    "marque": "Carrefour",
+    "sous_marques": [
+      "Carrefour Market",
+      "Carrefour Express"
+    ],
+    "groupe": "Carrefour",
+    "secteur": "distribution",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "categorie": "israel-palestine",
+    "motif": "Partenaire israélien listé par l'ONU",
+    "impact": "moyen",
+    "raison": "En Israël, des supermarchés passent sous enseigne Carrefour depuis 2023 grâce à une franchise avec Electra Consumer Products, contrôlée par le groupe Elco (Globes). Elco et Electra Group figurent dans la base de données de l'ONU des entreprises impliquées dans les colonies (2026, type : contribution).",
+    "nuance": "Selon l'ONG palestinienne Al-Haq (source associative), des magasins de l'enseigne se trouvent dans des colonies. Carrefour elle-même ne figure pas dans la base de l'ONU. Vérifier que la franchise est toujours en cours.",
+    "faits_lies": [
+      "onu-base-colonies-2026"
+    ],
+    "fiabilite": "presse",
+    "source_url": "https://en.globes.co.il/en/article-1001487796",
+    "source_nom": "Globes, et base de données de l'ONU (2026)",
+    "alternatives": [
+      "Colruyt",
+      "Delhaize",
+      "Aldi",
+      "Lidl",
+      "Épiceries locales"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "mcdonalds-israel",
+    "marque": "McDonald's (Israël)",
+    "sous_marques": [],
+    "groupe": "McDonald's Corporation",
+    "secteur": "alimentation",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "categorie": "israel-palestine",
+    "motif": "Repas offerts à l'armée par le franchisé",
+    "impact": "moyen",
+    "raison": "En octobre 2023, le franchisé israélien de McDonald's, Alonyal, a annoncé offrir des repas gratuits aux soldats israéliens. En avril 2024, McDonald's a racheté ce franchisé et ses 225 restaurants en Israël (Fortune).",
+    "nuance": "L'annonce des repas venait du franchisé, pas de McDonald's Corporation.",
+    "faits_lies": [
+      "cij-avis-2024"
+    ],
+    "fiabilite": "presse",
+    "source_url": "https://fortune.com/2024/04/05/mcdonalds-israel-franchise-acquires-225-restaurants",
+    "source_nom": "Fortune",
+    "alternatives": [
+      "Friteries et snacks indépendants"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "google-israel",
+    "marque": "Google (contrat Nimbus)",
+    "sous_marques": [
+      "YouTube",
+      "Gmail",
+      "Google Maps",
+      "Gemini",
+      "Android",
+      "Pixel"
+    ],
+    "groupe": "Google (Alphabet)",
+    "secteur": "tech",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "categorie": "israel-palestine",
+    "motif": "Services à l'État et à l'armée israéliens",
+    "impact": "fort",
+    "raison": "Depuis 2021, Google et Amazon fournissent des services d'informatique en nuage au gouvernement israélien, y compris à l'appareil de défense, dans le cadre du contrat « Nimbus » (environ 1,2 milliard de dollars) (Ynet).",
+    "faits_lies": [
+      "cij-avis-2024"
+    ],
+    "fiabilite": "presse",
+    "source_url": "https://www.ynetnews.com/business/article/B1D1q3pL00",
+    "source_nom": "Ynet",
+    "alternatives": [
+      "Qwant",
+      "Ecosia",
+      "Proton Mail",
+      "Organic Maps"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "amazon-israel",
+    "marque": "Amazon (contrat Nimbus)",
+    "sous_marques": [
+      "Prime Video",
+      "Twitch",
+      "Audible",
+      "Kindle",
+      "AWS"
+    ],
+    "groupe": "Amazon",
+    "secteur": "tech",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "categorie": "israel-palestine",
+    "motif": "Services à l'État et à l'armée israéliens",
+    "impact": "fort",
+    "raison": "Depuis 2021, Amazon (AWS) et Google fournissent des services d'informatique en nuage au gouvernement israélien, y compris à l'appareil de défense, dans le cadre du contrat « Nimbus » (environ 1,2 milliard de dollars) (Ynet).",
+    "faits_lies": [
+      "cij-avis-2024"
+    ],
+    "fiabilite": "presse",
+    "source_url": "https://www.ynetnews.com/business/article/B1D1q3pL00",
+    "source_nom": "Ynet",
+    "alternatives": [
+      "Commerces locaux",
+      "Bol (groupe Ahold Delhaize)"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "microsoft-israel",
+    "marque": "Microsoft (armée israélienne)",
+    "sous_marques": [
+      "Windows",
+      "Office",
+      "Outlook",
+      "Teams",
+      "LinkedIn",
+      "Xbox",
+      "Copilot"
+    ],
+    "groupe": "Microsoft",
+    "secteur": "tech",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "categorie": "israel-palestine",
+    "motif": "Services à l'État et à l'armée israéliens",
+    "impact": "fort",
+    "raison": "Microsoft fournit des services d'informatique en nuage et d'IA au ministère israélien de la Défense. En septembre 2025, après une enquête du Guardian, Microsoft a désactivé certains abonnements utilisés par une unité militaire pour stocker des données de surveillance d'appels de Palestiniens (TechCrunch).",
+    "nuance": "Microsoft a déclaré ne pas fournir de technologie destinée à la surveillance de masse de civils.",
+    "faits_lies": [
+      "cij-avis-2024"
+    ],
+    "fiabilite": "presse",
+    "source_url": "https://techcrunch.com/2025/09/25/microsoft-cuts-cloud-services-to-israeli-military-unit-over-palestinian-surveillance",
+    "source_nom": "TechCrunch",
+    "alternatives": [
+      "LibreOffice",
+      "Linux",
+      "Proton Mail"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "coca-cola-atarot",
+    "marque": "Coca-Cola (Israël)",
+    "sous_marques": [
+      "Fanta",
+      "Sprite",
+      "Fuze Tea",
+      "Chaudfontaine"
+    ],
+    "groupe": "The Coca-Cola Company",
+    "secteur": "alimentation",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "categorie": "israel-palestine",
+    "motif": "Embouteilleur à Jérusalem-Est (sources associatives)",
+    "impact": "moyen",
+    "raison": "Selon Ethical Consumer et le mouvement BDS (sources associatives), l'embouteilleur israélien de Coca-Cola, Central Bottling Company, exploite un centre de distribution dans la zone industrielle d'Atarot, à Jérusalem-Est.",
+    "nuance": "Central Bottling Company ne figure pas dans la base de données de l'ONU (2026). À recouper avec une source officielle ou de presse.",
+    "faits_lies": [
+      "cij-avis-2024"
+    ],
+    "fiabilite": "associatif",
+    "source_url": "https://www.ethicalconsumer.org/ethical-shopping/boycotts/coca-cola",
+    "source_nom": "Ethical Consumer",
+    "alternatives": [
+      "Spa (groupe belge Spadel)"
     ],
     "date_verification": "2026-10-04",
     "statut": "actif"

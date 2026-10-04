@@ -16,8 +16,10 @@ const FIABILITE = {
   methode: { label: 'Estimation', classe: 'b-methode' }
 };
 const AVERTISSEMENT_ANALYSE = 'Interprétation largement documentée mais contestée par la personne concernée. Voir les faits sur lesquels elle repose.';
-const PAYS = { BE: 'Belgique', FR: 'France', UE: 'Union européenne', US: 'États-Unis' };
-const THEMES = { police: 'Police', 'extreme-droite': 'Extrême droite', democratie: 'Démocratie', medias: 'Médias', methode: 'Méthode' };
+const PAYS = { BE: 'Belgique', FR: 'France', UE: 'Union européenne', US: 'États-Unis', INT: 'International' };
+const THEMES = { police: 'Police', 'extreme-droite': 'Extrême droite', democratie: 'Démocratie', medias: 'Médias', methode: 'Méthode', 'israel-palestine': 'Israël-Palestine' };
+const CATEGORIES = { bollore: 'Groupe Bolloré', 'extreme-droite': 'Extrême droite', trump: 'Investiture de Trump', 'israel-palestine': 'Israël-Palestine' };
+const IMPACT = { fort: 'fort', moyen: 'moyen', faible: 'faible' };
 const SECTEURS = { media: 'Médias', distribution: 'Distribution', alimentation: 'Alimentation', tech: 'Tech', energie: 'Énergie', autre: 'Autre' };
 const SIX_MOIS = 182 * 24 * 3600 * 1000;
 
@@ -52,10 +54,6 @@ const repliqueParId = (id) => etat.repliques.find((r) => r.id === id);
 function badge(fiab) {
   const b = FIABILITE[fiab] || { label: fiab, classe: 'b-methode' };
   return `<span class="badge ${b.classe}">${esc(b.label)}</span>`;
-}
-function options(map, valeur, tous) {
-  return `<option value="">${tous}</option>` + Object.entries(map)
-    .map(([k, v]) => `<option value="${esc(k)}"${k === valeur ? ' selected' : ''}>${esc(v)}</option>`).join('');
 }
 
 function toast(msg) {
@@ -148,71 +146,138 @@ function blocReplique(r, ouvert) {
   </details>`;
 }
 
+/* ---------- Filtres à cocher ----------
+   Chaque onglet propose des catégories à cocher / décocher.
+   Par défaut tout est coché : on ne mémorise que ce qui est décoché,
+   ainsi une nouvelle catégorie ajoutée dans les JSON apparaît cochée. */
+
+// Valeurs présentes dans les données, dans l'ordre voulu, avec leur libellé
+function optionsDe(listes, cle, libelles, ordre) {
+  const vals = [...new Set(listes.flat().flatMap((x) => [].concat(x[cle] ?? [])))];
+  if (ordre) vals.sort((a, b) => ordre.indexOf(a) - ordre.indexOf(b));
+  return vals.map((v) => [v, libelles[v] || v]);
+}
+
+function blocFiltres(page, groupes) {
+  const off = lire('decoches-' + page, {});
+  const html = groupes.filter((g) => g.options.length > 1).map((g) => `
+    <fieldset><legend>${esc(g.titre)}</legend>${g.options.map(([v, l]) => `
+      <label class="chip"><input type="checkbox" data-groupe="${esc(g.cle)}" value="${esc(v)}"${(off[g.cle] || []).includes(v) ? '' : ' checked'}> ${esc(l)}</label>`).join('')}
+    </fieldset>`).join('');
+  return html ? `<details class="filtres-chips" id="filtres"><summary>${resumeFiltres(off)}</summary>${html}
+    <button type="button" class="lien" data-tout-cocher>Tout cocher</button></details>` : '';
+}
+
+function resumeFiltres(off) {
+  const n = Object.values(off).reduce((s, l) => s + l.length, 0);
+  return n ? `Filtrer (${n} catégorie${n > 1 ? 's' : ''} masquée${n > 1 ? 's' : ''})` : 'Filtrer par catégorie';
+}
+
+// Branche les cases d'un onglet ; appelle redessiner() à chaque changement
+function brancherFiltres(page, redessiner) {
+  const bloc = document.getElementById('filtres');
+  if (!bloc) return;
+  const maj = () => {
+    const off = {};
+    bloc.querySelectorAll('input[data-groupe]').forEach((c) => { if (!c.checked) (off[c.dataset.groupe] ||= []).push(c.value); });
+    ecrire('decoches-' + page, off);
+    bloc.querySelector('summary').textContent = resumeFiltres(off);
+    redessiner();
+  };
+  bloc.addEventListener('change', maj);
+  bloc.querySelector('[data-tout-cocher]').addEventListener('click', () => {
+    bloc.querySelectorAll('input[data-groupe]').forEach((c) => { c.checked = true; });
+    maj();
+  });
+}
+
+// Un élément passe si sa valeur (ou l'une de ses valeurs) n'est pas décochée
+function passe(page, item, cles) {
+  const off = lire('decoches-' + page, {});
+  return cles.every((cle) => {
+    const masques = off[cle] || [];
+    const vals = [].concat(item[cle] ?? []);
+    return !vals.length || vals.some((v) => !masques.includes(v));
+  });
+}
+
 /* ---------- Vues ---------- */
 
 const vue = () => document.getElementById('vue');
 
 function vueArguments() {
+  const groupes = [{ cle: 'theme', titre: 'Thème', options: optionsDe([etat.repliques, etat.faits], 'theme', THEMES) }];
   vue().innerHTML = `
     <a class="bouton principal gros" href="#parcours">Besoin d'arguments ?<small>Trois questions, une réponse prête à copier</small></a>
     <label for="recherche" class="etiquette-avis">Chercher une objection ou un fait</label>
     <input id="recherche" type="search" placeholder="Ex. : début, plainte, Mawda" autocomplete="off">
+    ${blocFiltres('arguments', groupes)}
     <div id="resultats"></div>`;
   const champ = document.getElementById('recherche');
   const dessiner = () => {
     const q = norm(champ.value.trim());
-    const reps = etat.repliques.filter((r) => !q || norm(r.objection + ' ' + r.courte + ' ' + r.longue).includes(q));
-    const faits = q ? etat.faits.filter((f) => norm(f.titre + ' ' + f.resume + ' ' + f.source_nom).includes(q)) : [];
+    const reps = etat.repliques.filter((r) => passe('arguments', r, ['theme']) &&
+      (!q || norm(r.objection + ' ' + r.courte + ' ' + r.longue).includes(q)));
+    const faits = q ? etat.faits.filter((f) => passe('arguments', f, ['theme']) &&
+      norm(f.titre + ' ' + f.resume + ' ' + f.source_nom).includes(q)) : [];
     document.getElementById('resultats').innerHTML =
       `<h2 class="section-titre">On me dit...</h2>` +
       (reps.length ? reps.map((r) => blocReplique(r, false)).join('') : '<p class="vide">Aucune objection trouvée.</p>') +
       (q ? `<h2 class="section-titre">Faits</h2>` + (faits.length ? faits.map(carteFait).join('') : '<p class="vide">Aucun fait trouvé.</p>') : '');
   };
   champ.addEventListener('input', dessiner);
+  brancherFiltres('arguments', dessiner);
   dessiner();
 }
 
 function vueFaits() {
-  const f = lire('filtres-faits', { pays: '', theme: '', fiab: '', fav: false });
   const fiabs = Object.fromEntries(Object.entries(FIABILITE).map(([k, v]) => [k, v.label]));
+  const groupes = [
+    { cle: 'theme', titre: 'Thème', options: optionsDe([etat.faits], 'theme', THEMES) },
+    { cle: 'pays', titre: 'Pays', options: optionsDe([etat.faits], 'pays', PAYS) },
+    { cle: 'fiabilite', titre: 'Fiabilité', options: optionsDe([etat.faits], 'fiabilite', fiabs, Object.keys(FIABILITE)) }
+  ];
+  const fav = lire('faits-favoris-seuls', false);
   vue().innerHTML = `
     <h2>Faits</h2>
-    <form class="filtres" id="filtres">
-      <label>Pays<select name="pays">${options(PAYS, f.pays, 'Tous')}</select></label>
-      <label>Thème<select name="theme">${options(THEMES, f.theme, 'Tous')}</select></label>
-      <label class="large">Fiabilité<select name="fiab">${options(fiabs, f.fiab, 'Toutes')}</select></label>
-      <label class="case large"><input type="checkbox" name="fav"${f.fav ? ' checked' : ''}> Mes favoris seulement</label>
-    </form>
+    <label for="recherche" class="etiquette-avis">Chercher un fait</label>
+    <input id="recherche" type="search" placeholder="Ex. : Comité P, CEDH, Bolloré" autocomplete="off">
+    ${blocFiltres('faits', groupes)}
+    <label class="case"><input type="checkbox" id="fav"${fav ? ' checked' : ''}> Mes favoris seulement</label>
     <div id="liste"></div>`;
-  const form = document.getElementById('filtres');
+  const champ = document.getElementById('recherche');
+  const caseFav = document.getElementById('fav');
   const dessiner = () => {
-    const v = { pays: form.pays.value, theme: form.theme.value, fiab: form.fiab.value, fav: form.fav.checked };
-    ecrire('filtres-faits', v);
-    const liste = etat.faits.filter((x) =>
-      (!v.pays || x.pays === v.pays) && (!v.theme || x.theme === v.theme) &&
-      (!v.fiab || x.fiabilite === v.fiab) && (!v.fav || favoris.has(x.id)));
+    const q = norm(champ.value.trim());
+    ecrire('faits-favoris-seuls', caseFav.checked);
+    const liste = etat.faits.filter((x) => passe('faits', x, ['theme', 'pays', 'fiabilite']) &&
+      (!caseFav.checked || favoris.has(x.id)) &&
+      (!q || norm(x.titre + ' ' + x.resume + ' ' + x.source_nom).includes(q)));
     document.getElementById('liste').innerHTML = liste.length ? liste.map(carteFait).join('') : '<p class="vide">Aucun fait pour ces filtres.</p>';
   };
-  form.addEventListener('change', dessiner);
+  champ.addEventListener('input', dessiner);
+  caseFav.addEventListener('change', dessiner);
+  brancherFiltres('faits', dessiner);
   dessiner();
 }
 
 function vueActus() {
   const vus = new Set(lire('actus-vues', []));
-  const f = lire('filtres-actus', { pays: '', theme: '' });
+  const groupes = [
+    { cle: 'theme', titre: 'Thème', options: optionsDe([etat.actus], 'theme', THEMES) },
+    { cle: 'pays', titre: 'Pays', options: optionsDe([etat.actus], 'pays', PAYS) }
+  ];
   vue().innerHTML = `
     <h2>Actus</h2>
-    <form class="filtres" id="filtres">
-      <label>Pays<select name="pays">${options(PAYS, f.pays, 'Tous')}</select></label>
-      <label>Thème<select name="theme">${options(THEMES, f.theme, 'Tous')}</select></label>
-    </form>
+    <label for="recherche" class="etiquette-avis">Chercher une actu</label>
+    <input id="recherche" type="search" placeholder="Ex. : appel, non-lieu" autocomplete="off">
+    ${blocFiltres('actus', groupes)}
     <div id="liste"></div>`;
-  const form = document.getElementById('filtres');
+  const champ = document.getElementById('recherche');
   const dessiner = () => {
-    const v = { pays: form.pays.value, theme: form.theme.value };
-    ecrire('filtres-actus', v);
+    const q = norm(champ.value.trim());
     const liste = etat.actus
-      .filter((a) => (!v.pays || a.pays === v.pays) && (!v.theme || a.theme === v.theme))
+      .filter((a) => passe('actus', a, ['theme', 'pays']) && (!q || norm(a.titre + ' ' + a.resume).includes(q)))
       .sort((a, b) => b.date.localeCompare(a.date));
     document.getElementById('liste').innerHTML = liste.length ? liste.map((a) => `
       <article class="fiche">
@@ -224,7 +289,8 @@ function vueActus() {
         ${(a.faits_lies || []).map(faitParId).filter(Boolean).map((x) => `<p class="source">Fait lié : <a href="#faits" data-voir-fait="${esc(x.id)}">${esc(x.titre)}</a></p>`).join('')}
       </article>`).join('') : '<p class="vide">Aucune actu pour ces filtres.</p>';
   };
-  form.addEventListener('change', dessiner);
+  champ.addEventListener('input', dessiner);
+  brancherFiltres('actus', dessiner);
   dessiner();
   // Les actus affichées ne sont plus « nouvelles » à la prochaine ouverture
   ecrire('actus-vues', etat.actus.map((a) => a.id));
@@ -232,31 +298,48 @@ function vueActus() {
 }
 
 function vueBoycotts() {
+  const actives = etat.boycotts.filter((b) => b.statut !== 'retire');
+  const groupes = [
+    { cle: 'categorie', titre: 'Catégorie', options: optionsDe([actives], 'categorie', CATEGORIES, Object.keys(CATEGORIES)) },
+    { cle: 'impact', titre: 'Impact', options: optionsDe([actives], 'impact', IMPACT, Object.keys(IMPACT)) },
+    { cle: 'secteur', titre: 'Secteur', options: optionsDe([actives], 'secteur', SECTEURS, Object.keys(SECTEURS)) }
+  ];
   vue().innerHTML = `
     <h2>Boycotts</h2>
     <label for="marque" class="etiquette-avis">Chercher une marque</label>
     <input id="marque" type="search" placeholder="Nom de la marque ou du groupe" autocomplete="off">
+    ${blocFiltres('boycotts', groupes)}
+    <details class="legende"><summary>Comment lire l'impact ?</summary>
+      <p><strong>Fort :</strong> l'entreprise elle-même (ou son propriétaire quasi unique) mène l'activité en cause. Pour la base de l'ONU : implication par « causalité » ou « contribution ».</p>
+      <p><strong>Moyen :</strong> lien par un actionnaire, une maison mère, une filiale, un franchisé ou un partenaire. Pour la base de l'ONU : « lien direct ».</p>
+      <p><strong>Faible :</strong> don ponctuel et légal, don personnel d'un dirigeant ou prise de position publique.</p>
+      <p>L'impact mesure à quel point le lien est direct, pas la gravité des faits. La fiabilité (badge de couleur) dit d'où vient l'information.</p>
+    </details>
     <div id="liste"></div>`;
   const champ = document.getElementById('marque');
+  const ordreImpact = Object.keys(IMPACT);
   const dessiner = () => {
     const q = norm(champ.value.trim());
     // La recherche porte aussi sur les sous-marques (ex. « Fayard » trouve Hachette Livre)
-    const actifs = etat.boycotts.filter((b) => b.statut !== 'retire' &&
-      (!q || norm([b.marque, b.groupe, b.motif, ...(b.sous_marques || [])].join(' ')).includes(q)));
+    const liste = actives.filter((b) => passe('boycotts', b, ['categorie', 'impact', 'secteur']) &&
+      (!q || norm([b.marque, b.groupe, b.motif, ...(b.sous_marques || [])].join(' ')).includes(q)))
+      .sort((a, b) => ordreImpact.indexOf(a.impact) - ordreImpact.indexOf(b.impact));
     if (!etat.boycotts.length) {
       document.getElementById('liste').innerHTML = '<p class="vide">Aucune fiche pour l\'instant. Chaque marque est ajoutée seulement après vérification d\'une source solide.</p>';
       return;
     }
-    if (!actifs.length) {
-      document.getElementById('liste').innerHTML = '<p class="vide">Cette marque n\'est pas dans la liste.</p>';
+    if (!liste.length) {
+      document.getElementById('liste').innerHTML = q
+        ? '<p class="vide">Pas de fiche pour cette marque (ou elle est masquée par les filtres).</p>'
+        : '<p class="vide">Aucune fiche pour ces filtres.</p>';
       return;
     }
     const parSecteur = {};
-    actifs.forEach((b) => (parSecteur[b.secteur] ||= []).push(b));
-    document.getElementById('liste').innerHTML = Object.entries(parSecteur).map(([s, liste]) =>
-      `<h3 class="section-titre">${esc(SECTEURS[s] || s)}</h3>` + liste.map((b) => `
+    liste.forEach((b) => (parSecteur[b.secteur] ||= []).push(b));
+    document.getElementById('liste').innerHTML = Object.entries(parSecteur).map(([s, l]) =>
+      `<h3 class="section-titre">${esc(SECTEURS[s] || s)}</h3>` + l.map((b) => `
         <article class="fiche">
-          <div class="tete">${badge(b.fiabilite)}${b.statut === 'a-revoir' ? '<span class="issue">À revoir</span>' : ''}<span>${esc((b.pays || []).join(', '))}</span></div>
+          <div class="tete">${badge(b.fiabilite)}${b.impact ? `<span class="issue">Impact ${esc(IMPACT[b.impact] || b.impact)}</span>` : ''}${b.statut === 'a-revoir' ? '<span class="issue">À revoir</span>' : ''}<span>${esc(CATEGORIES[b.categorie] || '')}</span></div>
           <h3>${esc(b.marque)}</h3>
           ${b.motif ? `<p class="source">Motif : <strong>${esc(b.motif)}</strong></p>` : ''}
           <p class="source">Groupe : ${esc(b.groupe)}</p>
@@ -272,6 +355,7 @@ function vueBoycotts() {
         </article>`).join('')).join('');
   };
   champ.addEventListener('input', dessiner);
+  brancherFiltres('boycotts', dessiner);
   dessiner();
 }
 

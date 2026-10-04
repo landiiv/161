@@ -98,10 +98,22 @@ input[type="search"], select {
   font: inherit; width: 100%; min-height: 44px; padding: 8px 10px;
   border: 1px solid var(--encre-2); border-radius: 4px; background: var(--papier); color: var(--encre);
 }
-.filtres { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 12px; }
-.filtres label { font-size: .85rem; color: var(--encre-2); display: grid; gap: 2px; }
-.filtres .large { grid-column: 1 / -1; }
 .case { display: flex; align-items: center; gap: 8px; min-height: 44px; }
+
+/* Filtres : catégories à cocher, repliables pour gagner de la place */
+.filtres-chips { margin: 8px 0; border-bottom: 1px solid var(--trait); padding-bottom: 4px; }
+.filtres-chips summary, .legende summary { min-height: 44px; display: flex; align-items: center; cursor: pointer; font-weight: 600; }
+.filtres-chips fieldset { border: 0; padding: 0; margin: 0 0 10px; display: flex; flex-wrap: wrap; gap: 6px; }
+.filtres-chips legend { font-size: .85rem; color: var(--encre-2); padding: 0; margin-bottom: 4px; }
+.chip {
+  display: inline-flex; align-items: center; gap: 6px; min-height: 44px; padding: 0 12px;
+  border: 1px solid var(--trait); border-radius: 22px; background: var(--papier); color: var(--encre-2); font-size: .9rem; cursor: pointer;
+}
+.chip:has(input:checked) { border-color: var(--encre); color: var(--encre); font-weight: 600; }
+.chip input { width: 18px; height: 18px; margin: 0; accent-color: var(--encre); }
+button.lien { border: 0; background: none; color: var(--lien); text-decoration: underline; padding: 0; min-height: 44px; }
+.legende { margin-bottom: 8px; font-size: .9rem; }
+.legende p { margin-left: 2px; }
 .case input { width: 22px; height: 22px; }
 
 /* Fiches : feuille de carnet avec marge à gauche, pas d'ombre */
@@ -153,3 +165,9 @@ details.objection[open] > summary { border-bottom: 1px solid var(--trait); }
 @media (prefers-reduced-motion: reduce) {
   * { transition: none !important; animation: none !important; scroll-behavior: auto !important; }
 }
+
+/* Flèche des blocs repliables (le marqueur natif disparaît avec display: flex) */
+.filtres-chips > summary, .legende > summary { list-style: none; }
+.filtres-chips > summary::-webkit-details-marker, .legende > summary::-webkit-details-marker { display: none; }
+.filtres-chips > summary::before, .legende > summary::before { content: "▸"; margin-right: 8px; }
+.filtres-chips[open] > summary::before, .legende[open] > summary::before { content: "▾"; }

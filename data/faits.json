@@ -275,5 +275,44 @@
     "date_publication": "2025-08-07",
     "date_verification": "2026-10-04",
     "nuance": "Ces dons sont légaux et publics aux États-Unis. Certaines entreprises les présentent comme une pratique habituelle, quel que soit le président élu (Spotify par exemple). Un don à une investiture n'est pas un don à un parti."
+  },
+  {
+    "id": "onu-base-colonies-2026",
+    "pays": "INT",
+    "theme": "israel-palestine",
+    "titre": "L'ONU recense 214 entreprises impliquées dans des activités liées aux colonies israéliennes",
+    "resume": "Le 25 septembre 2026, le Haut-Commissariat de l'ONU aux droits de l'homme a mis à jour sa base de données des entreprises impliquées dans des activités liées aux colonies israéliennes du Territoire palestinien occupé : 214 entreprises de 11 pays, dont Airbnb, Booking, Expedia et Tripadvisor. Pour chacune, le rapport précise le type d'implication selon les Principes directeurs de l'ONU : causalité, contribution ou lien direct.",
+    "fiabilite": "officiel",
+    "source_url": "https://www.ohchr.org/sites/default/files/documents/hrbodies/hrcouncil/sessions-regular/session63/advance-versions/a-hrc-63-20-aev.pdf",
+    "source_nom": "HCDH (ONU), rapport A/HRC/63/20 du 25 septembre 2026",
+    "date_publication": "2026-09-25",
+    "date_verification": "2026-10-04",
+    "nuance": "L'ONU précise que ce travail n'est ni une procédure judiciaire ni une qualification juridique. Israël rejette ce registre, qu'il juge partial (BusinessAM, septembre 2026). Cinq entreprises ont été retirées de la liste en 2026 car elles n'étaient plus impliquées."
+  },
+  {
+    "id": "cij-avis-2024",
+    "pays": "INT",
+    "theme": "israel-palestine",
+    "titre": "Avis de la Cour internationale de justice sur l'occupation du Territoire palestinien",
+    "resume": "Dans un avis consultatif du 19 juillet 2024, la Cour internationale de justice a estimé que la présence continue d'Israël dans le Territoire palestinien occupé est illicite et qu'Israël doit y mettre fin dans les plus brefs délais. Elle a ajouté que les États ne doivent pas prêter aide ou assistance au maintien de cette situation.",
+    "fiabilite": "officiel",
+    "source_url": "https://icj-cij.org/fr/node/204175",
+    "source_nom": "Cour internationale de justice, communiqué du 19 juillet 2024",
+    "date_publication": "2024-07-19",
+    "date_verification": "2026-10-04",
+    "nuance": "Un avis consultatif n'a pas de force obligatoire. Les autorités israéliennes ont rejeté l'avis (JusticeInfo, juillet 2024)."
+  },
+  {
+    "id": "cjue-etiquetage-colonies-2019",
+    "pays": "UE",
+    "theme": "israel-palestine",
+    "titre": "La Cour de justice de l'UE impose d'indiquer « colonie israélienne » sur l'étiquette",
+    "resume": "Dans un arrêt du 12 novembre 2019 (affaire C-363/18), la Cour de justice de l'Union européenne a jugé que les denrées alimentaires produites dans les territoires occupés par Israël depuis 1967 doivent indiquer leur territoire d'origine et, le cas échéant, qu'elles proviennent d'une colonie israélienne.",
+    "fiabilite": "jugé",
+    "source_url": "https://legrandcontinent.eu/fr/2019/12/01/la-cour-de-justice-de-lunion-europeenne-reaffirme-lobligation-dindiquer-lorigine-des-produits-issus-des-colonies-israeliennes/",
+    "source_nom": "Le Grand Continent, d'après l'arrêt C-363/18 de la CJUE",
+    "date_publication": "2019-12-01",
+    "date_verification": "2026-10-04",
+    "nuance": "L'affaire a été portée par l'Organisation juive européenne et la cave Psagot, qui contestaient cette obligation."
   }
 ]
