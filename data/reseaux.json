@@ -1,5 +1,5 @@
 {
-  "_lisez_moi": "Chaque lien est un fait sourcé. Types : parent, fratrie, parrains_croises, designe, formateur, candidat, collaborateur, conjoint, membre, alliance (mariage avec un membre d'une famille ; la personne n'est pas nommée si elle n'a pas de rôle public), parrain, temoin, invite, possede, copropriete, dirige, fonde, siege, fonction, edite, finance. Un lien terminé porte « fin » (année). Seules les personnes ayant un rôle public figurent ici.",
+  "_lisez_moi": "Chaque lien est un fait sourcé. Types : parent, fratrie, parrains_croises, designe, formateur, candidat, collaborateur, soutien, declaration, invite_evenement, conjoint, membre, alliance (mariage avec un membre d'une famille ; la personne n'est pas nommée si elle n'a pas de rôle public), parrain, temoin, invite, possede, copropriete, dirige, fonde, siege, fonction, edite, finance. Un lien terminé porte « fin » (année). Seules les personnes ayant un rôle public figurent ici.",
   "reseaux": {
     "bollore": {
       "nom": "Bolloré",
@@ -970,6 +970,22 @@
       "nom": "LN24",
       "reseau": "rossel-ipm",
       "pays": "BE"
+    },
+    {
+      "id": "david-lisnard",
+      "type": "personne",
+      "nom": "David Lisnard",
+      "reseau": "politique",
+      "pays": "FR",
+      "role": "Maire de Cannes, président du parti Nouvelle Énergie, candidat à l'élection présidentielle de 2027 selon La Libre"
+    },
+    {
+      "id": "gabriel-attal",
+      "type": "personne",
+      "nom": "Gabriel Attal",
+      "reseau": "politique",
+      "pays": "FR",
+      "role": "Ancien Premier ministre français"
     }
   ],
   "liens": [
@@ -2242,6 +2258,50 @@
       "source_nom": "La Libre",
       "fiabilite": "presse",
       "date_source": "2026-01-15",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "georges-louis-bouchez",
+      "type": "soutien",
+      "vers": "david-lisnard",
+      "detail": "« Je rêve que David Lisnard devienne Président de la République ! », janvier 2026",
+      "source_url": "https://www.lalibre.be/belgique/politique-belge/2026/01/03/les-rapports-etroits-entre-georges-louis-bouchez-et-la-politique-francaise-je-reve-que-david-lisnard-devienne-president-de-la-republique-HRN3QYUQ5JE2HN243YT5UNMWZ4/",
+      "source_nom": "La Libre",
+      "fiabilite": "presse",
+      "date_source": "2026-01-03",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "georges-louis-bouchez",
+      "type": "invite_evenement",
+      "vers": "david-lisnard",
+      "detail": "grand invité et orateur de l'université d'été de Nouvelle Énergie à Cannes, fin août 2026",
+      "source_url": "https://www.lalibre.be/belgique/politique-belge/2026/08/26/bouchez-participera-ce-samedi-au-meeting-de-son-chouchou-pour-la-presidentielle-francaise-le-liberal-david-lisnard-PO2F5J6X4JEFLLP2H5SILZVUVM/",
+      "source_nom": "La Libre",
+      "fiabilite": "presse",
+      "date_source": "2026-08-26",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "georges-louis-bouchez",
+      "type": "declaration",
+      "vers": "jordan-bardella",
+      "detail": "en janvier 2026, il dit ne pas avoir de sympathie particulière pour lui, mais lui reconnaît de réelles capacités, et se demande si l'on peut encore le qualifier d'extrême droite",
+      "source_url": "https://www.lalibre.be/belgique/politique-belge/2026/01/03/les-rapports-etroits-entre-georges-louis-bouchez-et-la-politique-francaise-je-reve-que-david-lisnard-devienne-president-de-la-republique-HRN3QYUQ5JE2HN243YT5UNMWZ4/",
+      "source_nom": "La Libre",
+      "fiabilite": "presse",
+      "date_source": "2026-01-03",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "gabriel-attal",
+      "type": "invite_evenement",
+      "vers": "georges-louis-bouchez",
+      "detail": "invité d'honneur du congrès du 1er mai du MR à Charleroi, 2025",
+      "source_url": "https://www.dhnet.be/regions/charleroi/2025/05/01/ils-aimaient-tant-les-pauvres-quils-en-fabriquaient-chaque-jour-georges-louis-bouchez-tacle-la-gauche-los-de-son-discours-du-1er-mai-DD5D6UWJTZEKDFA5WJMVTEPRGI/",
+      "source_nom": "La DH (Belga)",
+      "fiabilite": "presse",
+      "date_source": "2025-05-01",
       "date_verification": "2026-10-04"
     }
   ]

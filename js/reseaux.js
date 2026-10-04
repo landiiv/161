@@ -13,6 +13,9 @@ const TYPES_LIEN = {
   formateur: { cat: 'nominations', de: 'Chargé de la mission :', vers: 'Mission confiée à', phrase: '{a} a été chargé de la mission : {b}' },
   candidat: { cat: 'nominations', de: 'Candidat(e) sur une liste de', vers: 'Candidat(e) :', phrase: "{a} a été candidat sur une liste de : {b}" },
   collaborateur: { cat: 'affaires', de: 'Proche collaborateur de', vers: 'Proche collaborateur :', phrase: '{a} a été un proche collaborateur de {b}' },
+  soutien: { cat: 'soutiens', de: 'Soutient publiquement', vers: 'Soutenu publiquement par', phrase: '{a} a publiquement soutenu {b}' },
+  declaration: { cat: 'soutiens', de: "S'est exprimé sur", vers: 'Objet de déclarations de', phrase: "{a} s'est exprimé publiquement sur {b}" },
+  invite_evenement: { cat: 'soutiens', de: "Invité à un événement de", vers: 'A invité', phrase: '{a} a été invité à un événement de {b}' },
   membre: { cat: 'famille', de: 'Membre de', vers: 'Membre :', phrase: '{a} fait partie de : {b}' },
   alliance: { cat: 'famille', de: 'Allié par mariage à', vers: 'Allié par mariage :', phrase: '{a} : alliance par mariage avec {b}' },
   parrain: { cat: 'proches', de: 'Parrain de', vers: 'Filleul de', phrase: '{a} est le parrain de {b}' },
@@ -27,7 +30,7 @@ const TYPES_LIEN = {
   edite: { cat: 'affaires', de: 'Publie chez', vers: 'A publié', phrase: '{a} publie chez {b}' },
   finance: { cat: 'financement', de: 'Finance', vers: 'Financé par', phrase: '{a} finance {b}' }
 };
-const CATS_LIEN = { famille: 'Famille', proches: 'Proches (parrain, témoin, invité)', propriete: 'Propriété', direction: 'Direction et conseils', affaires: 'Emplois et contrats', nominations: 'Nominations, missions et candidatures', financement: 'Financement' };
+const CATS_LIEN = { famille: 'Famille', proches: 'Proches (parrain, témoin, invité)', propriete: 'Propriété', direction: 'Direction et conseils', affaires: 'Emplois et contrats', nominations: 'Nominations, missions et candidatures', soutiens: 'Soutiens et déclarations publiques', financement: 'Financement' };
 const TYPES_NOEUD = { personne: 'Personne', famille: 'Famille', entreprise: 'Entreprise', media: 'Média', institution: 'Institution ou parti', autre: 'Autre' };
 const EXPLIC_CAT = {
   famille: 'Lien familial (filiation, couple, mariage), documenté par la presse. Les conjoints sans rôle public ne sont pas nommés.',
@@ -36,6 +39,7 @@ const EXPLIC_CAT = {
   direction: "Fonction de direction ou siège au conseil d'administration.",
   affaires: 'Emploi, contrat ou publication.',
   nominations: 'Désignation à un poste ou mission confiée, telle que rapportée par la presse.',
+  soutiens: 'Soutien, déclaration ou invitation publique, rapportés par la presse avec les mots de la personne.',
   financement: 'Argent versé ou prévu pour un projet.'
 };
 const EXPLIC_NOEUD = {
@@ -362,7 +366,7 @@ function vueReseaux() {
           <button type="button" data-zoom="centrer">Recentrer</button>
         </div>
       </div>
-      <p class="legende-toile">● personne · ◎ famille · ■ entreprise · ◆ média · ⬡ institution ou parti · ▲ autre. Trait plein : famille ou propriété ; tirets : direction ; tirets longs : emplois et contrats ; tirets alternés : nominations ; pointillés : financement ; tirets et points : proches. Trait pâle : lien terminé. La flèche va du propriétaire ou du parent vers ce qu'il détient ou dirige.</p>
+      <p class="legende-toile">● personne · ◎ famille · ■ entreprise · ◆ média · ⬡ institution ou parti · ▲ autre. Trait plein : famille ou propriété ; tirets : direction ; tirets longs : emplois et contrats ; tirets alternés : nominations ; traits mixtes : soutiens et déclarations ; pointillés : financement ; tirets et points : proches. Trait pâle : lien terminé. La flèche va du propriétaire ou du parent vers ce qu'il détient ou dirige.</p>
       <div id="panneau"></div>
     </div>
     <div id="liste-reseaux"${toile.liste ? '' : ' hidden'}></div>`;
