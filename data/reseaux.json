@@ -1381,6 +1381,64 @@
       "reseau": "dynasties-be",
       "pays": "BE",
       "role": "Responsable politique (FDF, devenu DéFI)"
+    },
+    {
+      "id": "alexis-kohler",
+      "type": "personne",
+      "nom": "Alexis Kohler",
+      "reseau": "macron",
+      "pays": "FR",
+      "role": "Secrétaire général de l'Élysée de 2017 à 2025",
+      "faits": [
+        "fr-kohler-msc"
+      ]
+    },
+    {
+      "id": "famille-aponte",
+      "type": "famille",
+      "nom": "Famille Aponte",
+      "reseau": "macron",
+      "pays": "FR"
+    },
+    {
+      "id": "msc",
+      "type": "entreprise",
+      "nom": "MSC (groupe franco-italien)",
+      "reseau": "macron",
+      "pays": "FR"
+    },
+    {
+      "id": "rachida-dati",
+      "type": "personne",
+      "nom": "Rachida Dati",
+      "reseau": "politique",
+      "pays": "FR",
+      "role": "Ancienne garde des Sceaux",
+      "faits": [
+        "fr-dati-proces"
+      ]
+    },
+    {
+      "id": "matthieu-pigasse",
+      "type": "personne",
+      "nom": "Matthieu Pigasse",
+      "reseau": "niel",
+      "pays": "FR",
+      "role": "Banquier d'affaires"
+    },
+    {
+      "id": "le-monde",
+      "type": "media",
+      "nom": "Le Monde",
+      "reseau": "niel",
+      "pays": "FR"
+    },
+    {
+      "id": "fnac-darty",
+      "type": "entreprise",
+      "nom": "Fnac Darty",
+      "reseau": "kretinsky",
+      "pays": "FR"
     }
   ],
   "liens": [
@@ -3146,6 +3204,73 @@
       "source_nom": "L'Avenir",
       "fiabilite": "presse",
       "date_source": "2019-03-18",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "alexis-kohler",
+      "type": "fonction",
+      "vers": "emmanuel-macron",
+      "detail": "directeur de cabinet au ministère de l'Économie, puis secrétaire général de l'Élysée de 2017 à 2025",
+      "fin": "2025",
+      "source_url": "https://www.boursorama.com/bourse/actualites/non-lieu-requis-pour-alexis-kohler-dans-l-affaire-de-prise-illegale-d-interets-autour-de-msc-a8bdc6036a8f6430902c361fbdd3fffd",
+      "source_nom": "Boursorama (AFP)",
+      "fiabilite": "presse",
+      "date_source": "2026-09-23",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "alexis-kohler",
+      "type": "apparente",
+      "vers": "famille-aponte",
+      "detail": "la famille Aponte est celle des cousins de sa mère",
+      "source_url": "https://www.boursorama.com/bourse/actualites/non-lieu-requis-pour-alexis-kohler-dans-l-affaire-de-prise-illegale-d-interets-autour-de-msc-a8bdc6036a8f6430902c361fbdd3fffd",
+      "source_nom": "Boursorama (AFP)",
+      "fiabilite": "presse",
+      "date_source": "2026-09-23",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "famille-aponte",
+      "type": "dirige",
+      "vers": "msc",
+      "source_url": "https://www.boursorama.com/bourse/actualites/non-lieu-requis-pour-alexis-kohler-dans-l-affaire-de-prise-illegale-d-interets-autour-de-msc-a8bdc6036a8f6430902c361fbdd3fffd",
+      "source_nom": "Boursorama (AFP)",
+      "fiabilite": "presse",
+      "date_source": "2026-09-23",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "matthieu-pigasse",
+      "type": "possede",
+      "vers": "le-monde",
+      "detail": "a cédé en 2022 la quasi-totalité de sa participation à Xavier Niel",
+      "fin": "2022",
+      "source_url": "https://www.cbnews.fr/node/66678",
+      "source_nom": "CB News",
+      "fiabilite": "presse",
+      "date_source": "2022-01-25",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "xavier-niel",
+      "type": "possede",
+      "vers": "le-monde",
+      "detail": "a repris en 2022 l'essentiel des parts de Matthieu Pigasse",
+      "source_url": "https://www.cbnews.fr/node/66678",
+      "source_nom": "CB News",
+      "fiabilite": "presse",
+      "date_source": "2022-01-25",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "daniel-kretinsky",
+      "type": "possede",
+      "vers": "fnac-darty",
+      "detail": "offre de rachat déposée fin janvier 2026 à 36 € par action, déclarée conforme par l'AMF le 8 mai 2026",
+      "source_url": "https://lessentieldeleco.fr/7299-daniel-kretinsky-le-milliardaire-qui-rachete-leurope-a-prix-casse/",
+      "source_nom": "L'Essentiel de l'Éco",
+      "fiabilite": "presse",
+      "date_source": "2026-06-10",
       "date_verification": "2026-10-04"
     }
   ]

@@ -379,5 +379,31 @@
     "date_publication": "2025-09-17",
     "date_verification": "2026-10-04",
     "nuance": "Condamnation définitive. Elle porte sur un discours précis de 2019, pas sur l'ensemble de ses prises de position."
+  },
+  {
+    "id": "fr-kohler-msc",
+    "pays": "FR",
+    "theme": "democratie",
+    "titre": "Affaire Kohler-MSC : le parquet requiert un non-lieu",
+    "resume": "Alexis Kohler, secrétaire général de l'Élysée de 2017 à 2025, a été mis en cause pour prise illégale d'intérêts pour avoir participé, comme haut fonctionnaire, à des décisions concernant le groupe MSC, dirigé par la famille Aponte, celle des cousins de sa mère. En septembre 2026, le parquet a requis un non-lieu.",
+    "fiabilite": "presse",
+    "source_url": "https://www.boursorama.com/bourse/actualites/non-lieu-requis-pour-alexis-kohler-dans-l-affaire-de-prise-illegale-d-interets-autour-de-msc-a8bdc6036a8f6430902c361fbdd3fffd",
+    "source_nom": "Boursorama (AFP)",
+    "date_publication": "2026-09-23",
+    "date_verification": "2026-10-04",
+    "nuance": "Un réquisitoire de non-lieu n'est pas une décision : le juge d'instruction doit encore trancher. Alexis Kohler bénéficie de la présomption d'innocence."
+  },
+  {
+    "id": "fr-dati-proces",
+    "pays": "FR",
+    "theme": "democratie",
+    "titre": "Rachida Dati jugée pour corruption et trafic d'influence dans l'affaire Renault-Nissan",
+    "resume": "Rachida Dati a été jugée aux côtés de Carlos Ghosn, ancien patron de Renault-Nissan, pour corruption et trafic d'influence, du 16 au 28 septembre 2026, devant le tribunal correctionnel de Paris.",
+    "fiabilite": "presse",
+    "source_url": "https://www.publicsenat.fr/actualites/politique/affaire-renault-nissan-rachida-dati-sera-jugee-pour-corruption-et-trafic-dinfluence-en-septembre-2026",
+    "source_nom": "Public Sénat",
+    "date_publication": "2025-09-29",
+    "date_verification": "2026-10-04",
+    "nuance": "Aucune décision n'a encore été rendue : Rachida Dati bénéficie de la présomption d'innocence."
   }
 ]
