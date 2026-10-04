@@ -262,5 +262,18 @@
     "date_publication": "2025-01-09",
     "date_verification": "2026-10-04",
     "nuance": "Prise de position publique ; la source ne fait état d'aucun financement de l'AfD par ses entreprises."
+  },
+  {
+    "id": "us-investiture-trump-2025",
+    "pays": "US",
+    "theme": "democratie",
+    "titre": "Le comité d'investiture de Trump et Vance a déclaré 247,7 millions de dollars de dons",
+    "resume": "Selon sa déclaration à la FEC, l'autorité électorale américaine (version du 7 août 2025), le comité d'investiture de Donald Trump et J. D. Vance a reçu environ 247,7 millions de dollars. Parmi les donateurs figurent Pilgrim's Pride (5 millions), Amazon, Meta, Google, McDonald's, Anheuser-Busch et Uber (au moins 1 million chacun).",
+    "fiabilite": "officiel",
+    "source_url": "https://docquery.fec.gov/pdf/295/202508079789419295/202508079789419295.pdf",
+    "source_nom": "FEC, déclaration du comité d'investiture Trump-Vance (version du 7 août 2025)",
+    "date_publication": "2025-08-07",
+    "date_verification": "2026-10-04",
+    "nuance": "Ces dons sont légaux et publics aux États-Unis. Certaines entreprises les présentent comme une pratique habituelle, quel que soit le président élu (Spotify par exemple). Un don à une investiture n'est pas un don à un parti."
   }
 ]

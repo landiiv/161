@@ -31,7 +31,8 @@
       "Éditeurs belges : Weyrich, Les Impressions Nouvelles"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "motif": "Groupe Bolloré"
   },
   {
     "id": "hachette-boardgames",
@@ -67,7 +68,8 @@
       "Ludothèques communales (prêt de jeux)"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "motif": "Groupe Bolloré"
   },
   {
     "id": "prisma-media",
@@ -99,7 +101,8 @@
       "Imagine demain le monde"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "motif": "Groupe Bolloré"
   },
   {
     "id": "relay",
@@ -108,10 +111,11 @@
     "groupe": "Lagardère, Louis Hachette Group (groupe Bolloré)",
     "secteur": "distribution",
     "pays": [
+      "BE",
       "FR"
     ],
     "raison": "Les boutiques Relay font partie du groupe Lagardère, contrôlé par Louis Hachette Group, dont le groupe Bolloré est l'actionnaire de référence.",
-    "nuance": "Présence de Relay en Belgique à vérifier.",
+    "nuance": "En Belgique, la plupart des Relay des gares appartiennent au réseau Ubiway Retail, vendu par bpost au groupe belge Golden Palace en 2022 (RTBF) : pas de lien avec Bolloré. Lagardère Travel Retail Belgium (groupe Lagardère) exploite ses propres boutiques, dont des Relay, à Brussels Airport, à l'aéroport de Charleroi et à la gare du Midi, selon son site.",
     "faits_lies": [
       "fr-bollore-lhg-2025"
     ],
@@ -123,7 +127,8 @@
       "Marchands de journaux indépendants"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "motif": "Groupe Bolloré"
   },
   {
     "id": "europe1-jdd",
@@ -153,7 +158,8 @@
       "France Info"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "motif": "Groupe Bolloré"
   },
   {
     "id": "canal-plus",
@@ -184,7 +190,8 @@
       "Telenet"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "motif": "Groupe Bolloré"
   },
   {
     "id": "smartbox",
@@ -216,7 +223,8 @@
       "Chèques commerces de ta commune"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "motif": "Projet Périclès (Stérin)"
   },
   {
     "id": "tesla",
@@ -238,12 +246,12 @@
     "source_nom": "La Libre",
     "alternatives": [
       "Renault",
-      "Kia",
       "Volkswagen",
       "Skoda"
     ],
     "date_verification": "2026-10-04",
-    "statut": "actif"
+    "statut": "actif",
+    "motif": "Soutien d'Elon Musk à l'AfD"
   },
   {
     "id": "x-twitter",
@@ -257,9 +265,10 @@
       "BE",
       "FR"
     ],
-    "raison": "Le réseau social X est contrôlé par Elon Musk, qui y a appelé à voter pour le parti d'extrême droite allemand AfD lors d'un entretien en direct avec sa dirigeante Alice Weidel en janvier 2025, selon La Libre.",
+    "raison": "Le réseau social X est contrôlé par Elon Musk, qui y a appelé à voter pour le parti d'extrême droite allemand AfD lors d'un entretien en direct avec sa dirigeante Alice Weidel en janvier 2025, selon La Libre. X Corp a aussi donné l'équivalent de 1 000 000 $ en publicité au comité d'investiture de Donald Trump, selon la déclaration de ce comité à la FEC.",
     "faits_lies": [
-      "ue-musk-afd-2025"
+      "ue-musk-afd-2025",
+      "us-investiture-trump-2025"
     ],
     "fiabilite": "presse",
     "source_url": "https://www.lalibre.be/international/europe/2025/01/09/allemagne-elon-musk-poursuit-son-ingerence-dans-les-elections-en-reiterant-son-soutien-au-parti-allemand-dextreme-droite-afd-XLGQKBTOQ5B7DOFRRCXFCVFKNE/",
@@ -267,6 +276,461 @@
     "alternatives": [
       "Bluesky",
       "Mastodon"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif",
+    "motif": "Soutien d'Elon Musk à l'AfD"
+  },
+  {
+    "id": "coca-cola",
+    "marque": "Coca-Cola",
+    "sous_marques": [
+      "Fanta",
+      "Sprite",
+      "Minute Maid",
+      "Fuze Tea",
+      "Chaudfontaine",
+      "Costa Coffee"
+    ],
+    "groupe": "The Coca-Cola Company",
+    "secteur": "alimentation",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "motif": "Don à l'investiture de Trump (2025)",
+    "raison": "The Coca-Cola Company a donné 250 000 $, plus 39 750 $ en nature (bouteilles commémoratives), au comité d'investiture de Donald Trump et J. D. Vance (janvier 2025), selon la déclaration de ce comité à la FEC.",
+    "nuance": "La rumeur virale de février 2025 selon laquelle Coca-Cola aurait dénoncé ses salariés aux services d'immigration (ICE) est fausse, selon PolitiFact : ne pas la reprendre.",
+    "faits_lies": [
+      "us-investiture-trump-2025"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://docquery.fec.gov/pdf/295/202508079789419295/202508079789419295.pdf",
+    "source_nom": "FEC, déclaration du comité d'investiture Trump-Vance (version du 7 août 2025)",
+    "alternatives": [
+      "Spa (groupe belge Spadel)",
+      "Limonades de brasseries locales"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "pepsico",
+    "marque": "PepsiCo",
+    "sous_marques": [
+      "Pepsi",
+      "7Up",
+      "Lay's",
+      "Doritos",
+      "Cheetos",
+      "Quaker",
+      "Duyvis"
+    ],
+    "groupe": "PepsiCo",
+    "secteur": "alimentation",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "motif": "Don à l'investiture de Trump (2025)",
+    "raison": "PepsiCo a donné 500 000 $ au comité d'investiture de Donald Trump et J. D. Vance (janvier 2025), selon la déclaration de ce comité à la FEC.",
+    "faits_lies": [
+      "us-investiture-trump-2025"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://docquery.fec.gov/pdf/295/202508079789419295/202508079789419295.pdf",
+    "source_nom": "FEC, déclaration du comité d'investiture Trump-Vance (version du 7 août 2025)",
+    "alternatives": [
+      "Marques de distributeur (Delhaize, Colruyt, Carrefour)"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "mcdonalds",
+    "marque": "McDonald's",
+    "sous_marques": [],
+    "groupe": "McDonald's Corporation",
+    "secteur": "alimentation",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "motif": "Don à l'investiture de Trump (2025)",
+    "raison": "McDonald's Corporation a donné 1 000 000 $ au comité d'investiture de Donald Trump et J. D. Vance (janvier 2025), selon la déclaration de ce comité à la FEC.",
+    "faits_lies": [
+      "us-investiture-trump-2025"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://docquery.fec.gov/pdf/295/202508079789419295/202508079789419295.pdf",
+    "source_nom": "FEC, déclaration du comité d'investiture Trump-Vance (version du 7 août 2025)",
+    "alternatives": [
+      "Friteries et snacks indépendants"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "ab-inbev",
+    "marque": "AB InBev (bières)",
+    "sous_marques": [
+      "Jupiler",
+      "Stella Artois",
+      "Leffe",
+      "Hoegaarden",
+      "Belle-Vue",
+      "Corona",
+      "Budweiser",
+      "Beck's"
+    ],
+    "groupe": "AB InBev",
+    "secteur": "alimentation",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "motif": "Don à l'investiture de Trump (2025)",
+    "raison": "Anheuser-Busch Companies, filiale américaine du groupe AB InBev (siège à Louvain), a donné 1 000 000 $ au comité d'investiture de Donald Trump et J. D. Vance (janvier 2025), selon la déclaration de ce comité à la FEC.",
+    "nuance": "Le don vient de la filiale américaine du groupe.",
+    "faits_lies": [
+      "us-investiture-trump-2025"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://docquery.fec.gov/pdf/295/202508079789419295/202508079789419295.pdf",
+    "source_nom": "FEC, déclaration du comité d'investiture Trump-Vance (version du 7 août 2025)",
+    "alternatives": [
+      "Bières trappistes (Orval, Chimay, Rochefort)",
+      "Brasseries familiales (Dupont, Duvel Moortgat, Brasserie de la Senne)"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "diageo",
+    "marque": "Diageo (spiritueux, bière)",
+    "sous_marques": [
+      "Guinness",
+      "Johnnie Walker",
+      "Smirnoff",
+      "Baileys",
+      "J&B",
+      "Captain Morgan",
+      "Tanqueray"
+    ],
+    "groupe": "Diageo",
+    "secteur": "alimentation",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "motif": "Don à l'investiture de Trump (2025)",
+    "raison": "Diageo North America, filiale américaine du groupe britannique Diageo, a donné l'équivalent de 125 000 $ en boissons au comité d'investiture de Donald Trump et J. D. Vance (janvier 2025), selon la déclaration de ce comité à la FEC.",
+    "nuance": "Don en nature (boissons), fait par la filiale américaine.",
+    "faits_lies": [
+      "us-investiture-trump-2025"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://docquery.fec.gov/pdf/295/202508079789419295/202508079789419295.pdf",
+    "source_nom": "FEC, déclaration du comité d'investiture Trump-Vance (version du 7 août 2025)",
+    "alternatives": [
+      "Distilleries belges (Filliers, Belgian Owl)"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "spotify",
+    "marque": "Spotify",
+    "sous_marques": [],
+    "groupe": "Spotify",
+    "secteur": "tech",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "motif": "Don à l'investiture de Trump (2025)",
+    "raison": "Spotify USA Inc. a donné 150 000 $ au comité d'investiture de Donald Trump et J. D. Vance (janvier 2025), selon la déclaration de ce comité à la FEC.",
+    "nuance": "Spotify a présenté ce don comme conforme à son action habituelle auprès des gouvernements, quel que soit le pouvoir en place (DJ Mag).",
+    "faits_lies": [
+      "us-investiture-trump-2025"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://docquery.fec.gov/pdf/295/202508079789419295/202508079789419295.pdf",
+    "source_nom": "FEC, déclaration du comité d'investiture Trump-Vance (version du 7 août 2025)",
+    "alternatives": [
+      "Qobuz",
+      "Bandcamp",
+      "Deezer"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "openai",
+    "marque": "OpenAI (ChatGPT)",
+    "sous_marques": [
+      "ChatGPT",
+      "Sora",
+      "DALL-E"
+    ],
+    "groupe": "OpenAI",
+    "secteur": "tech",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "motif": "Dons de dirigeants en faveur de Trump",
+    "raison": "Sam Altman, PDG d'OpenAI, a donné personnellement 1 000 000 $ au comité d'investiture de Donald Trump (FEC). Greg Brockman, président d'OpenAI, et son épouse ont donné 25 millions de dollars au super PAC pro-Trump MAGA Inc. en 2025, selon SFGate d'après la FEC.",
+    "nuance": "Dons personnels de dirigeants : OpenAI n'apparaît pas comme donatrice. En octobre 2026, Greg Brockman a renoncé à un second don de 25 millions à un super PAC consacré à l'IA après des protestations de salariés (Semafor).",
+    "faits_lies": [
+      "us-investiture-trump-2025"
+    ],
+    "fiabilite": "presse",
+    "source_url": "https://www.sfgate.com/tech/article/brockman-openai-top-trump-donor-21273419.php",
+    "source_nom": "SFGate, d'après la FEC",
+    "alternatives": [
+      "Le Chat (Mistral AI)"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "anthropic",
+    "marque": "Anthropic (Claude)",
+    "sous_marques": [
+      "Claude"
+    ],
+    "groupe": "Anthropic",
+    "secteur": "tech",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "motif": "Don à l'investiture de Trump (2025)",
+    "raison": "Anthropic a donné 50 000 $ au comité d'investiture de Donald Trump et J. D. Vance (janvier 2025), selon la déclaration de ce comité à la FEC.",
+    "nuance": "En février 2026, l'administration Trump a ordonné aux agences fédérales de cesser d'utiliser Anthropic, après le refus de l'entreprise de lever deux restrictions d'usage de son IA (armes entièrement autonomes, surveillance de masse) (TechCrunch).",
+    "faits_lies": [
+      "us-investiture-trump-2025"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://docquery.fec.gov/pdf/295/202508079789419295/202508079789419295.pdf",
+    "source_nom": "FEC, déclaration du comité d'investiture Trump-Vance (version du 7 août 2025)",
+    "alternatives": [
+      "Le Chat (Mistral AI)"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "meta",
+    "marque": "Meta",
+    "sous_marques": [
+      "Facebook",
+      "Instagram",
+      "WhatsApp",
+      "Messenger",
+      "Threads"
+    ],
+    "groupe": "Meta",
+    "secteur": "tech",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "motif": "Don à l'investiture de Trump (2025)",
+    "raison": "Meta a donné 1 000 000 $ au comité d'investiture de Donald Trump et J. D. Vance (janvier 2025), selon la déclaration de ce comité à la FEC.",
+    "faits_lies": [
+      "us-investiture-trump-2025"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://docquery.fec.gov/pdf/295/202508079789419295/202508079789419295.pdf",
+    "source_nom": "FEC, déclaration du comité d'investiture Trump-Vance (version du 7 août 2025)",
+    "alternatives": [
+      "Signal",
+      "Mastodon",
+      "Bluesky"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "google",
+    "marque": "Google",
+    "sous_marques": [
+      "YouTube",
+      "Gmail",
+      "Google Maps",
+      "Gemini",
+      "Android",
+      "Pixel"
+    ],
+    "groupe": "Google (Alphabet)",
+    "secteur": "tech",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "motif": "Don à l'investiture de Trump (2025)",
+    "raison": "Google a donné 1 000 000 $ au comité d'investiture de Donald Trump et J. D. Vance (janvier 2025), selon la déclaration de ce comité à la FEC.",
+    "faits_lies": [
+      "us-investiture-trump-2025"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://docquery.fec.gov/pdf/295/202508079789419295/202508079789419295.pdf",
+    "source_nom": "FEC, déclaration du comité d'investiture Trump-Vance (version du 7 août 2025)",
+    "alternatives": [
+      "Qwant",
+      "Ecosia",
+      "Proton Mail",
+      "Organic Maps"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "amazon",
+    "marque": "Amazon",
+    "sous_marques": [
+      "Prime Video",
+      "Twitch",
+      "Audible",
+      "Kindle",
+      "AWS"
+    ],
+    "groupe": "Amazon",
+    "secteur": "distribution",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "motif": "Don à l'investiture de Trump (2025)",
+    "raison": "Amazon a donné 1 000 000 $, plus environ 888 900 $ en nature (services numériques et publicité), au comité d'investiture de Donald Trump et J. D. Vance (janvier 2025), selon la déclaration de ce comité à la FEC.",
+    "faits_lies": [
+      "us-investiture-trump-2025"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://docquery.fec.gov/pdf/295/202508079789419295/202508079789419295.pdf",
+    "source_nom": "FEC, déclaration du comité d'investiture Trump-Vance (version du 7 août 2025)",
+    "alternatives": [
+      "Commerces locaux",
+      "Bol (groupe Ahold Delhaize)"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "microsoft",
+    "marque": "Microsoft",
+    "sous_marques": [
+      "Windows",
+      "Office",
+      "Outlook",
+      "Teams",
+      "LinkedIn",
+      "Xbox",
+      "Copilot",
+      "Bing"
+    ],
+    "groupe": "Microsoft",
+    "secteur": "tech",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "motif": "Don à l'investiture de Trump (2025)",
+    "raison": "Microsoft a donné 750 000 $ au comité d'investiture de Donald Trump et J. D. Vance (janvier 2025), selon la déclaration de ce comité à la FEC.",
+    "faits_lies": [
+      "us-investiture-trump-2025"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://docquery.fec.gov/pdf/295/202508079789419295/202508079789419295.pdf",
+    "source_nom": "FEC, déclaration du comité d'investiture Trump-Vance (version du 7 août 2025)",
+    "alternatives": [
+      "LibreOffice",
+      "Linux",
+      "Proton Mail"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "apple",
+    "marque": "Apple",
+    "sous_marques": [
+      "iPhone",
+      "Mac",
+      "Apple Music",
+      "iCloud"
+    ],
+    "groupe": "Apple",
+    "secteur": "tech",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "motif": "Dons de dirigeants en faveur de Trump",
+    "raison": "Tim Cook, PDG d'Apple, a donné personnellement 1 000 000 $ au comité d'investiture de Donald Trump et J. D. Vance (janvier 2025), selon la déclaration de ce comité à la FEC.",
+    "nuance": "Don personnel du dirigeant : Apple n'apparaît pas comme donatrice.",
+    "faits_lies": [
+      "us-investiture-trump-2025"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://docquery.fec.gov/pdf/295/202508079789419295/202508079789419295.pdf",
+    "source_nom": "FEC, déclaration du comité d'investiture Trump-Vance (version du 7 août 2025)",
+    "alternatives": [
+      "Fairphone"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "uber",
+    "marque": "Uber",
+    "sous_marques": [
+      "Uber Eats"
+    ],
+    "groupe": "Uber",
+    "secteur": "autre",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "motif": "Don à l'investiture de Trump (2025)",
+    "raison": "Uber Technologies a donné 1 000 000 $ au comité d'investiture de Donald Trump et J. D. Vance (janvier 2025), selon la déclaration de ce comité à la FEC.",
+    "faits_lies": [
+      "us-investiture-trump-2025"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://docquery.fec.gov/pdf/295/202508079789419295/202508079789419295.pdf",
+    "source_nom": "FEC, déclaration du comité d'investiture Trump-Vance (version du 7 août 2025)",
+    "alternatives": [
+      "Taxis agréés",
+      "Commande directe au restaurant"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "deliveroo",
+    "marque": "Deliveroo",
+    "sous_marques": [],
+    "groupe": "DoorDash",
+    "secteur": "autre",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "motif": "Don à l'investiture de Trump (2025)",
+    "raison": "Deliveroo appartient à DoorDash depuis octobre 2025. DoorDash a donné 100 000 $ au comité d'investiture de Donald Trump et J. D. Vance (janvier 2025), selon la déclaration de ce comité à la FEC.",
+    "nuance": "Rachat de Deliveroo par DoorDash finalisé le 2 octobre 2025 (communiqué de DoorDash). Le don date d'avant le rachat.",
+    "faits_lies": [
+      "us-investiture-trump-2025"
+    ],
+    "fiabilite": "officiel",
+    "source_url": "https://docquery.fec.gov/pdf/295/202508079789419295/202508079789419295.pdf",
+    "source_nom": "FEC, déclaration du comité d'investiture Trump-Vance (version du 7 août 2025)",
+    "alternatives": [
+      "Commande directe au restaurant"
     ],
     "date_verification": "2026-10-04",
     "statut": "actif"

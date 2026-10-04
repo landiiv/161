@@ -108,6 +108,7 @@ Thèmes autorisés : `police`, `extreme-droite`, `democratie`, `medias` (concent
   "sous_marques": ["Marques du même groupe, trouvées par la recherche (optionnel)"],
   "groupe": "Groupe ou propriétaire",
   "secteur": "media | distribution | alimentation | tech | energie | autre",
+  "motif": "Étiquette courte et neutre du type de raison, ex. « Groupe Bolloré », « Don à l'investiture de Trump (2025) »",
   "pays": ["BE", "FR"],
   "raison": "Fait neutre et vérifiable, une ou deux phrases.",
   "nuance": "Précision utile : distributeur local différent, ancienne filiale vendue... (optionnel)",

@@ -16,7 +16,7 @@ const FIABILITE = {
   methode: { label: 'Estimation', classe: 'b-methode' }
 };
 const AVERTISSEMENT_ANALYSE = 'Interprétation largement documentée mais contestée par la personne concernée. Voir les faits sur lesquels elle repose.';
-const PAYS = { BE: 'Belgique', FR: 'France', UE: 'Union européenne' };
+const PAYS = { BE: 'Belgique', FR: 'France', UE: 'Union européenne', US: 'États-Unis' };
 const THEMES = { police: 'Police', 'extreme-droite': 'Extrême droite', democratie: 'Démocratie', medias: 'Médias', methode: 'Méthode' };
 const SECTEURS = { media: 'Médias', distribution: 'Distribution', alimentation: 'Alimentation', tech: 'Tech', energie: 'Énergie', autre: 'Autre' };
 const SIX_MOIS = 182 * 24 * 3600 * 1000;
@@ -92,7 +92,7 @@ function texteFait(f) {
   return t;
 }
 function texteBoycott(b) {
-  let t = `${b.marque} (${b.groupe}) : ${b.raison}\nSource : ${b.source_nom}. ${b.source_url}`;
+  let t = `${b.marque} (${b.groupe})${b.motif ? ', motif : ' + b.motif : ''}.\n${b.raison}\nSource : ${b.source_nom}. ${b.source_url}`;
   if (b.fiabilite === 'analyse') t += '\n' + AVERTISSEMENT_ANALYSE;
   if (b.nuance) t += `\nNuance : ${b.nuance}`;
   if ((b.alternatives || []).length) t += `\nAlternatives : ${b.alternatives.join(', ')}`;
@@ -242,7 +242,7 @@ function vueBoycotts() {
     const q = norm(champ.value.trim());
     // La recherche porte aussi sur les sous-marques (ex. « Fayard » trouve Hachette Livre)
     const actifs = etat.boycotts.filter((b) => b.statut !== 'retire' &&
-      (!q || norm([b.marque, b.groupe, ...(b.sous_marques || [])].join(' ')).includes(q)));
+      (!q || norm([b.marque, b.groupe, b.motif, ...(b.sous_marques || [])].join(' ')).includes(q)));
     if (!etat.boycotts.length) {
       document.getElementById('liste').innerHTML = '<p class="vide">Aucune fiche pour l\'instant. Chaque marque est ajoutée seulement après vérification d\'une source solide.</p>';
       return;
@@ -258,6 +258,7 @@ function vueBoycotts() {
         <article class="fiche">
           <div class="tete">${badge(b.fiabilite)}${b.statut === 'a-revoir' ? '<span class="issue">À revoir</span>' : ''}<span>${esc((b.pays || []).join(', '))}</span></div>
           <h3>${esc(b.marque)}</h3>
+          ${b.motif ? `<p class="source">Motif : <strong>${esc(b.motif)}</strong></p>` : ''}
           <p class="source">Groupe : ${esc(b.groupe)}</p>
           ${(b.sous_marques || []).length ? `<p class="source">Marques concernées : ${esc(b.sous_marques.join(', '))}</p>` : ''}
           <p>${esc(b.raison)}</p>
