@@ -353,5 +353,31 @@
     "date_publication": "2026-02-16",
     "date_verification": "2026-10-04",
     "nuance": "Une inculpation n'est pas une condamnation : les trois hommes bénéficient de la présomption d'innocence et aucun procès n'a eu lieu. Par la voix de son avocat, Didier Reynders a déclaré que l'affaire ne concerne « en rien les mandats politiques » qu'il a exercés (Paris Match, novembre 2025)."
+  },
+  {
+    "id": "fr-le-pen-assistants",
+    "pays": "FR",
+    "theme": "extreme-droite",
+    "titre": "Assistants parlementaires du FN : Marine Le Pen condamnée en appel, pourvoi en cassation",
+    "resume": "Le 7 juillet 2026, la cour d'appel de Paris a confirmé la culpabilité de Marine Le Pen pour détournement de fonds publics dans l'affaire des assistants parlementaires européens du Front national. Elle l'a condamnée à 3 ans de prison dont 1 an ferme sous bracelet électronique, à 45 mois d'inéligibilité dont 30 avec sursis et à 100 000 € d'amende, des peines allégées par rapport à la première instance de mars 2025. Marine Le Pen s'est pourvue en cassation.",
+    "fiabilite": "jugé",
+    "source_url": "https://www.publicsenat.fr/actualites/politique/direct-suivez-le-delibere-du-proces-en-appel-de-marine-le-pen",
+    "source_nom": "Public Sénat",
+    "date_publication": "2026-07-07",
+    "date_verification": "2026-10-04",
+    "nuance": "Décision de cour d'appel, non définitive tant que la Cour de cassation ne s'est pas prononcée. Les conséquences sur une candidature en 2027 font l'objet de lectures différentes selon les commentateurs (Le Club des juristes, RTS)."
+  },
+  {
+    "id": "fr-zemmour-condamnation-2025",
+    "pays": "FR",
+    "theme": "extreme-droite",
+    "titre": "Éric Zemmour définitivement condamné pour provocation à la haine raciale",
+    "resume": "En septembre 2025, la Cour de cassation a rendu définitive la condamnation d'Éric Zemmour, président de Reconquête, pour provocation publique à la haine et injures publiques à caractère racial, pour des propos tenus le 28 septembre 2019 à la « convention de la droite ». La cour d'appel de Paris l'avait condamné en février 2024 à 15 000 € d'amende.",
+    "fiabilite": "jugé",
+    "source_url": "https://www.lalibre.be/international/europe/2025/09/17/zemmour-definitivement-condamne-pour-racisme-les-lois-nadmettent-pas-que-la-haine-puisse-servir-de-fondement-a-notre-societe-2UQ2WKE7W5HYXJ3SKA2BHBG4YQ/",
+    "source_nom": "La Libre (AFP)",
+    "date_publication": "2025-09-17",
+    "date_verification": "2026-10-04",
+    "nuance": "Condamnation définitive. Elle porte sur un discours précis de 2019, pas sur l'ensemble de ses prises de position."
   }
 ]

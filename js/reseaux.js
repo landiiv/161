@@ -7,6 +7,7 @@
 const TYPES_LIEN = {
   parent: { cat: 'famille', de: 'Parent de', vers: 'Enfant de', phrase: '{a} est le parent de {b}' },
   conjoint: { cat: 'famille', de: 'En couple avec', vers: 'En couple avec', phrase: '{a} et {b} sont en couple' },
+  apparente: { cat: 'famille', de: 'Apparenté(e) à', vers: 'Apparenté(e) à', phrase: '{a} et {b} sont apparentés' },
   fratrie: { cat: 'famille', de: 'Même fratrie que', vers: 'Même fratrie que', phrase: '{a} et {b} sont de la même fratrie' },
   parrains_croises: { cat: 'proches', de: 'Parrains croisés avec', vers: 'Parrains croisés avec', phrase: "{a} et {b} sont chacun parrain d'un enfant de l'autre" },
   designe: { cat: 'nominations', de: 'A désigné ou choisi', vers: 'Désigné(e) par', phrase: '{a} a désigné ou choisi {b}' },
@@ -154,7 +155,7 @@ function svgToile() {
     const d = Math.hypot(b.x - a.x, b.y - a.y) || 1;
     const x2 = b.x - ((b.x - a.x) / d) * 11, y2 = b.y - ((b.y - a.y) / d) * 11;
     const cat = catLien(l);
-    const fleche = ['conjoint', 'alliance', 'fratrie', 'parrains_croises'].includes(l.type) ? '' : ' marker-end="url(#fleche)"';
+    const fleche = ['conjoint', 'alliance', 'fratrie', 'parrains_croises', 'apparente'].includes(l.type) ? '' : ' marker-end="url(#fleche)"';
     return `<line class="lien lien-${cat}${l.fin ? ' lien-fini' : ''}" data-i="${i}" x1="${a.x.toFixed(1)}" y1="${a.y.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}"${fleche}/>` +
       `<line class="lien-zone" data-i="${i}" x1="${a.x.toFixed(1)}" y1="${a.y.toFixed(1)}" x2="${b.x.toFixed(1)}" y2="${b.y.toFixed(1)}"/>`;
   }).join('');

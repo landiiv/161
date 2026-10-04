@@ -1,5 +1,5 @@
 {
-  "_lisez_moi": "Chaque lien est un fait sourcé. Types : parent, fratrie, parrains_croises, designe, formateur, candidat, collaborateur, soutien, declaration, invite_evenement, conjoint, membre, alliance (mariage avec un membre d'une famille ; la personne n'est pas nommée si elle n'a pas de rôle public), parrain, temoin, invite, possede, copropriete, dirige, fonde, siege, fonction, edite, finance. Un lien terminé porte « fin » (année). Seules les personnes ayant un rôle public figurent ici.",
+  "_lisez_moi": "Chaque lien est un fait sourcé. Types : parent, apparente, fratrie, parrains_croises, designe, formateur, candidat, collaborateur, soutien, declaration, invite_evenement, conjoint, membre, alliance (mariage avec un membre d'une famille ; la personne n'est pas nommée si elle n'a pas de rôle public), parrain, temoin, invite, possede, copropriete, dirige, fonde, siege, fonction, edite, finance. Un lien terminé porte « fin » (année). Seules les personnes ayant un rôle public figurent ici.",
   "reseaux": {
     "bollore": {
       "nom": "Bolloré",
@@ -83,6 +83,14 @@
     },
     "hermes": {
       "nom": "Hermès (familles Dumas et alliées)",
+      "pays": "FR"
+    },
+    "le-pen": {
+      "nom": "Famille Le Pen et RN",
+      "pays": "FR"
+    },
+    "zemmour": {
+      "nom": "Zemmour et Knafo (Reconquête)",
       "pays": "FR"
     }
   },
@@ -1058,6 +1066,97 @@
       "type": "entreprise",
       "nom": "Hermès International",
       "reseau": "hermes",
+      "pays": "FR"
+    },
+    {
+      "id": "jean-marie-le-pen",
+      "type": "personne",
+      "nom": "Jean-Marie Le Pen (1928-2025)",
+      "reseau": "le-pen",
+      "pays": "FR",
+      "role": "Fondateur du Front national"
+    },
+    {
+      "id": "marine-le-pen",
+      "type": "personne",
+      "nom": "Marine Le Pen",
+      "reseau": "le-pen",
+      "pays": "FR",
+      "role": "Ancienne présidente du FN puis du RN",
+      "faits": [
+        "fr-le-pen-assistants"
+      ]
+    },
+    {
+      "id": "marion-marechal",
+      "type": "personne",
+      "nom": "Marion Maréchal",
+      "reseau": "le-pen",
+      "pays": "FR",
+      "role": "Fondatrice d'Identité-Libertés, députée européenne"
+    },
+    {
+      "id": "vincenzo-sofo",
+      "type": "personne",
+      "nom": "Vincenzo Sofo",
+      "reseau": "le-pen",
+      "pays": "FR",
+      "role": "Ancien député européen italien"
+    },
+    {
+      "id": "philippe-olivier",
+      "type": "personne",
+      "nom": "Philippe Olivier",
+      "reseau": "le-pen",
+      "pays": "FR",
+      "role": "Conseiller spécial de Marine Le Pen"
+    },
+    {
+      "id": "louis-aliot",
+      "type": "personne",
+      "nom": "Louis Aliot",
+      "reseau": "le-pen",
+      "pays": "FR",
+      "role": "Maire RN de Perpignan depuis 2020"
+    },
+    {
+      "id": "rn",
+      "type": "institution",
+      "nom": "Rassemblement national (ex-Front national)",
+      "reseau": "le-pen",
+      "pays": "FR"
+    },
+    {
+      "id": "identite-libertes",
+      "type": "institution",
+      "nom": "Identité-Libertés",
+      "reseau": "le-pen",
+      "pays": "FR"
+    },
+    {
+      "id": "eric-zemmour",
+      "type": "personne",
+      "nom": "Éric Zemmour",
+      "reseau": "zemmour",
+      "pays": "FR",
+      "role": "Président de Reconquête",
+      "faits": [
+        "fr-zemmour-condamnation-2025"
+      ]
+    },
+    {
+      "id": "sarah-knafo",
+      "type": "personne",
+      "nom": "Sarah Knafo",
+      "reseau": "zemmour",
+      "pays": "FR",
+      "role": "Députée européenne (Reconquête)"
+    },
+    {
+      "id": "reconquete",
+      "type": "institution",
+      "nom": "Reconquête",
+      "reseau": "zemmour",
       "pays": "FR"
     }
   ],
@@ -2481,6 +2580,174 @@
       "source_nom": "DaarDaar, traduction d'une chronique de Fouad Gandoul (De Standaard)",
       "fiabilite": "presse",
       "date_source": "2025-12-17",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "jean-marie-le-pen",
+      "type": "fonde",
+      "vers": "rn",
+      "detail": "Front national, 1972 ; exclu du parti en 2015",
+      "source_url": "https://www.publicsenat.fr/actualites/politique/jean-marie-le-pen-fondateur-du-front-national-est-mort-a-96-ans",
+      "source_nom": "Public Sénat",
+      "fiabilite": "presse",
+      "date_source": "2025-01-07",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "jean-marie-le-pen",
+      "type": "parent",
+      "vers": "marine-le-pen",
+      "source_url": "https://www.publicsenat.fr/actualites/politique/jean-marie-le-pen-fondateur-du-front-national-est-mort-a-96-ans",
+      "source_nom": "Public Sénat",
+      "fiabilite": "presse",
+      "date_source": "2025-01-07",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "jean-marie-le-pen",
+      "type": "apparente",
+      "vers": "marion-marechal",
+      "detail": "grand-père de Marion Maréchal",
+      "source_url": "https://www.aljazeera.com/news/2024/10/12/marine-le-pens-niece-starts-own-party-what-it-means-for-french-far-right",
+      "source_nom": "Al Jazeera",
+      "fiabilite": "presse",
+      "date_source": "2024-10-12",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "marine-le-pen",
+      "type": "apparente",
+      "vers": "marion-marechal",
+      "detail": "Marion Maréchal est la nièce de Marine Le Pen",
+      "source_url": "https://www.aljazeera.com/news/2024/10/12/marine-le-pens-niece-starts-own-party-what-it-means-for-french-far-right",
+      "source_nom": "Al Jazeera",
+      "fiabilite": "presse",
+      "date_source": "2024-10-12",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "marine-le-pen",
+      "type": "dirige",
+      "vers": "rn",
+      "detail": "présidente, à la suite de son père en 2011, jusqu'en 2021",
+      "fin": "2021",
+      "source_url": "https://www.nbcnews.com/news/world/france-far-right-le-pen-bardella-national-rally-national-front-rcna55858",
+      "source_nom": "NBC News (AP)",
+      "fiabilite": "presse",
+      "date_source": "2022-11-06",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "jordan-bardella",
+      "type": "dirige",
+      "vers": "rn",
+      "detail": "président depuis novembre 2022",
+      "source_url": "https://www.nbcnews.com/news/world/france-far-right-le-pen-bardella-national-rally-national-front-rcna55858",
+      "source_nom": "NBC News (AP)",
+      "fiabilite": "presse",
+      "date_source": "2022-11-06",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "louis-aliot",
+      "type": "conjoint",
+      "vers": "marine-le-pen",
+      "detail": "ancien compagnon",
+      "fin": "oui",
+      "source_url": "https://www.nbcnews.com/news/world/france-far-right-le-pen-bardella-national-rally-national-front-rcna55858",
+      "source_nom": "NBC News (AP)",
+      "fiabilite": "presse",
+      "date_source": "2022-11-06",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "philippe-olivier",
+      "type": "apparente",
+      "vers": "marine-le-pen",
+      "detail": "beau-frère de Marine Le Pen",
+      "source_url": "https://www.lalibre.be/international/europe/elections-france/2022/04/20/presidentielle-francaise-philippe-olivier-lhomme-qui-murmure-a-loreille-de-marine-le-pen-pour-dediaboliser-le-rassemblement-national-4LNWNEYD3NHWBILHRNGU7O67HE/",
+      "source_nom": "La Libre",
+      "fiabilite": "presse",
+      "date_source": "2022-04-20",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "philippe-olivier",
+      "type": "fonction",
+      "vers": "marine-le-pen",
+      "detail": "conseiller spécial",
+      "source_url": "https://www.lalibre.be/international/europe/elections-france/2022/04/20/presidentielle-francaise-philippe-olivier-lhomme-qui-murmure-a-loreille-de-marine-le-pen-pour-dediaboliser-le-rassemblement-national-4LNWNEYD3NHWBILHRNGU7O67HE/",
+      "source_nom": "La Libre",
+      "fiabilite": "presse",
+      "date_source": "2022-04-20",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "marion-marechal",
+      "type": "conjoint",
+      "vers": "vincenzo-sofo",
+      "detail": "mariés",
+      "source_url": "https://www.parismatch.be/actualites/monde/2025/08/18/marion-marechal-et-son-mari-victimes-dun-grave-accident-nous-avons-vu-la-mort-DTCN7KQTFVBT5DNZ4MY5PZHS4U/",
+      "source_nom": "Paris Match Belgique",
+      "fiabilite": "presse",
+      "date_source": "2025-08-18",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "marion-marechal",
+      "type": "fonde",
+      "vers": "identite-libertes",
+      "detail": "en 2024, après avoir quitté Reconquête",
+      "source_url": "https://www.aljazeera.com/news/2024/10/12/marine-le-pens-niece-starts-own-party-what-it-means-for-french-far-right",
+      "source_nom": "Al Jazeera",
+      "fiabilite": "presse",
+      "date_source": "2024-10-12",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "marion-marechal",
+      "type": "membre",
+      "vers": "reconquete",
+      "detail": "jusqu'en 2024",
+      "fin": "2024",
+      "source_url": "https://www.aljazeera.com/news/2024/10/12/marine-le-pens-niece-starts-own-party-what-it-means-for-french-far-right",
+      "source_nom": "Al Jazeera",
+      "fiabilite": "presse",
+      "date_source": "2024-10-12",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "eric-zemmour",
+      "type": "conjoint",
+      "vers": "sarah-knafo",
+      "detail": "relation rendue publique en janvier 2022",
+      "source_url": "https://www.lalibre.be/lifestyle/people/2022/01/13/eric-zemmour-officialise-sa-relation-avec-sa-collaboratrice-sarah-knafo-YLFHPUFZGNAPJHPBT2PVD3VOLY/",
+      "source_nom": "La Libre",
+      "fiabilite": "presse",
+      "date_source": "2022-01-13",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "eric-zemmour",
+      "type": "dirige",
+      "vers": "reconquete",
+      "detail": "président du parti",
+      "source_url": "https://www.lalibre.be/international/europe/2025/09/17/zemmour-definitivement-condamne-pour-racisme-les-lois-nadmettent-pas-que-la-haine-puisse-servir-de-fondement-a-notre-societe-2UQ2WKE7W5HYXJ3SKA2BHBG4YQ/",
+      "source_nom": "La Libre (AFP)",
+      "fiabilite": "presse",
+      "date_source": "2025-09-17",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "eric-zemmour",
+      "type": "fonction",
+      "vers": "cnews",
+      "detail": "chroniqueur de « Face à l'info » jusqu'en septembre 2021, après une décision du CSA sur son temps de parole",
+      "fin": "2021",
+      "source_url": "https://www.parismatch.be/actualites/politique/2021/09/13/cnews-pour-eric-zemmour-cest-termine-en-route-vers-la-presidence-GCBLXDRCCNB6ZEZEQKNSXFQYRM/",
+      "source_nom": "Paris Match Belgique",
+      "fiabilite": "presse",
+      "date_source": "2021-09-13",
       "date_verification": "2026-10-04"
     }
   ]
