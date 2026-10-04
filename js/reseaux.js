@@ -7,12 +7,15 @@
 const TYPES_LIEN = {
   parent: { cat: 'famille', de: 'Parent de', vers: 'Enfant de', phrase: '{a} est le parent de {b}' },
   conjoint: { cat: 'famille', de: 'En couple avec', vers: 'En couple avec', phrase: '{a} et {b} sont en couple' },
+  membre: { cat: 'famille', de: 'Membre de', vers: 'Membre :', phrase: '{a} fait partie de : {b}' },
+  alliance: { cat: 'famille', de: 'Allié par mariage à', vers: 'Allié par mariage :', phrase: '{a} : alliance par mariage avec {b}' },
   parrain: { cat: 'proches', de: 'Parrain de', vers: 'Filleul de', phrase: '{a} est le parrain de {b}' },
   temoin: { cat: 'proches', de: 'Témoin de mariage de', vers: 'Témoin à son mariage :', phrase: '{a} a été témoin au mariage de {b}' },
   invite: { cat: 'proches', de: 'Invité de', vers: 'A reçu', phrase: '{a} a été invité par {b}' },
   possede: { cat: 'propriete', de: 'Actionnaire de', vers: 'Détenu par', phrase: '{a} est actionnaire de {b}' },
   copropriete: { cat: 'propriete', de: 'Copropriétaire de', vers: 'Copropriétaire :', phrase: '{a} est copropriétaire de {b}' },
   dirige: { cat: 'direction', de: 'Dirige', vers: 'Dirigé par', phrase: '{a} dirige {b}' },
+  fonde: { cat: 'direction', de: 'Fondateur de', vers: 'Fondé par', phrase: '{a} a fondé {b}' },
   siege: { cat: 'direction', de: 'Membre du conseil de', vers: 'Au conseil :', phrase: '{a} siège au conseil de {b}' },
   fonction: { cat: 'affaires', de: 'Travaille pour', vers: 'Y travaille :', phrase: '{a} travaille pour {b}' },
   edite: { cat: 'affaires', de: 'Publie chez', vers: 'A publié', phrase: '{a} publie chez {b}' },
@@ -21,7 +24,7 @@ const TYPES_LIEN = {
 const CATS_LIEN = { famille: 'Famille', proches: 'Proches (parrain, témoin, invité)', propriete: 'Propriété', direction: 'Direction et conseils', affaires: 'Emplois et contrats', financement: 'Financement' };
 const TYPES_NOEUD = { personne: 'Personne', famille: 'Famille', entreprise: 'Entreprise', media: 'Média', autre: 'Autre' };
 const EXPLIC_CAT = {
-  famille: 'Lien familial, documenté par la presse.',
+  famille: 'Lien familial (filiation, couple, mariage), documenté par la presse. Les conjoints sans rôle public ne sont pas nommés.',
   proches: 'Relation personnelle documentée : parrainage, témoin de mariage, invitation.',
   propriete: "L'un détient tout ou partie du capital de l'autre.",
   direction: "Fonction de direction ou siège au conseil d'administration.",
@@ -137,7 +140,7 @@ function svgToile() {
     const d = Math.hypot(b.x - a.x, b.y - a.y) || 1;
     const x2 = b.x - ((b.x - a.x) / d) * 11, y2 = b.y - ((b.y - a.y) / d) * 11;
     const cat = catLien(l);
-    const fleche = ['conjoint'].includes(l.type) ? '' : ' marker-end="url(#fleche)"';
+    const fleche = ['conjoint', 'alliance'].includes(l.type) ? '' : ' marker-end="url(#fleche)"';
     return `<line class="lien lien-${cat}${l.fin ? ' lien-fini' : ''}" data-i="${i}" x1="${a.x.toFixed(1)}" y1="${a.y.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}"${fleche}/>` +
       `<line class="lien-zone" data-i="${i}" x1="${a.x.toFixed(1)}" y1="${a.y.toFixed(1)}" x2="${b.x.toFixed(1)}" y2="${b.y.toFixed(1)}"/>`;
   }).join('');

@@ -1,5 +1,5 @@
 {
-  "_lisez_moi": "Chaque lien est un fait sourcé. Types : parent, conjoint, parrain, temoin, invite, possede, copropriete, dirige, siege, fonction, edite, finance. Un lien terminé porte « fin » (année). Seules les personnes ayant un rôle public figurent ici.",
+  "_lisez_moi": "Chaque lien est un fait sourcé. Types : parent, conjoint, membre, alliance (mariage avec un membre d'une famille ; la personne n'est pas nommée si elle n'a pas de rôle public), parrain, temoin, invite, possede, copropriete, dirige, fonde, siege, fonction, edite, finance. Un lien terminé porte « fin » (année). Seules les personnes ayant un rôle public figurent ici.",
   "reseaux": {
     "bollore": {
       "nom": "Bolloré",
@@ -55,6 +55,14 @@
     },
     "politique": {
       "nom": "Responsables politiques",
+      "pays": "FR"
+    },
+    "niel": {
+      "nom": "Niel",
+      "pays": "FR"
+    },
+    "darty": {
+      "nom": "Famille Darty",
       "pays": "FR"
     }
   },
@@ -771,6 +779,43 @@
       "type": "entreprise",
       "nom": "Financière Agache",
       "reseau": "arnault",
+      "pays": "FR"
+    },
+    {
+      "id": "famille-bouygues",
+      "type": "famille",
+      "nom": "Famille Bouygues",
+      "reseau": "bouygues",
+      "pays": "FR"
+    },
+    {
+      "id": "xavier-niel",
+      "type": "personne",
+      "nom": "Xavier Niel",
+      "reseau": "niel",
+      "pays": "FR",
+      "role": "Entrepreneur des télécoms"
+    },
+    {
+      "id": "jean-sarkozy",
+      "type": "personne",
+      "nom": "Jean Sarkozy",
+      "reseau": "politique",
+      "pays": "FR"
+    },
+    {
+      "id": "famille-darty",
+      "type": "famille",
+      "nom": "Famille Darty",
+      "reseau": "darty",
+      "pays": "FR",
+      "role": "Famille fondatrice des magasins Darty"
+    },
+    {
+      "id": "iliad",
+      "type": "entreprise",
+      "nom": "Iliad (Free)",
+      "reseau": "niel",
       "pays": "FR"
     }
   ],
@@ -1762,6 +1807,69 @@
       "source_nom": "Puremédias (ozap)",
       "fiabilite": "presse",
       "date_source": "2021-09-02",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "martin-bouygues",
+      "type": "membre",
+      "vers": "famille-bouygues",
+      "source_url": "https://www.choiseul-magazine.fr/2020/10/27/yannick-bollore/",
+      "source_nom": "Choiseul Magazine",
+      "fiabilite": "presse",
+      "date_source": "2020-10-27",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "yannick-bollore",
+      "type": "alliance",
+      "vers": "famille-bouygues",
+      "detail": "mariage en 2006 avec une nièce de Martin Bouygues",
+      "source_url": "https://www.choiseul-magazine.fr/2020/10/27/yannick-bollore/",
+      "source_nom": "Choiseul Magazine",
+      "fiabilite": "presse",
+      "date_source": "2020-10-27",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "xavier-niel",
+      "type": "conjoint",
+      "vers": "delphine-arnault",
+      "source_url": "https://fortune.com/europe/2025/06/03/this-hacker-turned-telecom-mogul-could-be-europe-tech-savior-xavier-niel-stationf-ai-lvmh/",
+      "source_nom": "Fortune",
+      "fiabilite": "presse",
+      "date_source": "2025-06-03",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "nicolas-sarkozy",
+      "type": "parent",
+      "vers": "jean-sarkozy",
+      "source_url": "https://www.jta.org/archive/the-son-of-french-president-nicolas-sarkozy-married",
+      "source_nom": "JTA",
+      "fiabilite": "presse",
+      "date_source": "2008-09-12",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "jean-sarkozy",
+      "type": "alliance",
+      "vers": "famille-darty",
+      "detail": "mariage en 2008 avec une héritière de la famille fondatrice de Darty",
+      "source_url": "https://www.jta.org/archive/the-son-of-french-president-nicolas-sarkozy-married",
+      "source_nom": "JTA",
+      "fiabilite": "presse",
+      "date_source": "2008-09-12",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "xavier-niel",
+      "type": "fonde",
+      "vers": "iliad",
+      "detail": "en 1999",
+      "source_url": "https://fortune.com/europe/2025/06/03/this-hacker-turned-telecom-mogul-could-be-europe-tech-savior-xavier-niel-stationf-ai-lvmh/",
+      "source_nom": "Fortune",
+      "fiabilite": "presse",
+      "date_source": "2025-06-03",
       "date_verification": "2026-10-04"
     }
   ]
