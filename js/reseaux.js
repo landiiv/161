@@ -19,6 +19,7 @@ const TYPES_LIEN = {
   invite_evenement: { cat: 'soutiens', de: "Invité à un événement de", vers: 'A invité', phrase: '{a} a été invité à un événement de {b}' },
   membre: { cat: 'famille', de: 'Membre de', vers: 'Membre :', phrase: '{a} fait partie de : {b}' },
   alliance: { cat: 'famille', de: 'Allié par mariage à', vers: 'Allié par mariage :', phrase: '{a} : alliance par mariage avec {b}' },
+  ami: { cat: 'proches', de: 'Ami de', vers: 'Ami de', phrase: '{a} et {b} sont amis' },
   parrain: { cat: 'proches', de: 'Parrain de', vers: 'Filleul de', phrase: '{a} est le parrain de {b}' },
   temoin: { cat: 'proches', de: 'Témoin de mariage de', vers: 'Témoin à son mariage :', phrase: '{a} a été témoin au mariage de {b}' },
   invite: { cat: 'proches', de: 'Invité de', vers: 'A reçu', phrase: '{a} a été invité par {b}' },
@@ -155,7 +156,7 @@ function svgToile() {
     const d = Math.hypot(b.x - a.x, b.y - a.y) || 1;
     const x2 = b.x - ((b.x - a.x) / d) * 11, y2 = b.y - ((b.y - a.y) / d) * 11;
     const cat = catLien(l);
-    const fleche = ['conjoint', 'alliance', 'fratrie', 'parrains_croises', 'apparente'].includes(l.type) ? '' : ' marker-end="url(#fleche)"';
+    const fleche = ['conjoint', 'alliance', 'fratrie', 'parrains_croises', 'apparente', 'ami'].includes(l.type) ? '' : ' marker-end="url(#fleche)"';
     return `<line class="lien lien-${cat}${l.fin ? ' lien-fini' : ''}" data-i="${i}" x1="${a.x.toFixed(1)}" y1="${a.y.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}"${fleche}/>` +
       `<line class="lien-zone" data-i="${i}" x1="${a.x.toFixed(1)}" y1="${a.y.toFixed(1)}" x2="${b.x.toFixed(1)}" y2="${b.y.toFixed(1)}"/>`;
   }).join('');

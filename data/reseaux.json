@@ -92,6 +92,18 @@
     "zemmour": {
       "nom": "Zemmour et Knafo (Reconquête)",
       "pays": "FR"
+    },
+    "macron": {
+      "nom": "Macron",
+      "pays": "FR"
+    },
+    "bettencourt": {
+      "nom": "Bettencourt Meyers (L'Oréal)",
+      "pays": "FR"
+    },
+    "dynasties-be": {
+      "nom": "Dynasties politiques belges",
+      "pays": "BE"
     }
   },
   "noeuds": [
@@ -1158,6 +1170,217 @@
       "nom": "Reconquête",
       "reseau": "zemmour",
       "pays": "FR"
+    },
+    {
+      "id": "emmanuel-macron",
+      "type": "personne",
+      "nom": "Emmanuel Macron",
+      "reseau": "macron",
+      "pays": "FR",
+      "role": "Président de la République depuis 2017"
+    },
+    {
+      "id": "rothschild-cie",
+      "type": "entreprise",
+      "nom": "Rothschild & Cie (banque d'affaires)",
+      "reseau": "macron",
+      "pays": "FR"
+    },
+    {
+      "id": "henry-hermand",
+      "type": "personne",
+      "nom": "Henry Hermand (1924-2016)",
+      "reseau": "macron",
+      "pays": "FR",
+      "role": "Homme d'affaires"
+    },
+    {
+      "id": "famille-bettencourt-meyers",
+      "type": "famille",
+      "nom": "Famille Bettencourt Meyers",
+      "reseau": "bettencourt",
+      "pays": "FR"
+    },
+    {
+      "id": "francoise-bettencourt-meyers",
+      "type": "personne",
+      "nom": "Françoise Bettencourt Meyers",
+      "reseau": "bettencourt",
+      "pays": "FR"
+    },
+    {
+      "id": "loreal",
+      "type": "entreprise",
+      "nom": "L'Oréal",
+      "reseau": "bettencourt",
+      "pays": "FR"
+    },
+    {
+      "id": "nestle",
+      "type": "entreprise",
+      "nom": "Nestlé",
+      "reseau": "bettencourt",
+      "pays": "FR"
+    },
+    {
+      "id": "herman-de-croo",
+      "type": "personne",
+      "nom": "Herman De Croo",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Ancien ministre et ancien président de la Chambre (Open VLD)"
+    },
+    {
+      "id": "alexander-de-croo",
+      "type": "personne",
+      "nom": "Alexander De Croo",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Premier ministre à partir d'octobre 2020 (Open VLD)"
+    },
+    {
+      "id": "olivier-maingain",
+      "type": "personne",
+      "nom": "Olivier Maingain",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Responsable politique (DéFI)"
+    },
+    {
+      "id": "fabian-maingain",
+      "type": "personne",
+      "nom": "Fabian Maingain",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Responsable politique (DéFI)"
+    },
+    {
+      "id": "philippe-moureaux",
+      "type": "personne",
+      "nom": "Philippe Moureaux",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Responsable politique (PS)"
+    },
+    {
+      "id": "catherine-moureaux",
+      "type": "personne",
+      "nom": "Catherine Moureaux",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Responsable politique (PS)"
+    },
+    {
+      "id": "daniel-ducarme",
+      "type": "personne",
+      "nom": "Daniel Ducarme",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Responsable politique (MR)"
+    },
+    {
+      "id": "denis-ducarme",
+      "type": "personne",
+      "nom": "Denis Ducarme",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Responsable politique (MR)"
+    },
+    {
+      "id": "guy-mathot",
+      "type": "personne",
+      "nom": "Guy Mathot",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Responsable politique (PS)"
+    },
+    {
+      "id": "alain-mathot",
+      "type": "personne",
+      "nom": "Alain Mathot",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Responsable politique (PS)"
+    },
+    {
+      "id": "michel-daerden",
+      "type": "personne",
+      "nom": "Michel Daerden",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Responsable politique (PS)"
+    },
+    {
+      "id": "frederic-daerden",
+      "type": "personne",
+      "nom": "Frédéric Daerden",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Responsable politique (PS)"
+    },
+    {
+      "id": "robert-collignon",
+      "type": "personne",
+      "nom": "Robert Collignon",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Responsable politique (PS)"
+    },
+    {
+      "id": "christophe-collignon",
+      "type": "personne",
+      "nom": "Christophe Collignon",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Responsable politique (PS)"
+    },
+    {
+      "id": "guy-lutgen",
+      "type": "personne",
+      "nom": "Guy Lutgen",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Responsable politique (cdH, devenu Les Engagés)"
+    },
+    {
+      "id": "benoit-lutgen",
+      "type": "personne",
+      "nom": "Benoît Lutgen",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Responsable politique (cdH, devenu Les Engagés)"
+    },
+    {
+      "id": "jean-defraigne",
+      "type": "personne",
+      "nom": "Jean Defraigne",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Responsable politique (MR)"
+    },
+    {
+      "id": "christine-defraigne",
+      "type": "personne",
+      "nom": "Christine Defraigne",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Responsable politique (MR)"
+    },
+    {
+      "id": "georges-clerfayt",
+      "type": "personne",
+      "nom": "Georges Clerfayt",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Responsable politique (FDF, devenu DéFI)"
+    },
+    {
+      "id": "bernard-clerfayt",
+      "type": "personne",
+      "nom": "Bernard Clerfayt",
+      "reseau": "dynasties-be",
+      "pays": "BE",
+      "role": "Responsable politique (FDF, devenu DéFI)"
     }
   ],
   "liens": [
@@ -2748,6 +2971,181 @@
       "source_nom": "Paris Match Belgique",
       "fiabilite": "presse",
       "date_source": "2021-09-13",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "emmanuel-macron",
+      "type": "fonction",
+      "vers": "rothschild-cie",
+      "detail": "banquier d'affaires de 2008 à 2012",
+      "fin": "2012",
+      "source_url": "https://www.rtbf.be/info/monde/detail_presidentielle-francaise-2017-qui-est-emmanuel-macron?id=9574199",
+      "source_nom": "RTBF",
+      "fiabilite": "presse",
+      "date_source": "2017-04-06",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "henry-hermand",
+      "type": "ami",
+      "vers": "emmanuel-macron",
+      "detail": "Emmanuel Macron a démenti en 2017 avoir reçu un héritage de lui",
+      "source_url": "https://www.publicsenat.fr/actualites/politique/macron-operation-transparence-sur-son-argent-pour-devancer-d-eventuelles-attaques",
+      "source_nom": "Public Sénat (AFP)",
+      "fiabilite": "presse",
+      "date_source": "2017-04-17",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "famille-bettencourt-meyers",
+      "type": "possede",
+      "vers": "loreal",
+      "detail": "34,73 % du capital au 31 décembre 2023, avec les sociétés Téthys et Financière L'Arcouest",
+      "source_url": "https://www.loreal-finance.com/eng/2023-universal-registration-document/en/article/397/",
+      "source_nom": "L'Oréal, document d'enregistrement universel 2023",
+      "fiabilite": "officiel",
+      "date_source": "2023-12-31",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "francoise-bettencourt-meyers",
+      "type": "membre",
+      "vers": "famille-bettencourt-meyers",
+      "source_url": "https://www.loreal-finance.com/eng/2023-universal-registration-document/en/article/397/",
+      "source_nom": "L'Oréal, document d'enregistrement universel 2023",
+      "fiabilite": "officiel",
+      "date_source": "2023-12-31",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "nestle",
+      "type": "possede",
+      "vers": "loreal",
+      "detail": "20,13 % du capital au 31 décembre 2023",
+      "source_url": "https://www.loreal-finance.com/eng/2023-universal-registration-document/en/article/397/",
+      "source_nom": "L'Oréal, document d'enregistrement universel 2023",
+      "fiabilite": "officiel",
+      "date_source": "2023-12-31",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "herman-de-croo",
+      "type": "parent",
+      "vers": "alexander-de-croo",
+      "source_url": "https://www.lalibre.be/belgique/politique-belge/2020/09/30/herman-de-croo-fier-de-son-fils-alexander-na-pas-dennemis-G7HYCZ6QHRC43FFEQMIFALZVTM/",
+      "source_nom": "La Libre",
+      "fiabilite": "presse",
+      "date_source": "2020-09-30",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "olivier-maingain",
+      "type": "parent",
+      "vers": "fabian-maingain",
+      "source_url": "https://www.lavenir.net/actu/belgique/2019/03/18/moureaux-mathot-ducarme-ou-michel-ces-fils-et-filles-de-qui-ont-reussi-en-politique-HKRG2OIWTRFNFCWV23NVQBTEQA/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2019-03-18",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "philippe-moureaux",
+      "type": "parent",
+      "vers": "catherine-moureaux",
+      "source_url": "https://www.lavenir.net/actu/belgique/2019/03/18/moureaux-mathot-ducarme-ou-michel-ces-fils-et-filles-de-qui-ont-reussi-en-politique-HKRG2OIWTRFNFCWV23NVQBTEQA/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2019-03-18",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "daniel-ducarme",
+      "type": "parent",
+      "vers": "denis-ducarme",
+      "source_url": "https://www.lavenir.net/actu/belgique/2019/03/18/moureaux-mathot-ducarme-ou-michel-ces-fils-et-filles-de-qui-ont-reussi-en-politique-HKRG2OIWTRFNFCWV23NVQBTEQA/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2019-03-18",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "guy-mathot",
+      "type": "parent",
+      "vers": "alain-mathot",
+      "source_url": "https://www.lavenir.net/actu/belgique/2019/03/18/moureaux-mathot-ducarme-ou-michel-ces-fils-et-filles-de-qui-ont-reussi-en-politique-HKRG2OIWTRFNFCWV23NVQBTEQA/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2019-03-18",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "michel-daerden",
+      "type": "parent",
+      "vers": "frederic-daerden",
+      "source_url": "https://www.lavenir.net/actu/belgique/2019/03/18/moureaux-mathot-ducarme-ou-michel-ces-fils-et-filles-de-qui-ont-reussi-en-politique-HKRG2OIWTRFNFCWV23NVQBTEQA/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2019-03-18",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "robert-collignon",
+      "type": "parent",
+      "vers": "christophe-collignon",
+      "source_url": "https://www.lavenir.net/actu/belgique/2019/03/18/moureaux-mathot-ducarme-ou-michel-ces-fils-et-filles-de-qui-ont-reussi-en-politique-HKRG2OIWTRFNFCWV23NVQBTEQA/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2019-03-18",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "guy-lutgen",
+      "type": "parent",
+      "vers": "benoit-lutgen",
+      "source_url": "https://www.lavenir.net/actu/belgique/2019/03/18/moureaux-mathot-ducarme-ou-michel-ces-fils-et-filles-de-qui-ont-reussi-en-politique-HKRG2OIWTRFNFCWV23NVQBTEQA/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2019-03-18",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "jean-defraigne",
+      "type": "parent",
+      "vers": "christine-defraigne",
+      "source_url": "https://www.lavenir.net/actu/belgique/2019/03/18/moureaux-mathot-ducarme-ou-michel-ces-fils-et-filles-de-qui-ont-reussi-en-politique-HKRG2OIWTRFNFCWV23NVQBTEQA/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2019-03-18",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "georges-clerfayt",
+      "type": "parent",
+      "vers": "bernard-clerfayt",
+      "source_url": "https://www.lavenir.net/actu/belgique/2019/03/18/moureaux-mathot-ducarme-ou-michel-ces-fils-et-filles-de-qui-ont-reussi-en-politique-HKRG2OIWTRFNFCWV23NVQBTEQA/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2019-03-18",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "denis-ducarme",
+      "type": "membre",
+      "vers": "mr",
+      "source_url": "https://www.lavenir.net/actu/belgique/2019/03/18/moureaux-mathot-ducarme-ou-michel-ces-fils-et-filles-de-qui-ont-reussi-en-politique-HKRG2OIWTRFNFCWV23NVQBTEQA/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2019-03-18",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "christine-defraigne",
+      "type": "membre",
+      "vers": "mr",
+      "source_url": "https://www.lavenir.net/actu/belgique/2019/03/18/moureaux-mathot-ducarme-ou-michel-ces-fils-et-filles-de-qui-ont-reussi-en-politique-HKRG2OIWTRFNFCWV23NVQBTEQA/",
+      "source_nom": "L'Avenir",
+      "fiabilite": "presse",
+      "date_source": "2019-03-18",
       "date_verification": "2026-10-04"
     }
   ]
