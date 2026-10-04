@@ -91,6 +91,13 @@ function texteFait(f) {
   if (f.nuance) t += `\nNuance : ${f.nuance}`;
   return t;
 }
+function texteBoycott(b) {
+  let t = `${b.marque} (${b.groupe}) : ${b.raison}\nSource : ${b.source_nom}. ${b.source_url}`;
+  if (b.fiabilite === 'analyse') t += '\n' + AVERTISSEMENT_ANALYSE;
+  if (b.nuance) t += `\nNuance : ${b.nuance}`;
+  if ((b.alternatives || []).length) t += `\nAlternatives : ${b.alternatives.join(', ')}`;
+  return t;
+}
 function texteReplique(r) {
   const sources = (r.faits_lies || []).map(faitParId).filter(Boolean)
     .map((f) => `- ${f.titre} (${f.source_nom}) ${f.source_url}` + (f.fiabilite === 'analyse' ? `\n  ${AVERTISSEMENT_ANALYSE}` : ''));
@@ -233,7 +240,9 @@ function vueBoycotts() {
   const champ = document.getElementById('marque');
   const dessiner = () => {
     const q = norm(champ.value.trim());
-    const actifs = etat.boycotts.filter((b) => b.statut !== 'retire' && (!q || norm(b.marque + ' ' + b.groupe).includes(q)));
+    // La recherche porte aussi sur les sous-marques (ex. « Fayard » trouve Hachette Livre)
+    const actifs = etat.boycotts.filter((b) => b.statut !== 'retire' &&
+      (!q || norm([b.marque, b.groupe, ...(b.sous_marques || [])].join(' ')).includes(q)));
     if (!etat.boycotts.length) {
       document.getElementById('liste').innerHTML = '<p class="vide">Aucune fiche pour l\'instant. Chaque marque est ajoutée seulement après vérification d\'une source solide.</p>';
       return;
@@ -248,12 +257,17 @@ function vueBoycotts() {
       `<h3 class="section-titre">${esc(SECTEURS[s] || s)}</h3>` + liste.map((b) => `
         <article class="fiche">
           <div class="tete">${badge(b.fiabilite)}${b.statut === 'a-revoir' ? '<span class="issue">À revoir</span>' : ''}<span>${esc((b.pays || []).join(', '))}</span></div>
-          <h3>${esc(b.marque)} <small>(${esc(b.groupe)})</small></h3>
+          <h3>${esc(b.marque)}</h3>
+          <p class="source">Groupe : ${esc(b.groupe)}</p>
+          ${(b.sous_marques || []).length ? `<p class="source">Marques concernées : ${esc(b.sous_marques.join(', '))}</p>` : ''}
           <p>${esc(b.raison)}</p>
           ${b.fiabilite === 'analyse' ? `<p class="avert">${AVERTISSEMENT_ANALYSE}</p>` : ''}
+          ${b.nuance ? `<p class="nuance"><strong>Nuance :</strong> ${esc(b.nuance)}</p>` : ''}
           ${(b.alternatives || []).length ? `<p><strong>Alternatives :</strong> ${esc(b.alternatives.join(', '))}</p>` : ''}
           <p class="source">Source : <a href="${esc(b.source_url)}" target="_blank" rel="noopener">${esc(b.source_nom)}</a></p>
           <p class="verif${aRevérifier(b.date_verification) ? ' perime' : ''}">Vérifié le ${esc(dateFr(b.date_verification))}</p>
+          <details><summary>Faits liés</summary>${listeFaitsLies(b.faits_lies)}</details>
+          <div class="actions"><button type="button" data-copier-boycott="${esc(b.id)}">Copier</button></div>
         </article>`).join('')).join('');
   };
   champ.addEventListener('input', dessiner);
@@ -326,10 +340,11 @@ function majPastille() {
 
 // Un seul écouteur pour tous les boutons de l'app
 document.addEventListener('click', (e) => {
-  const el = e.target.closest('[data-copier-fait],[data-copier-replique],[data-fav],[data-reponse],[data-parcours],[data-voir-fait]');
+  const el = e.target.closest('[data-copier-fait],[data-copier-replique],[data-copier-boycott],[data-fav],[data-reponse],[data-parcours],[data-voir-fait]');
   if (!el) return;
   const d = el.dataset;
   if (d.copierFait) copier(texteFait(faitParId(d.copierFait)));
+  else if (d.copierBoycott) copier(texteBoycott(etat.boycotts.find((b) => b.id === d.copierBoycott)));
   else if (d.copierReplique) copier(texteReplique(repliqueParId(d.copierReplique)));
   else if (d.fav) {
     favoris.has(d.fav) ? favoris.delete(d.fav) : favoris.add(d.fav);
@@ -358,5 +373,10 @@ window.addEventListener('hashchange', router);
   if (etat.meta.derniere_maj) document.getElementById('maj').textContent = 'Mis à jour le ' + dateFr(etat.meta.derniere_maj);
   majPastille();
   router();
-  if ('serviceWorker' in navigator) navigator.serviceWorker.register('sw.js').catch(() => {});
+  if ('serviceWorker' in navigator) {
+    // Nouvelle version installée : recharger une fois pour l'afficher tout de suite
+    const avaitUneVersion = !!navigator.serviceWorker.controller;
+    navigator.serviceWorker.addEventListener('controllerchange', () => { if (avaitUneVersion) location.reload(); });
+    navigator.serviceWorker.register('sw.js').catch(() => {});
+  }
 })();

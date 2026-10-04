@@ -1,1 +1,274 @@
-[]
+[
+  {
+    "id": "hachette-livre",
+    "marque": "Hachette Livre (éditions)",
+    "sous_marques": [
+      "Fayard",
+      "Grasset",
+      "Larousse",
+      "Calmann-Lévy",
+      "Le Livre de Poche",
+      "Armand Colin"
+    ],
+    "groupe": "Louis Hachette Group (groupe Bolloré)",
+    "secteur": "media",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "raison": "Hachette Livre appartient à Louis Hachette Group, dont le groupe Bolloré est l'actionnaire de référence (31,03 % du capital fin 2025, selon le rapport annuel du groupe). Le même groupe contrôle Europe 1 et le JDD.",
+    "nuance": "Editis (Robert Laffont, Plon, Julliard, Pocket, Nathan) a été vendu par Vivendi en 2023 et ne fait plus partie du groupe Bolloré.",
+    "faits_lies": [
+      "fr-bollore-lhg-2025",
+      "fr-jdd-greve-2023"
+    ],
+    "fiabilite": "presse",
+    "source_url": "https://gusandco.net/2026/05/01/boycott-jeux-societe-bollore-hachette/",
+    "source_nom": "Gus&Co, d'après le rapport annuel 2025 de Louis Hachette Group",
+    "alternatives": [
+      "Gallimard et Flammarion (groupe Madrigall)",
+      "Actes Sud",
+      "Éditeurs belges : Weyrich, Les Impressions Nouvelles"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "hachette-boardgames",
+    "marque": "Hachette Boardgames (jeux de société)",
+    "sous_marques": [
+      "Gigamic",
+      "Le Scorpion Masqué",
+      "Funnyfox",
+      "Studio H",
+      "Catch Up Games",
+      "Sorry We Are French",
+      "La Boîte de Jeu",
+      "Hiboutatillus",
+      "Blackrock Games",
+      "Skyjo (version distribuée en France uniquement)"
+    ],
+    "groupe": "Louis Hachette Group (groupe Bolloré)",
+    "secteur": "autre",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "raison": "Hachette Boardgames fait partie de Hachette Livre, au sein de Louis Hachette Group, dont le groupe Bolloré est l'actionnaire de référence (31,03 % du capital fin 2025).",
+    "nuance": "En Belgique, Skyjo est distribué par Geronimo Games (Fernelmont), sans lien avec ce groupe, selon La Libre (mai 2026) : le lien avec Bolloré ne vaut que pour la version distribuée en France par Blackrock Games. Selon Gus&Co, aucune intervention éditoriale n'est documentée dans les studios de jeux.",
+    "faits_lies": [
+      "fr-bollore-lhg-2025"
+    ],
+    "fiabilite": "presse",
+    "source_url": "https://gusandco.net/2026/05/01/boycott-jeux-societe-bollore-hachette/",
+    "source_nom": "Gus&Co",
+    "alternatives": [
+      "Jeux distribués en Belgique par Geronimo Games",
+      "Ludothèques communales (prêt de jeux)"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "prisma-media",
+    "marque": "Prisma Media (magazines)",
+    "sous_marques": [
+      "Gala",
+      "Voici",
+      "Femme Actuelle",
+      "Géo",
+      "Capital",
+      "Télé-Loisirs"
+    ],
+    "groupe": "Louis Hachette Group (groupe Bolloré)",
+    "secteur": "media",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "raison": "Prisma Media appartient à 100 % à Louis Hachette Group depuis la scission de Vivendi en décembre 2024. Le groupe Bolloré est l'actionnaire de référence de Louis Hachette Group (31,03 % du capital fin 2025).",
+    "faits_lies": [
+      "fr-bollore-lhg-2025"
+    ],
+    "fiabilite": "presse",
+    "source_url": "https://www.abcbourse.com/marches/le-conseil-de-surveillance-de-vivendi-arrete-les-resolutions-de-scission-du-grou_647111",
+    "source_nom": "ABC Bourse, d'après Vivendi",
+    "alternatives": [
+      "Le Vif",
+      "Wilfried",
+      "Imagine demain le monde"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "relay",
+    "marque": "Relay (boutiques en gare)",
+    "sous_marques": [],
+    "groupe": "Lagardère, Louis Hachette Group (groupe Bolloré)",
+    "secteur": "distribution",
+    "pays": [
+      "FR"
+    ],
+    "raison": "Les boutiques Relay font partie du groupe Lagardère, contrôlé par Louis Hachette Group, dont le groupe Bolloré est l'actionnaire de référence.",
+    "nuance": "Présence de Relay en Belgique à vérifier.",
+    "faits_lies": [
+      "fr-bollore-lhg-2025"
+    ],
+    "fiabilite": "presse",
+    "source_url": "https://vert.eco/chaleurs-actuelles/quelles-entreprises-possede-vincent-bollore-le-milliardaire-au-service-de-lextreme-droite/",
+    "source_nom": "Vert",
+    "alternatives": [
+      "Librairies indépendantes",
+      "Marchands de journaux indépendants"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "europe1-jdd",
+    "marque": "Europe 1 et le JDD",
+    "sous_marques": [
+      "Journal du dimanche",
+      "JDNews"
+    ],
+    "groupe": "Lagardère, Louis Hachette Group (groupe Bolloré)",
+    "secteur": "media",
+    "pays": [
+      "FR"
+    ],
+    "raison": "Europe 1 et le JDD appartiennent au groupe Lagardère, contrôlé par Louis Hachette Group, dont le groupe Bolloré est l'actionnaire de référence. En 2023, la rédaction du JDD a fait grève 40 jours contre la nomination de Geoffroy Lejeune, ancien directeur de la rédaction de Valeurs actuelles.",
+    "faits_lies": [
+      "fr-bollore-lhg-2025",
+      "fr-jdd-greve-2023",
+      "analyse-bollore-medias"
+    ],
+    "fiabilite": "presse",
+    "source_url": "https://vert.eco/chaleurs-actuelles/quelles-entreprises-possede-vincent-bollore-le-milliardaire-au-service-de-lextreme-droite/",
+    "source_nom": "Vert",
+    "alternatives": [
+      "RTBF",
+      "Le Soir",
+      "La Libre",
+      "France Info"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "canal-plus",
+    "marque": "Canal+",
+    "sous_marques": [
+      "CNews",
+      "TéléSAT",
+      "TV Vlaanderen"
+    ],
+    "groupe": "Canal+ (groupe Bolloré)",
+    "secteur": "media",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "raison": "Canal+ a été séparé de Vivendi en décembre 2024 et ses actions ont été distribuées aux actionnaires de Vivendi, dont le groupe Bolloré, qui détenait alors un peu moins de 30 % de Vivendi. Canal+ possède la chaîne CNews.",
+    "nuance": "En Belgique, TéléSAT appartient à M7, racheté par Canal+ en 2019 (Puremédias).",
+    "faits_lies": [
+      "fr-arcom-c8-2024",
+      "analyse-bollore-medias"
+    ],
+    "fiabilite": "presse",
+    "source_url": "https://www.tradingsat.com/actualites/informations-societes/canal-chute-pour-ses-premiers-pas-a-la-bourse-de-londres-havas-grimpe-a-amsterdam-1129188.html",
+    "source_nom": "Tradingsat",
+    "alternatives": [
+      "Proximus Pickx",
+      "Orange (VOO)",
+      "Telenet"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "smartbox",
+    "marque": "Smartbox (coffrets cadeaux)",
+    "sous_marques": [
+      "Bongo",
+      "Weekendesk",
+      "Cadeaubox",
+      "Dakotabox",
+      "La Vida es Bella",
+      "Buyagift"
+    ],
+    "groupe": "Smartbox Group (Pierre-Édouard Stérin)",
+    "secteur": "autre",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "raison": "Le cofondateur et principal actionnaire de Smartbox, Pierre-Édouard Stérin, a prévu de consacrer 150 millions d'euros sur dix ans au projet Périclès, qui vise une « victoire idéologique, électorale et politique » du RN et de la droite, selon des documents révélés par L'Humanité en juillet 2024 et rapportés par Politis.",
+    "nuance": "Bongo appartient à Smartbox (Test-Achats, mars 2026). Devant le Sénat en juin 2026, Pierre-Édouard Stérin a présenté Périclès comme un projet « métapolitique » et affirmé séparer ses activités philanthropiques et politiques. Fin 2025, la presse a fait état de difficultés financières de sa holding : vérifier régulièrement que Smartbox n'a pas changé de propriétaire.",
+    "faits_lies": [
+      "fr-sterin-pericles-2024"
+    ],
+    "fiabilite": "presse",
+    "source_url": "https://www.politis.fr/articles/2024/07/pericles-linquietant-projet-pro-rn-du-milliardaire-sterin/",
+    "source_nom": "Politis",
+    "alternatives": [
+      "Bon cadeau acheté directement chez un restaurant, un hôtel ou un artisan",
+      "Chèques commerces de ta commune"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "tesla",
+    "marque": "Tesla",
+    "sous_marques": [],
+    "groupe": "Tesla (Elon Musk)",
+    "secteur": "autre",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "raison": "Elon Musk, patron de Tesla, a appelé à voter pour le parti d'extrême droite allemand AfD lors d'un entretien en direct sur X avec sa dirigeante Alice Weidel en janvier 2025, selon La Libre.",
+    "nuance": "Il s'agit d'une prise de position publique d'Elon Musk ; la source ne fait état d'aucun financement de l'AfD par Tesla.",
+    "faits_lies": [
+      "ue-musk-afd-2025"
+    ],
+    "fiabilite": "presse",
+    "source_url": "https://www.lalibre.be/international/europe/2025/01/09/allemagne-elon-musk-poursuit-son-ingerence-dans-les-elections-en-reiterant-son-soutien-au-parti-allemand-dextreme-droite-afd-XLGQKBTOQ5B7DOFRRCXFCVFKNE/",
+    "source_nom": "La Libre",
+    "alternatives": [
+      "Renault",
+      "Kia",
+      "Volkswagen",
+      "Skoda"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  },
+  {
+    "id": "x-twitter",
+    "marque": "X (ex-Twitter)",
+    "sous_marques": [
+      "Twitter"
+    ],
+    "groupe": "Elon Musk",
+    "secteur": "tech",
+    "pays": [
+      "BE",
+      "FR"
+    ],
+    "raison": "Le réseau social X est contrôlé par Elon Musk, qui y a appelé à voter pour le parti d'extrême droite allemand AfD lors d'un entretien en direct avec sa dirigeante Alice Weidel en janvier 2025, selon La Libre.",
+    "faits_lies": [
+      "ue-musk-afd-2025"
+    ],
+    "fiabilite": "presse",
+    "source_url": "https://www.lalibre.be/international/europe/2025/01/09/allemagne-elon-musk-poursuit-son-ingerence-dans-les-elections-en-reiterant-son-soutien-au-parti-allemand-dextreme-droite-afd-XLGQKBTOQ5B7DOFRRCXFCVFKNE/",
+    "source_nom": "La Libre",
+    "alternatives": [
+      "Bluesky",
+      "Mastodon"
+    ],
+    "date_verification": "2026-10-04",
+    "statut": "actif"
+  }
+]

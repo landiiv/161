@@ -157,11 +157,110 @@
     "titre": "Ordre de grandeur : environ 1 % des situations vécues comme violences policières arriveraient devant un juge",
     "resume": "Estimation obtenue en croisant deux chiffres : environ 6 victimes sur 10 ne signalent rien (FRA), et moins de 4 % des plaintes au Comité P aboutissent à une décision judiciaire. Le produit des deux donne un ordre de grandeur proche de 1 %.",
     "fiabilite": "methode",
-    "faits_lies": ["ue-fra-signalement-2019", "be-comitep-taux-2023"],
+    "faits_lies": [
+      "ue-fra-signalement-2019",
+      "be-comitep-taux-2023"
+    ],
     "source_url": "https://fra.europa.eu/sites/default/files/fra_uploads/fra-2019-being-black-in-the-eu-summary_en.pdf",
     "source_nom": "Calcul de l'app à partir des chiffres FRA et Comité P",
     "date_publication": "2026-10",
     "date_verification": "2026-10-04",
     "nuance": "Ce n'est pas une statistique officielle. Les deux chiffres ne portent ni sur la même population ni sur le même champ. À présenter uniquement comme un ordre de grandeur."
+  },
+  {
+    "id": "fr-bollore-lhg-2025",
+    "pays": "FR",
+    "theme": "medias",
+    "titre": "Le groupe Bolloré détient 31 % de Louis Hachette Group",
+    "resume": "Fin 2025, le groupe Bolloré détenait 31,03 % du capital et 31,05 % des droits de vote de Louis Hachette Group, selon le rapport annuel du groupe. Louis Hachette Group contrôle notamment Hachette Livre, les boutiques Relay, Europe 1, le JDD et Prisma Media.",
+    "fiabilite": "presse",
+    "source_url": "https://gusandco.net/2026/05/01/boycott-jeux-societe-bollore-hachette/",
+    "source_nom": "Gus&Co, d'après le rapport annuel 2025 de Louis Hachette Group",
+    "date_publication": "2026-05-01",
+    "date_verification": "2026-10-04",
+    "nuance": "Le second actionnaire est Arnaud Lagardère. La composition du groupe découle de la scission de Vivendi en décembre 2024 (ABC Bourse)."
+  },
+  {
+    "id": "fr-jdd-greve-2023",
+    "pays": "FR",
+    "theme": "medias",
+    "titre": "JDD : 40 jours de grève contre la nomination de Geoffroy Lejeune",
+    "resume": "En juin et juillet 2023, la rédaction du Journal du dimanche a fait grève pendant 40 jours contre la nomination à sa tête de Geoffroy Lejeune, ancien directeur de la rédaction de l'hebdomadaire Valeurs actuelles. Il a pris ses fonctions le 1er août 2023, après un accord de fin de grève.",
+    "fiabilite": "presse",
+    "source_url": "https://www.ozap.com/actu/arrivee-de-geoffroy-lejeune-au-jdd-la-greve-des-journalistes-prend-fin-apres-un-accord-avec-la-direction/635251",
+    "source_nom": "Puremédias (ozap)",
+    "date_publication": "2023-08-01",
+    "date_verification": "2026-10-04",
+    "nuance": "La grève portait sur une nomination ; la direction a maintenu son choix."
+  },
+  {
+    "id": "fr-arcom-c8-2024",
+    "pays": "FR",
+    "theme": "medias",
+    "titre": "L'Arcom ne renouvelle pas la fréquence TNT de C8",
+    "resume": "En juillet 2024, l'Arcom, régulateur de l'audiovisuel, a exclu C8 (groupe Canal+) de la réattribution des fréquences de la TNT à partir de 2025. La chaîne avait été sanctionnée à plusieurs reprises pour des séquences de l'émission « Touche pas à mon poste ».",
+    "fiabilite": "officiel",
+    "source_url": "https://www.cbnews.fr/cb/frequences-tnt-arcom-rend-son-verdict",
+    "source_nom": "CB News, d'après la décision de l'Arcom",
+    "date_publication": "2024-07-24",
+    "date_verification": "2026-10-04",
+    "nuance": "C8 a contesté la décision devant le Conseil d'État. L'Arcom n'a pas motivé sa décision par l'orientation politique de la chaîne."
+  },
+  {
+    "id": "fr-senat-bollore-2022",
+    "pays": "FR",
+    "theme": "medias",
+    "titre": "Devant le Sénat, Vincent Bolloré conteste tout intérêt idéologique dans ses rachats de médias",
+    "resume": "Auditionné en janvier 2022 par la commission d'enquête du Sénat sur la concentration des médias, Vincent Bolloré s'est défendu de tout intérêt idéologique dans le rachat de médias.",
+    "fiabilite": "officiel",
+    "source_url": "https://www.publicsenat.fr/actualites/culture/greve-au-jdd-devant-le-senat-vincent-bollore-se-defendait-de-tout-interet-ideologique-dans-le-rachat-de-medias",
+    "source_nom": "Public Sénat",
+    "date_publication": "2023-06-23",
+    "date_verification": "2026-10-04",
+    "nuance": "Déclaration de l'intéressé devant une commission parlementaire."
+  },
+  {
+    "id": "analyse-bollore-medias",
+    "pays": "FR",
+    "theme": "medias",
+    "titre": "Analyse contestée : l'influence du groupe Bolloré sur la ligne de ses médias",
+    "resume": "Selon la rédaction du JDD, qui a fait grève 40 jours en 2023 contre la nomination d'un directeur venu de Valeurs actuelles, la prise de contrôle par le groupe Bolloré menace l'indépendance éditoriale de ses médias. Vincent Bolloré conteste toute visée idéologique : devant le Sénat en 2022, il s'est défendu de tout intérêt idéologique dans ses rachats.",
+    "fiabilite": "analyse",
+    "faits_lies": [
+      "fr-jdd-greve-2023",
+      "fr-arcom-c8-2024",
+      "fr-senat-bollore-2022"
+    ],
+    "source_url": "https://www.publicsenat.fr/actualites/culture/greve-au-jdd-devant-le-senat-vincent-bollore-se-defendait-de-tout-interet-ideologique-dans-le-rachat-de-medias",
+    "source_nom": "Public Sénat",
+    "date_publication": "2023-06-23",
+    "date_verification": "2026-10-04",
+    "nuance": "Attribution à compléter avec des enquêtes de presse nommées lors de la prochaine mise à jour."
+  },
+  {
+    "id": "fr-sterin-pericles-2024",
+    "pays": "FR",
+    "theme": "extreme-droite",
+    "titre": "Projet Périclès : 150 millions d'euros sur dix ans prévus par Pierre-Édouard Stérin",
+    "resume": "Selon des documents révélés par L'Humanité le 19 juillet 2024 et rapportés par Politis, Pierre-Édouard Stérin, cofondateur et principal actionnaire de Smartbox, prévoit de consacrer 150 millions d'euros sur dix ans au projet Périclès, qui vise une « victoire idéologique, électorale et politique » du RN et de la droite.",
+    "fiabilite": "presse",
+    "source_url": "https://www.politis.fr/articles/2024/07/pericles-linquietant-projet-pro-rn-du-milliardaire-sterin/",
+    "source_nom": "Politis, d'après L'Humanité",
+    "date_publication": "2024-07-25",
+    "date_verification": "2026-10-04",
+    "nuance": "Devant une commission d'enquête du Sénat le 4 juin 2026, Pierre-Édouard Stérin a présenté Périclès comme un projet « métapolitique » visant à diffuser des idées libérales-conservatrices, et affirmé séparer ses activités philanthropiques et politiques (Public Sénat)."
+  },
+  {
+    "id": "ue-musk-afd-2025",
+    "pays": "UE",
+    "theme": "extreme-droite",
+    "titre": "Elon Musk appelle à voter pour l'AfD aux élections allemandes",
+    "resume": "Le 9 janvier 2025, lors d'un entretien diffusé en direct sur X avec Alice Weidel, dirigeante du parti d'extrême droite allemand AfD, Elon Musk a appelé à voter pour ce parti aux élections législatives allemandes du 23 février 2025.",
+    "fiabilite": "presse",
+    "source_url": "https://www.lalibre.be/international/europe/2025/01/09/allemagne-elon-musk-poursuit-son-ingerence-dans-les-elections-en-reiterant-son-soutien-au-parti-allemand-dextreme-droite-afd-XLGQKBTOQ5B7DOFRRCXFCVFKNE/",
+    "source_nom": "La Libre",
+    "date_publication": "2025-01-09",
+    "date_verification": "2026-10-04",
+    "nuance": "Prise de position publique ; la source ne fait état d'aucun financement de l'AfD par ses entreprises."
   }
 ]

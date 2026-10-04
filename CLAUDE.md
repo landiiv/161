@@ -105,10 +105,12 @@ Thèmes autorisés : `police`, `extreme-droite`, `democratie`, `medias` (concent
 {
   "id": "marque-exemple",
   "marque": "Nom de la marque",
+  "sous_marques": ["Marques du même groupe, trouvées par la recherche (optionnel)"],
   "groupe": "Groupe ou propriétaire",
   "secteur": "media | distribution | alimentation | tech | energie | autre",
   "pays": ["BE", "FR"],
   "raison": "Fait neutre et vérifiable, une ou deux phrases.",
+  "nuance": "Précision utile : distributeur local différent, ancienne filiale vendue... (optionnel)",
   "faits_lies": ["id-de-fait"],
   "fiabilite": "officiel | presse | associatif | analyse",
   "source_url": "https://...",
