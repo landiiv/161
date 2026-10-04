@@ -76,6 +76,14 @@
     "michel": {
       "nom": "Famille Michel",
       "pays": "BE"
+    },
+    "mulliez": {
+      "nom": "Mulliez",
+      "pays": "FR"
+    },
+    "hermes": {
+      "nom": "Hermès (familles Dumas et alliées)",
+      "pays": "FR"
     }
   },
   "noeuds": [
@@ -986,6 +994,71 @@
       "reseau": "politique",
       "pays": "FR",
       "role": "Ancien Premier ministre français"
+    },
+    {
+      "id": "famille-mulliez",
+      "type": "famille",
+      "nom": "Famille Mulliez",
+      "reseau": "mulliez",
+      "pays": "FR",
+      "role": "Famille du Nord de la France ; des membres sont domiciliés à Néchin, en Belgique, selon La DH (2016)"
+    },
+    {
+      "id": "afm",
+      "type": "entreprise",
+      "nom": "Association familiale Mulliez (AFM)",
+      "reseau": "mulliez",
+      "pays": "FR"
+    },
+    {
+      "id": "auchan",
+      "type": "entreprise",
+      "nom": "Auchan",
+      "reseau": "mulliez",
+      "pays": "FR"
+    },
+    {
+      "id": "decathlon",
+      "type": "entreprise",
+      "nom": "Decathlon",
+      "reseau": "mulliez",
+      "pays": "FR"
+    },
+    {
+      "id": "adeo",
+      "type": "entreprise",
+      "nom": "Adeo (Leroy Merlin, Weldom, Bricoman)",
+      "reseau": "mulliez",
+      "pays": "FR"
+    },
+    {
+      "id": "famille-hermes",
+      "type": "famille",
+      "nom": "Famille Hermès (descendants, dont la branche Dumas)",
+      "reseau": "hermes",
+      "pays": "FR"
+    },
+    {
+      "id": "axel-dumas",
+      "type": "personne",
+      "nom": "Axel Dumas",
+      "reseau": "hermes",
+      "pays": "FR",
+      "role": "Gérant d'Hermès International depuis 2013"
+    },
+    {
+      "id": "h51",
+      "type": "entreprise",
+      "nom": "H51 (holding familiale)",
+      "reseau": "hermes",
+      "pays": "FR"
+    },
+    {
+      "id": "hermes",
+      "type": "entreprise",
+      "nom": "Hermès International",
+      "reseau": "hermes",
+      "pays": "FR"
     }
   ],
   "liens": [
@@ -2302,6 +2375,112 @@
       "source_nom": "La DH (Belga)",
       "fiabilite": "presse",
       "date_source": "2025-05-01",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "famille-mulliez",
+      "type": "possede",
+      "vers": "afm",
+      "detail": "association créée en 1955 par les héritiers de Louis Mulliez, qui regroupe les parts des membres de la famille",
+      "source_url": "https://www.lequotidiendesentreprises.fr/argent/mulliez-dou-vient-vraiment-la-fortune-familiale/",
+      "source_nom": "Le Quotidien des Entreprises",
+      "fiabilite": "presse",
+      "date_source": "2026-09-13",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "afm",
+      "type": "possede",
+      "vers": "auchan",
+      "source_url": "https://www.lequotidiendesentreprises.fr/argent/mulliez-dou-vient-vraiment-la-fortune-familiale/",
+      "source_nom": "Le Quotidien des Entreprises",
+      "fiabilite": "presse",
+      "date_source": "2026-09-13",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "afm",
+      "type": "possede",
+      "vers": "decathlon",
+      "source_url": "https://www.lequotidiendesentreprises.fr/argent/mulliez-dou-vient-vraiment-la-fortune-familiale/",
+      "source_nom": "Le Quotidien des Entreprises",
+      "fiabilite": "presse",
+      "date_source": "2026-09-13",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "afm",
+      "type": "possede",
+      "vers": "adeo",
+      "source_url": "https://www.lequotidiendesentreprises.fr/argent/mulliez-dou-vient-vraiment-la-fortune-familiale/",
+      "source_nom": "Le Quotidien des Entreprises",
+      "fiabilite": "presse",
+      "date_source": "2026-09-13",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "famille-hermes",
+      "type": "possede",
+      "vers": "h51",
+      "detail": "holding familiale créée en 2011, environ 40 membres de la famille selon Le Temps",
+      "source_url": "https://www.letemps.ch/economie/lvmh-reuni-famille-hermes",
+      "source_nom": "Le Temps",
+      "fiabilite": "presse",
+      "date_source": "2014-11-14",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "h51",
+      "type": "possede",
+      "vers": "hermes",
+      "detail": "50,2 % du capital immobilisés",
+      "source_url": "https://www.letemps.ch/economie/lvmh-reuni-famille-hermes",
+      "source_nom": "Le Temps",
+      "fiabilite": "presse",
+      "date_source": "2014-11-14",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "axel-dumas",
+      "type": "membre",
+      "vers": "famille-hermes",
+      "source_url": "https://www.tradingsat.com/hermes-intl-FR0000052292/actualites/hermes-intl-la-famille-hermes-de-retour-a-la-direction-du-groupe-en-2013-210602.html",
+      "source_nom": "Tradingsat",
+      "fiabilite": "presse",
+      "date_source": "2013",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "axel-dumas",
+      "type": "dirige",
+      "vers": "hermes",
+      "detail": "gérant depuis 2013",
+      "source_url": "https://www.tradingsat.com/hermes-intl-FR0000052292/actualites/hermes-intl-la-famille-hermes-de-retour-a-la-direction-du-groupe-en-2013-210602.html",
+      "source_nom": "Tradingsat",
+      "fiabilite": "presse",
+      "date_source": "2013",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "lvmh",
+      "type": "possede",
+      "vers": "hermes",
+      "detail": "participation constituée avant 2010 ; en 2013, l'AMF a infligé 8 millions d'euros d'amende à LVMH pour ne pas l'avoir correctement déclarée",
+      "source_url": "https://us.fashionnetwork.com/news/Lvmh-will-not-appeal-amf-fine-over-hermes,523743.html",
+      "source_nom": "FashionNetwork (Reuters)",
+      "fiabilite": "presse",
+      "date_source": "2013-09-04",
+      "date_verification": "2013-09-04"
+    },
+    {
+      "de": "georges-louis-bouchez",
+      "type": "declaration",
+      "vers": "jordan-bardella",
+      "detail": "selon une chronique de De Standaard (décembre 2025), il s'est demandé si quelque chose dans le discours de Jordan Bardella était interdit par la loi",
+      "source_url": "https://daardaar.be/rubriques/politique/georges-louis-bouchez-coche-toutes-les-cases-du-populisme-de-droite-radicale/",
+      "source_nom": "DaarDaar, traduction d'une chronique de Fouad Gandoul (De Standaard)",
+      "fiabilite": "presse",
+      "date_source": "2025-12-17",
       "date_verification": "2026-10-04"
     }
   ]

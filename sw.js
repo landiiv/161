@@ -1,6 +1,6 @@
 // Service worker : fonctionnement hors ligne.
 // À CHAQUE mise à jour de data/ : incrémenter VERSION pour forcer le rafraîchissement du cache.
-const VERSION = '2026-10-04.16';
+const VERSION = '2026-10-04.17';
 const CACHE = 'argumentaire-' + VERSION;
 
 const FICHIERS = [

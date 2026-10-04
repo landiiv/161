@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-04.16",
+  "version": "2026-10-04.17",
   "derniere_maj": "2026-10-04",
   "a_suivre": [
     "Procès Zecler (prévu novembre 2026) : à sourcer",
@@ -10,7 +10,8 @@
     "Résultats du Vlaams Belang en 2024",
     "Décision en appel de Nicolas Sarkozy (financement libyen), annoncée pour fin novembre 2026 : à vérifier et mettre à jour",
     "LN24 : des discussions avec Canal+ (groupe Bolloré) ou BFM TV ont été évoquées en 2025-2026, sans confirmation. À surveiller avant tout ajout.",
-    "Affaire Reynders : suivre l'enquête pour blanchiment (inculpations d'octobre 2025 et février 2026), sans rien affirmer avant décision de justice."
+    "Affaire Reynders : suivre l'enquête pour blanchiment (inculpations d'octobre 2025 et février 2026), sans rien affirmer avant décision de justice.",
+    "LVMH et Hermès : vérifier et sourcer la sortie de LVMH du capital d'Hermès (2014) pour marquer le lien comme terminé."
   ],
   "signalement": {
     "github_issues": "https://github.com/landiiv/161/issues/new",
