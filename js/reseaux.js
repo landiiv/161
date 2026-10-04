@@ -7,6 +7,10 @@
 const TYPES_LIEN = {
   parent: { cat: 'famille', de: 'Parent de', vers: 'Enfant de', phrase: '{a} est le parent de {b}' },
   conjoint: { cat: 'famille', de: 'En couple avec', vers: 'En couple avec', phrase: '{a} et {b} sont en couple' },
+  fratrie: { cat: 'famille', de: 'Même fratrie que', vers: 'Même fratrie que', phrase: '{a} et {b} sont de la même fratrie' },
+  parrains_croises: { cat: 'proches', de: 'Parrains croisés avec', vers: 'Parrains croisés avec', phrase: "{a} et {b} sont chacun parrain d'un enfant de l'autre" },
+  designe: { cat: 'nominations', de: 'A désigné ou choisi', vers: 'Désigné(e) par', phrase: '{a} a désigné ou choisi {b}' },
+  formateur: { cat: 'nominations', de: 'Chargé de la mission :', vers: 'Mission confiée à', phrase: '{a} a été chargé de la mission : {b}' },
   membre: { cat: 'famille', de: 'Membre de', vers: 'Membre :', phrase: '{a} fait partie de : {b}' },
   alliance: { cat: 'famille', de: 'Allié par mariage à', vers: 'Allié par mariage :', phrase: '{a} : alliance par mariage avec {b}' },
   parrain: { cat: 'proches', de: 'Parrain de', vers: 'Filleul de', phrase: '{a} est le parrain de {b}' },
@@ -21,14 +25,15 @@ const TYPES_LIEN = {
   edite: { cat: 'affaires', de: 'Publie chez', vers: 'A publié', phrase: '{a} publie chez {b}' },
   finance: { cat: 'financement', de: 'Finance', vers: 'Financé par', phrase: '{a} finance {b}' }
 };
-const CATS_LIEN = { famille: 'Famille', proches: 'Proches (parrain, témoin, invité)', propriete: 'Propriété', direction: 'Direction et conseils', affaires: 'Emplois et contrats', financement: 'Financement' };
-const TYPES_NOEUD = { personne: 'Personne', famille: 'Famille', entreprise: 'Entreprise', media: 'Média', autre: 'Autre' };
+const CATS_LIEN = { famille: 'Famille', proches: 'Proches (parrain, témoin, invité)', propriete: 'Propriété', direction: 'Direction et conseils', affaires: 'Emplois et contrats', nominations: 'Nominations et missions', financement: 'Financement' };
+const TYPES_NOEUD = { personne: 'Personne', famille: 'Famille', entreprise: 'Entreprise', media: 'Média', institution: 'Institution ou parti', autre: 'Autre' };
 const EXPLIC_CAT = {
   famille: 'Lien familial (filiation, couple, mariage), documenté par la presse. Les conjoints sans rôle public ne sont pas nommés.',
   proches: 'Relation personnelle documentée : parrainage, témoin de mariage, invitation.',
   propriete: "L'un détient tout ou partie du capital de l'autre.",
   direction: "Fonction de direction ou siège au conseil d'administration.",
   affaires: 'Emploi, contrat ou publication.',
+  nominations: 'Désignation à un poste ou mission confiée, telle que rapportée par la presse.',
   financement: 'Argent versé ou prévu pour un projet.'
 };
 const EXPLIC_NOEUD = {
@@ -36,6 +41,7 @@ const EXPLIC_NOEUD = {
   famille: 'Famille citée comme actionnaire, sans détailler chaque membre.',
   entreprise: 'Entreprise ou holding (société qui détient des parts d’autres sociétés).',
   media: 'Média : journal, magazine, radio, télévision ou site.',
+  institution: 'Organisme public, intercommunale, parti politique ou mission publique.',
   autre: 'Projet ou bien : projet politique, domaine viticole...'
 };
 
@@ -128,6 +134,7 @@ function formeNoeud(type) {
     case 'famille': return '<circle r="9"/><circle r="4.5" class="interieur"/>';
     case 'entreprise': return '<rect x="-7" y="-7" width="14" height="14"/>';
     case 'media': return '<path d="M0,-9 L9,0 L0,9 L-9,0 Z"/>';
+    case 'institution': return '<path d="M-8,-5 L0,-9 L8,-5 L8,5 L0,9 L-8,5 Z"/>';
     default: return '<path d="M0,-9 L8,6 L-8,6 Z"/>';
   }
 }
@@ -140,7 +147,7 @@ function svgToile() {
     const d = Math.hypot(b.x - a.x, b.y - a.y) || 1;
     const x2 = b.x - ((b.x - a.x) / d) * 11, y2 = b.y - ((b.y - a.y) / d) * 11;
     const cat = catLien(l);
-    const fleche = ['conjoint', 'alliance'].includes(l.type) ? '' : ' marker-end="url(#fleche)"';
+    const fleche = ['conjoint', 'alliance', 'fratrie', 'parrains_croises'].includes(l.type) ? '' : ' marker-end="url(#fleche)"';
     return `<line class="lien lien-${cat}${l.fin ? ' lien-fini' : ''}" data-i="${i}" x1="${a.x.toFixed(1)}" y1="${a.y.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}"${fleche}/>` +
       `<line class="lien-zone" data-i="${i}" x1="${a.x.toFixed(1)}" y1="${a.y.toFixed(1)}" x2="${b.x.toFixed(1)}" y2="${b.y.toFixed(1)}"/>`;
   }).join('');
@@ -352,7 +359,7 @@ function vueReseaux() {
           <button type="button" data-zoom="centrer">Recentrer</button>
         </div>
       </div>
-      <p class="legende-toile">● personne · ◎ famille · ■ entreprise · ◆ média · ▲ autre. Trait plein : famille ou propriété ; tirets : direction ; tirets longs : emplois et contrats ; pointillés : financement ; tirets et points : proches. Trait pâle : lien terminé. La flèche va du propriétaire ou du parent vers ce qu'il détient ou dirige.</p>
+      <p class="legende-toile">● personne · ◎ famille · ■ entreprise · ◆ média · ⬡ institution ou parti · ▲ autre. Trait plein : famille ou propriété ; tirets : direction ; tirets longs : emplois et contrats ; tirets alternés : nominations ; pointillés : financement ; tirets et points : proches. Trait pâle : lien terminé. La flèche va du propriétaire ou du parent vers ce qu'il détient ou dirige.</p>
       <div id="panneau"></div>
     </div>
     <div id="liste-reseaux"${toile.liste ? '' : ' hidden'}></div>`;

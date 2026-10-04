@@ -227,3 +227,4 @@ details.objection[open] > summary { border-bottom: 1px solid var(--trait); }
 .carte-phrase { font-size: 1rem; }
 .carte-info .actions { margin-top: 4px; gap: 4px 12px; }
 .carte-info .fermer { position: absolute; top: 2px; right: 2px; border: 0; background: none; font-size: 1.4rem; min-width: 44px; }
+#toile .lien-nominations { stroke-dasharray: 14 4 3 4; }

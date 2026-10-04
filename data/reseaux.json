@@ -1,5 +1,5 @@
 {
-  "_lisez_moi": "Chaque lien est un fait sourcé. Types : parent, conjoint, membre, alliance (mariage avec un membre d'une famille ; la personne n'est pas nommée si elle n'a pas de rôle public), parrain, temoin, invite, possede, copropriete, dirige, fonde, siege, fonction, edite, finance. Un lien terminé porte « fin » (année). Seules les personnes ayant un rôle public figurent ici.",
+  "_lisez_moi": "Chaque lien est un fait sourcé. Types : parent, fratrie, parrains_croises, designe, formateur, conjoint, membre, alliance (mariage avec un membre d'une famille ; la personne n'est pas nommée si elle n'a pas de rôle public), parrain, temoin, invite, possede, copropriete, dirige, fonde, siege, fonction, edite, finance. Un lien terminé porte « fin » (année). Seules les personnes ayant un rôle public figurent ici.",
   "reseaux": {
     "bollore": {
       "nom": "Bolloré",
@@ -64,6 +64,10 @@
     "darty": {
       "nom": "Famille Darty",
       "pays": "FR"
+    },
+    "bouchez": {
+      "nom": "Bouchez (MR)",
+      "pays": "BE"
     }
   },
   "noeuds": [
@@ -817,6 +821,79 @@
       "nom": "Iliad (Free)",
       "reseau": "niel",
       "pays": "FR"
+    },
+    {
+      "id": "georges-louis-bouchez",
+      "type": "personne",
+      "nom": "Georges-Louis Bouchez",
+      "reseau": "bouchez",
+      "pays": "BE",
+      "role": "Président du Mouvement réformateur (MR)",
+      "faits": [
+        "be-demaret-designations"
+      ]
+    },
+    {
+      "id": "lucie-demaret",
+      "type": "personne",
+      "nom": "Lucie Demaret",
+      "reseau": "bouchez",
+      "pays": "BE",
+      "role": "Présidente du conseil d'administration de l'ONE depuis 2025",
+      "faits": [
+        "be-demaret-designations"
+      ]
+    },
+    {
+      "id": "geraldine-demaret",
+      "type": "personne",
+      "nom": "Géraldine Demaret",
+      "reseau": "bouchez",
+      "pays": "BE",
+      "role": "Désignée présidente du conseil d'administration de la Loterie nationale en 2021"
+    },
+    {
+      "id": "david-leisterh",
+      "type": "personne",
+      "nom": "David Leisterh",
+      "reseau": "bouchez",
+      "pays": "BE",
+      "role": "Ancien président du MR bruxellois"
+    },
+    {
+      "id": "mr",
+      "type": "institution",
+      "nom": "Mouvement réformateur (MR)",
+      "reseau": "bouchez",
+      "pays": "BE"
+    },
+    {
+      "id": "one",
+      "type": "institution",
+      "nom": "ONE (Office de la Naissance et de l'Enfance)",
+      "reseau": "bouchez",
+      "pays": "BE"
+    },
+    {
+      "id": "isppc",
+      "type": "institution",
+      "nom": "ISPPC (intercommunale, Charleroi)",
+      "reseau": "bouchez",
+      "pays": "BE"
+    },
+    {
+      "id": "loterie-nationale",
+      "type": "institution",
+      "nom": "Loterie nationale",
+      "reseau": "bouchez",
+      "pays": "BE"
+    },
+    {
+      "id": "formation-bxl",
+      "type": "institution",
+      "nom": "Formation du gouvernement bruxellois (2024-2026)",
+      "reseau": "bouchez",
+      "pays": "BE"
     }
   ],
   "liens": [
@@ -1870,6 +1947,116 @@
       "source_nom": "Fortune",
       "fiabilite": "presse",
       "date_source": "2025-06-03",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "georges-louis-bouchez",
+      "type": "dirige",
+      "vers": "mr",
+      "detail": "président du parti",
+      "source_url": "https://www.parismatch.be/actualites/politique/2025/07/10/voici-quel-sera-le-salaire-de-lucie-demaret-a-la-tete-de-lone-H2GFC5QPMVCSZAWITBOCT6PIXM/",
+      "source_nom": "Paris Match Belgique, d'après Sudinfo",
+      "fiabilite": "presse",
+      "date_source": "2025-07-10",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "georges-louis-bouchez",
+      "type": "conjoint",
+      "vers": "lucie-demaret",
+      "source_url": "https://www.parismatch.be/actualites/politique/2025/07/10/voici-quel-sera-le-salaire-de-lucie-demaret-a-la-tete-de-lone-H2GFC5QPMVCSZAWITBOCT6PIXM/",
+      "source_nom": "Paris Match Belgique, d'après Sudinfo",
+      "fiabilite": "presse",
+      "date_source": "2025-07-10",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "georges-louis-bouchez",
+      "type": "designe",
+      "vers": "lucie-demaret",
+      "detail": "pour la présidence de l'ONE en 2025, parmi trois candidatures selon Sudinfo",
+      "source_url": "https://www.parismatch.be/actualites/politique/2025/07/10/voici-quel-sera-le-salaire-de-lucie-demaret-a-la-tete-de-lone-H2GFC5QPMVCSZAWITBOCT6PIXM/",
+      "source_nom": "Paris Match Belgique, d'après Sudinfo",
+      "fiabilite": "presse",
+      "date_source": "2025-07-10",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "lucie-demaret",
+      "type": "dirige",
+      "vers": "one",
+      "detail": "présidente du conseil d'administration depuis juillet 2025, mandat de cinq ans, 42 439,93 € bruts par an",
+      "source_url": "https://www.parismatch.be/actualites/politique/2025/07/10/voici-quel-sera-le-salaire-de-lucie-demaret-a-la-tete-de-lone-H2GFC5QPMVCSZAWITBOCT6PIXM/",
+      "source_nom": "Paris Match Belgique, d'après Sudinfo",
+      "fiabilite": "presse",
+      "date_source": "2025-07-10",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "lucie-demaret",
+      "type": "siege",
+      "vers": "isppc",
+      "detail": "vice-présidente du conseil d'administration en 2021, déjà en 2012-2013",
+      "source_url": "https://www.lalibre.be/belgique/politique-belge/2021/06/17/la-compagne-de-georges-louis-bouchez-est-devenue-vice-presidente-dune-intercommunale-de-charleroi-QF4IFVIQ6JHNBCMIKLHJAR4JCE/",
+      "source_nom": "La Libre",
+      "fiabilite": "presse",
+      "date_source": "2021-06-17",
+      "date_verification": "2021-06-17"
+    },
+    {
+      "de": "lucie-demaret",
+      "type": "fratrie",
+      "vers": "geraldine-demaret",
+      "detail": "sœurs",
+      "source_url": "https://fr.businessam.be/bouchez-ne-parvient-pas-a-effectuer-des-nominations-sans-faire-de-vagues/",
+      "source_nom": "Business AM, d'après L'Echo",
+      "fiabilite": "presse",
+      "date_source": "2021-05-03",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "geraldine-demaret",
+      "type": "dirige",
+      "vers": "loterie-nationale",
+      "detail": "désignée présidente du conseil d'administration en 2021",
+      "source_url": "https://fr.businessam.be/bouchez-ne-parvient-pas-a-effectuer-des-nominations-sans-faire-de-vagues/",
+      "source_nom": "Business AM, d'après L'Echo",
+      "fiabilite": "presse",
+      "date_source": "2021-05-03",
+      "date_verification": "2021-05-03"
+    },
+    {
+      "de": "georges-louis-bouchez",
+      "type": "parrains_croises",
+      "vers": "david-leisterh",
+      "detail": "déclaré publiquement par Georges-Louis Bouchez en octobre 2025",
+      "source_url": "https://www.moustique.be/notre-epoque/2025/10/29/un-coeur-pour-leisterh-et-le-savon-pour-bouchez-bouchez-pret-a-relever-le-defi-apres-500-jours-dechec-politique-a-bruxelles-YDYCSAKK6RFCZJXYIJS7U6XO6Y/",
+      "source_nom": "Moustique",
+      "fiabilite": "presse",
+      "date_source": "2025-10-29",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "david-leisterh",
+      "type": "formateur",
+      "vers": "formation-bxl",
+      "detail": "jusqu'à sa démission en octobre 2025, plus de 500 jours après les élections",
+      "fin": "2025",
+      "source_url": "https://www.lalibre.be/belgique/2025/10/29/nous-nallons-pas-changer-radicalement-ce-qui-est-sur-la-table-bouchez-reprendra-les-negociations-bruxelloises-a-six-a-partir-de-lundi-YEPLSRK4LVELHMVBHFE6GD7IUM/",
+      "source_nom": "La Libre (Belga)",
+      "fiabilite": "presse",
+      "date_source": "2025-10-29",
+      "date_verification": "2026-10-04"
+    },
+    {
+      "de": "georges-louis-bouchez",
+      "type": "formateur",
+      "vers": "formation-bxl",
+      "detail": "a repris la mission en octobre 2025",
+      "source_url": "https://www.rtbf.be/article/formation-bruxelloise-georges-louis-bouchez-formateur-a-la-place-de-david-leisterh-quel-impact-sur-les-negociations-11624030",
+      "source_nom": "RTBF",
+      "fiabilite": "presse",
+      "date_source": "2025-10-29",
       "date_verification": "2026-10-04"
     }
   ]
